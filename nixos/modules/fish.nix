@@ -34,7 +34,7 @@
       delgen="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations";
       makecurrent="sudo /run/current-system/bin/switch-to-configuration boot";
   
-      config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+      config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME";
       ga="git --git-dir=$HOME/.cfg/ --work-tree=$HOME add";
       gc="git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -a -m";
       ghp="git --git-dir=$HOME/.cfg/ --work-tree=$HOME push -u origin main";
