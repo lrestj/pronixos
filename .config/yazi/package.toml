@@ -1,0 +1,24 @@
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "fbb7c00"
+hash = "1d231a808d3344546380df33daf43e91"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "55bf699"
+hash = "a670c03eb3760812e044a24f94cedc55"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "55bf699"
+hash = "7918aab6a71caf31b58411f789195677"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "02f3fc6"
+hash = "7780fbbc8965da5a31a76a0dcd4d1216"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-latte"
+rev = "02f3fc6"
+hash = "5dffea1e87c50b18b8bb1599f6d4881a"

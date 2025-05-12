@@ -1,0 +1,15 @@
+ configuration {
+                drun {
+                  display-name: "Aplikace";}
+                window {
+                  display-name: "Okna";}
+                run  {
+                  display-name: "Spustitelné";}
+                ssh {
+                  display-name: "Ssh klient";}
+                timeout {
+                    delay:  20;
+                    action: "kb-cancel";}
+                terminal: "footclient";
+ }
+ @theme "/home/libor/.dotfiles/dotconfig/rofi/rofithemes/purple.rasi"

@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "brave",
+    "text" : "Prohlížeč internetu  [ b ]",
+    "keybind" : "b"
+}
+{
+    "label" : "hibernate",
+    "action" : "dolphin",
+    "text" : "Správce souborů  [ d ]",
+    "keybind" : "d"
+}
+{
+    "label" : "suspend",
+    "action" : "libreoffice",
+    "text" : "LibreOffice  [ l ]",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "kate",
+    "text" : "Textový editor  [ k ]",
+    "keybind" : "k"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Restart  [ r ]",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Vypnout  [ v ]",
+    "keybind" : "v"
+}
