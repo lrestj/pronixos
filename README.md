@@ -8,7 +8,7 @@ git init --bare $HOME/.cfg
 Define an alias for the command.    
 
 --------------------------------------------------------------------
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 --------------------------------------------------------------------
 
 
@@ -22,7 +22,7 @@ config config --local status.showUntrackedFiles no
 Add the alias to your .bashrc or .zshrc or config.fish for convenience.
 
 -----------------------------------------------------------------------------------------------
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+echo "alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 -----------------------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ Your git repository is here and ready to settle in your new system.
 Set up your alias before starting. You may just type it in your terminal or add it to your .bashrc, .zshrc, config.fish.
 
 ----------------------------------------------------------------------
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ----------------------------------------------------------------------
 
 
@@ -59,15 +59,15 @@ Again, .cfg is an arbitrary directory name. You can use any folder name you wish
 
 You’re now ready to clone your dotfiles into a git bare repository.
 
---------------------------------------------
-git clone --bare <git-repo-url> $HOME/.cfg
---------------------------------------------
+-----------------------------------------------------------------
+git clone --bare git@github.com:lrestj/nixosnew.git $HOME/.cfg
+-----------------------------------------------------------------
 
 
 Make sure that your alias is defined in your current shell scope.
 
 --------------------------------------------------------------------
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 --------------------------------------------------------------------
 
 or
