@@ -71,7 +71,7 @@ Make sure that your alias is defined in your current shell scope.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 --------------------------------------------------------------------
 
-OR
+or
 
 ----------------
 source .bashrc
@@ -116,7 +116,11 @@ config config --local status.showUntrackedFiles no
 
 Your set up is now complete and you can now add and update files using your config alias and git commands.
 
+
 config status
+
 config add .bashrc
+
 config commit -m "Add bashrc"
+
 config push
