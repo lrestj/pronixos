@@ -1,0 +1,16 @@
+[window]
+padding = { x = 8, y = 8 }
+dynamic_padding = true
+opacity = 0.7
+
+[font]
+size=13
+
+[colors.primary]
+background = "#000f0f"
+#background = "#000000"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/blood_moon.toml"
+]
