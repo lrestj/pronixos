@@ -5,13 +5,13 @@ git init --bare $HOME/.cfg
 
 Change .cfg to any name you wish. This is just an arbitrary name for our repository.
 
-Define an alias for the command. You can also use any other alias that you would want. This is for brevity only. We don’t want typing lengthy commands everytime!
+Define an alias for the command. You can also use any other alias that you would want.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 Run this next command to hide all files that we are not explicitly keeping track of.
 config config --local status.showUntrackedFiles no
 
-Add the alias to your .bashrc or .zshrc or config.fish for convenience. You can also run this command to save you time.
+Add the alias to your .bashrc or .zshrc or config.fish for convenience.
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 
 And that’s it! You have successfully set up your git bare repository. You can pass git commands to your alias and add your dotfiles and other configurations. Of course, this is not limited to just dotfiles. You can add all kinds of files and directories here.
