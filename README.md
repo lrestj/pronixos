@@ -1,4 +1,3 @@
-Getting started
 We’ll start by initializing a git bare repository.
 
 ---------------------------------
