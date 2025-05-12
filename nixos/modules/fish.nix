@@ -17,15 +17,15 @@
       sudo="sudo";
       ls="ls --color=auto";
       grep="grep --color=auto";
-      yay="cd ~/.dotfiles && sudo nix flake update";
+      yay="cd ~/nixos && sudo nix flake update";
       yup="ya pack -u";
       clean="sudo nix-collect-garbage";
       cleanall="sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nixos-rebuild boot";
       reb="reboot";
       nxs="nix-shell -p";
       nrs="sudo nixos-rebuild switch";
-      nco="vim ~/.dotfiles/configuration.nix";
-      npk="vim ~/.dotfiles/modules/pkgs.nix";
+      nco="vim ~/nixos/configuration.nix";
+      npk="vim ~/nixos/modules/pkgs.nix";
       nnn="nnn -dH";
   
       lspkg="nix-store --query --requisites /run/current-system | grep";
