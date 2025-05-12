@@ -12,4 +12,4 @@
                     action: "kb-cancel";}
                 terminal: "footclient";
  }
- @theme "/home/libor/.dotfiles/dotconfig/rofi/rofithemes/purple.rasi"
+ @theme "/home/libor/.config/rofi/rofithemes/purple.rasi"
