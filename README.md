@@ -1,40 +1,40 @@
 We’ll start by initializing a git bare repository.
 
----------------------------------
-git init --bare $HOME/.cfg
----------------------------------
+------------------------------------
+git init --bare $HOME/.cfg.git
+------------------------------------
 
 
 Define an alias for the command.    
 
---------------------------------------------------------------------
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
---------------------------------------------------------------------
+-----------------------------------------------------------------------------
+alias cfg='git --git-dir=$HOME/.cfg.git --work-tree=$HOME'
+-----------------------------------------------------------------------------
 
 
 Run this next command to hide all files that we are not explicitly keeping track of.
 
----------------------------------------------------
-config config --local status.showUntrackedFiles no
----------------------------------------------------
+-----------------------------------------------------------
+cfg config --local status.showUntrackedFiles no
+-----------------------------------------------------------
 
 
 Add the alias to your .bashrc or .zshrc or config.fish for convenience.
 
------------------------------------------------------------------------------------------------
-echo "alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+echo "alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'" >> $HOME/.bashrc
+-----------------------------------------------------------------------------------------------------------
 
 
 And that’s it! You have successfully set up your git bare repository. You can pass git commands to your alias and add your dotfiles and other configurations. Of course, this is not limited to just dotfiles. You can add all kinds of files and directories here.
 
-config status
+cfg status
 
-config add .bashrc
+cfg add .bashrc
 
-config commit -m "Add bashrc"
+cfg commit -m "Add bashrc"
 
-config push
+cfg push
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -43,44 +43,43 @@ Your git repository is here and ready to settle in your new system.
 
 Set up your alias before starting. You may just type it in your terminal or add it to your .bashrc, .zshrc, config.fish.
 
-----------------------------------------------------------------------
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-----------------------------------------------------------------------
+-------------------------------------------------------------------------
+alias cfg='git --git-dir=$HOME/.cfg-git/ --work-tree=$HOME'
+-------------------------------------------------------------------------
 
 
 Add your git bare repository to a .gitignore file. This will help you avoid any recursion problems.
 
-----------------------------
-echo ".cfg" >> .gitignore
-----------------------------
+------------------------------------
+echo ".cfg.git" >> .gitignore
+------------------------------------
 
 
-Again, .cfg is an arbitrary directory name. You can use any folder name you wish.
 
 You’re now ready to clone your dotfiles into a git bare repository.
 
------------------------------------------------------------------
-git clone --bare git@github.com:lrestj/nixosnew.git $HOME/.cfg
------------------------------------------------------------------
+---------------------------------------------------------------------------------
+git clone --bare git@github.com:lrestj/nixosnew.git $HOME/.cfg.git
+---------------------------------------------------------------------------------
 
 
 Make sure that your alias is defined in your current shell scope.
 
---------------------------------------------------------------------
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
---------------------------------------------------------------------
+--------------------------------------------------------------------------
+alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
+--------------------------------------------------------------------------
 
 or
 
-----------------
+-------------------
 source .bashrc
-----------------
+-------------------
 
 
 Checkout the contents of your bare repository to your $HOME directory.
 
 -----------------
-config checkout
+cfg checkout
 -----------------
 
 
@@ -95,31 +94,31 @@ Aborting
 There is a solution mentioned in an article in Atlassian written by @durdn. It involves backing up the files using a shell script.
 
 --------------------------------------------------------------------
-mkdir -p .config-backup && \\
-config checkout 2>&1 | egrep "\\s+\\." | awk {'print $1'} | \\
-xargs -I{} mv {} .config-backup/{}
+mkdir -p .cfg-backup && \\
+cfg checkout 2>&1 | egrep "\\s+\\." | awk {'print $1'} | \\
+xargs -I{} mv {} .cfg-backup/{}
 
 After running the above, run the checkout command again.
 
 ------------------
-config checkout
+cfg checkout
 ------------------
 
 
-Once you run config status, you may see a lot of untracked files again. Let’s set the showUntrackedStatus flag to noagain so we’ll only see files which we only explicitly track.
+Once you run cfg status, you may see a lot of untracked files again. Let’s set the showUntrackedStatus flag to noagain so we’ll only see files which we only explicitly track.
 
-------------------------------------------------------
-config config --local status.showUntrackedFiles no
-------------------------------------------------------
-
-
-Your set up is now complete and you can now add and update files using your config alias and git commands.
+----------------------------------------------------------
+cfg config --local status.showUntrackedFiles no
+----------------------------------------------------------
 
 
-config status
+Your set up is now complete and you can now add and update files using your cfg alias and git commands.
 
-config add .bashrc
 
-config commit -m "Add bashrc"
+cfg status
 
-config push
+cfg add .bashrc
+
+cfg commit -m "Add bashrc"
+
+cfg push

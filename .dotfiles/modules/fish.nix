@@ -34,12 +34,12 @@
       delgen="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations";
       makecurrent="sudo /run/current-system/bin/switch-to-configuration boot";
   
-      config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME";
-      ga="git --git-dir=$HOME/.cfg/ --work-tree=$HOME add";
-      gc="git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -a -m";
-      ghp="git --git-dir=$HOME/.cfg/ --work-tree=$HOME push -u origin main";
-      gcl="git clone git@github.com:lrestj/nixosnew.git";
-      gs="git --git-dir=$HOME/.cfg/ --work-tree=$HOME status";
+      cfg="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME";
+      ga="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add";
+      gc="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME commit -a -m ";
+      ghp="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u origin main";
+      gcl="git clone --bare git@github.com:lrestj/nixosnew.git";
+      gs="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status";
     };
   };
 
