@@ -7,7 +7,6 @@
       ./modules/hardware-configuration.nix
       ./modules/pkgs.nix
       ./modules/bash.nix
-     # ./modules/fish.nix
       ./modules/neovim.nix	
     ];
 
