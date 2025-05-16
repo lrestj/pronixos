@@ -26,6 +26,8 @@
     exfatprogs
     fastfetch
     figlet
+    fish
+    foot
     kdePackages.filelight
     font-manager
     gimp
@@ -99,9 +101,6 @@
 
 
   programs = {
-    fish = {
-       enable = true;
-    };
     hyprland = {
         enable = true;
         xwayland.enable = true;
@@ -117,9 +116,6 @@
           userEmail = "rest@seznam.cz";
         };
       };
-    };
-    foot = {
-      enable = true;
     };
   };
 
