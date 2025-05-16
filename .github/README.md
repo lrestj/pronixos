@@ -23,16 +23,12 @@ echo "alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'" >> $HOME/.bas
 
 
 And that’s it! You have successfully set up your git bare repository. You can pass git commands to your alias and add your dotfiles and other configurations. Of course, this is not limited to just dotfiles. You can add all kinds of files and directories here.
-
+```
 cfg status
-
 cfg add .bashrc
-
 cfg commit -m "Add bashrc"
-
 cfg push
-
-
+```
 Cloning your previous configurations to your new installation
 --------------------------------------------------------------------
 Your git repository is here and ready to settle in your new system.
@@ -78,33 +74,31 @@ cfg checkout
 
 
 Of course, this command might fail as you might have similarly named files already in your new installation. You may see errors such as the one below.
-
+```
 error: The following untracked working tree files would be overwritten by checkout:
     .bashrc
     .gitignore
 Please move or remove them before you can switch branches.
 Aborting
-
+```
 There is a solution to force checkout with -f argument to overwrite existing files
 ```
 cfg checkout -f
 ```
 
 
-Once you run cfg status, you may see a lot of untracked files again. Let’s set the showUntrackedStatus flag to noagain so we’ll only see files which we only explicitly track.
+Once you run `cfg status`, you may see a lot of untracked files again. Let’s set the `showUntrackedStatus` flag to noagain so we’ll only see files which we only explicitly track.
 
 ```
 cfg config --local status.showUntrackedFiles no
 ```
 
 
-Your set up is now complete and you can now add and update files using your cfg alias and git commands.
+Your set up is now complete and you can now add and update files using your `cfg` alias and git commands.
 
-
+```
 cfg status
-
 cfg add .bashrc
-
 cfg commit -m "Add bashrc"
-
 cfg push
+```
