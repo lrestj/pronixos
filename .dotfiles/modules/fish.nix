@@ -36,7 +36,7 @@
   
       cfg="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME";
       ga="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add";
-     # gc="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME commit -a -m \"\"";
+      #gc="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME commit -a -m \"\"";
       ghp="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u origin main";
       gcl="git clone --bare git@github.com:lrestj/nixosnew.git";
       gs="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status";
