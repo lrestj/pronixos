@@ -59,7 +59,7 @@ echo ".cfg.git" >> .gitignore
 You’re now ready to clone your dotfiles into a git bare repository.
 
 ---------------------------------------------------------------------------------
-git clone --bare git@github.com:lrestj/nixosnew.git $HOME/.cfg.git
+git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
 ---------------------------------------------------------------------------------
 
 
