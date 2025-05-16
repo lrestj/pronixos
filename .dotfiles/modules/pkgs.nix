@@ -120,17 +120,6 @@
     };
     foot = {
       enable = true;
-      theme = "kitty"; # (xterm tango modus-vivendi derp)
-      settings = {
-        main = {
-          font = "Hack Nerd Font:size=12";
-          pad = "10x10";
-          shell = "fish";
-        };
-        colors = {
-          alpha = 0.7;
-        };
-      };
     };
   };
 
