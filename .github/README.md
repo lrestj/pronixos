@@ -59,12 +59,6 @@ git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
 alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 ```
 
-or
-
-```
-source .bashrc
-```
-
 💬 Checkout the contents of your bare repository to your $HOME directory.
 
 ```
