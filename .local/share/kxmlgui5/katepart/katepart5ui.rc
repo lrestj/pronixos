@@ -207,8 +207,8 @@
  </ToolBar>
  <ActionProperties scheme="Default">
   <Action name="Previous Editing Line" shortcut="; "/>
-  <Action name="beginning_of_line" shortcut="Ctrl+F12"/>
-  <Action name="end_of_line" shortcut="Ctrl+Print"/>
+  <Action name="beginning_of_line" shortcut="Ctrl+F12; Home"/>
+  <Action name="end_of_line" shortcut="Ctrl+Print; Print"/>
   <Action name="edit_create_multi_cursor_up" shortcut="Ctrl+Alt+Up; Ctrl+Alt+K"/>
   <Action name="edit_create_multi_cursor_down" shortcut="Ctrl+Alt+Down; Ctrl+Alt+J"/>
   <Action name="select_end_of_line" shortcut="Shift+End; Shift+Print"/>
