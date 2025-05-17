@@ -29,6 +29,7 @@ abbr ghp "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u origin main"
 abbr gcl "git clone --bare git@github.com:lrestj/nixos.git"
 abbr gs "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status"
 abbr str "git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor log --pretty=format: --name-only --diff-filter=A "
+abbr untrack "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --skip-worktree"
 
 end
 
