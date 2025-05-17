@@ -19,7 +19,7 @@ alias cfg='git --git-dir=$HOME/.cfg.git --work-tree=$HOME'
 cfg config --local status.showUntrackedFiles no
 ```
 
-💬 Add the alias to your .bashrc or .zshrc or config.fish for convenience.
+💬 Add the alias to your .bashrc or config.fish for convenience.
 
 ```
 echo "alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'" >> $HOME/.bashrc
@@ -79,7 +79,7 @@ Aborting
 cfg checkout -f
 ```
 
-💬 Once you run `cfg status`, you may see a lot of untracked files again. Let’s hide them.
+💬 Once you run `cfg status`, you may see a lot of untracked files again. Run this command to hide them.
 
 ```
 cfg config --local status.showUntrackedFiles no
@@ -94,5 +94,5 @@ cfg add .bashrc
 cfg commit -m "Add bashrc"
 cfg push
 ```
-<div align="center"> 🔔&nbsp 🔔&nbsp 🔔&nbsp 🔔&nbsp 🔔 </div>
+<div align="center"> 🔔&nbsp🔔&nbsp🔔&nbsp🔔&nbsp🔔 </div>
 <div align="center"> 🇪 🇴 🇫 </div>
