@@ -94,5 +94,5 @@ cfg add .bashrc
 cfg commit -m "Add bashrc"
 cfg push
 ```
-<div align="center"> 🔔🔔🔔🔔🔔 </div>
+<div align="center"> 🔔&nbsp 🔔&nbsp 🔔&nbsp 🔔&nbsp 🔔 </div>
 <div align="center"> 🇪 🇴 🇫 </div>
