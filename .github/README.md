@@ -22,7 +22,7 @@ echo "alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'" >> $HOME/.bas
 ```
 
 
-And that’s it! You have successfully set up your git bare repository. You can pass git commands to your alias and add your dotfiles and other configurations. Of course, this is not limited to just dotfiles. You can add all kinds of files and directories here.
+And that’s it! You can add all kinds of files and directories in your repository.
 ```
 cfg status
 cfg add .bashrc
@@ -31,7 +31,6 @@ cfg push
 ```
 Cloning your previous configurations to your new installation
 --------------------------------------------------------------------
-Your git repository is here and ready to settle in your new system.
 
 Set up your alias before starting. You may just type it in your terminal or add it to your .bashrc, .zshrc, config.fish.
 
@@ -87,7 +86,7 @@ cfg checkout -f
 ```
 
 
-Once you run `cfg status`, you may see a lot of untracked files again. Let’s set the `showUntrackedStatus` flag to noagain so we’ll only see files which we only explicitly track.
+Once you run `cfg status`, you may see a lot of untracked files again. Let’s set the `showUntrackedStatus` flag to `no` again so we’ll only see files which we only explicitly track.
 
 ```
 cfg config --local status.showUntrackedFiles no
