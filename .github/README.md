@@ -80,7 +80,7 @@ error: The following untracked working tree files would be overwritten by checko
 Please move or remove them before you can switch branches.
 Aborting
 ```
-There is a solution to force checkout with -f argument to overwrite existing files
+There is a solution to force checkout with -f argument to overwrite existing files.
 ```
 cfg checkout -f
 ```
