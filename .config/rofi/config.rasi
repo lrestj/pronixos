@@ -10,6 +10,5 @@
                 timeout {
                     delay:  20;
                     action: "kb-cancel";}
-                terminal: "footclient";
  }
  @theme "/home/libor/.config/rofi/rofithemes/purple.rasi"
