@@ -52,6 +52,11 @@ echo ".cfg.git" >> .gitignore
 ```
 git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
 ```
+or
+
+```
+git clone --bare git@codeberg.org/lrestj/nixos.git $HOME/.cfg.git
+```
 
 💬 Make sure that your alias is defined in your current shell scope.
 
