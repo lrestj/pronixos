@@ -36,6 +36,7 @@
     hunspellDicts.cs_CZ
     hunspellDicts.en_US
     hypridle
+    hyprlock
     hyprpolkitagent
     hyprshot
     jq
