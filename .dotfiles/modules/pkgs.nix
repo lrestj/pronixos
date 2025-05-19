@@ -74,6 +74,7 @@
     unzip
     vlc
     waybar
+    waypaper
     wget
     wl-clipboard
     wlogout
