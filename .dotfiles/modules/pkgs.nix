@@ -57,6 +57,7 @@
     networkmanagerapplet
     kdePackages.okular
     kdePackages.oxygen-icons
+    pamixer
     pavucontrol
     pcmanfm-qt
     pdfarranger
