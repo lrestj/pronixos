@@ -37,3 +37,7 @@ on-button-middle=dismiss
 
 [category=help]
 width=440
+
+[category=center]
+anchor=center
+default-timeout=1000
