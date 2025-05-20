@@ -30,10 +30,10 @@ anchor=top-center
 default-timeout=2000
 group-by=category
 
-[category=custom]
-on-button-left=exec brave
+[category=run]
+on-button-left=exec kate && exec makoctl dismiss
 on-button-right=exec kate
-on-button-middle=dismiss
+default-timeout=0
 
 [category=help]
 width=440
