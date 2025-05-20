@@ -6,7 +6,7 @@
     font-awesome
     noto-fonts-cjk-sans
     nerd-fonts.hack
-    nerd-fonts.fira-mono
+    jetbrains-mono
     nerd-fonts.roboto-mono
     nerd-fonts.symbols-only
   ];
