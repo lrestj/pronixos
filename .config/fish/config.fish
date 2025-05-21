@@ -27,6 +27,8 @@ abbr ga "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add"
 abbr gc --set-cursor -- "git --git-dir $HOME/.cfg.git/ --work-tree=$HOME commit -a -m \"%\""
 abbr ghp "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u github main"
 abbr cbp "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push codeberg main"
+abbr ppp "git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push -u github main && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push codeberg main"
+
 abbr gcl "git clone --bare git@github.com:lrestj/nixos.git"
 abbr gs "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status"
 abbr str "git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor log --pretty=format: --name-only --diff-filter=A "
