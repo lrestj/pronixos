@@ -1,6 +1,0 @@
-sudo nix-env -p /nix/var/nix/profiles/system --list-generations | awk '{print $1}'| paste -s -d " "
-
-w
-
-sudo nix-env -p /nix/var/nix/profiles/system --list-generations | awk '{print $1}'| paste -s -d " " | rev |cut -d " " -f 2-
- | rev
