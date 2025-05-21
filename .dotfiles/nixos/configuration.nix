@@ -4,7 +4,7 @@
 
   imports =
     [ # Include hardware-configuration.nix
-      ./modules/hardware-configuration.nix
+      ./hardware-configuration.nix
       ./modules/pkgs.nix
       ./modules/bash.nix
       ./modules/neovim.nix	
