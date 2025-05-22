@@ -50,11 +50,12 @@ echo ".cfg.git" >> .gitignore
 💬 You’re now ready to clone your dotfiles into a git bare repository.
 
 ```
-git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
+git clone --bare https://codeberg.org/lrestj/nixos.git
 ```
-or
+or with ssh key activated:
 
 ```
+git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
 git clone --bare ssh://git@codeberg.org/lrestj/nixos.git $HOME/.cfg.git
 ```
 
