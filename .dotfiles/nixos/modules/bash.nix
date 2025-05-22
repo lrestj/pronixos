@@ -32,13 +32,12 @@
   
     lspkg="nix-store --query --requisites /run/current-system | grep";
     lsgen="sudo nix-env -p /nix/var/nix/profiles/system --list-generations";
-    lsdel="sudo nix-env -p /nix/var/nix/profiles/system --list-generations | awk '{print $1}'| paste -s -d " "";
     delgen="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations";
   
     ga="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add";
     gc="git --git-dir $HOME/.cfg.git/ --work-tree=$HOME commit -a -m";
     ghp="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u github main";
-    cbp=git"git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push codeberg main"
+    cbp="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push codeberg main";
 
     gcl="git clone --bare git@github.com:lrestj/nixos.git";
     gs="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status";
