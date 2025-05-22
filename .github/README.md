@@ -1,6 +1,9 @@
-
 ### <div align="center"> 💻 My nixos config 💻 </div>
 
+
+###### ⚠️ Welcome to my dotfiles. Feel free to look inside but I don't recommend to use this exact config on your system.
+
+###### ⁉️ Also this readme file is just a reminder for me actually.
 
 
 ## ⚙️ Initializing a git bare repository
@@ -56,7 +59,6 @@ or with ssh key activated:
 
 ```
 git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
-git clone --bare ssh://git@codeberg.org/lrestj/nixos.git $HOME/.cfg.git
 ```
 
 💬 Make sure that your alias is defined in your current shell scope.
