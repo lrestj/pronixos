@@ -24,22 +24,24 @@
     cleanall="sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nixos-rebuild boot";
     reb="reboot";
     nxs="nix-shell -p";
-    nrs="sudo nixos-rebuild switch";
-    nco="vim ~/.dotfiles/configuration.nix";
-    npk="vim ~/.dotfiles/modules/pkgs.nix";
-    bas="vim ~/.dotfiles/modules/bash.nix";
+    nrs="sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/";
+    nco="vim ~/.dotfiles/nixos/configuration.nix";
+    npk="vim ~/.dotfiles/nixos/modules/pkgs.nix";
+    bas="vim ~/.dotfiles/nixos/modules/bash.nix";
     nnn="nnn -dH";
   
     lspkg="nix-store --query --requisites /run/current-system | grep";
     lsgen="sudo nix-env -p /nix/var/nix/profiles/system --list-generations";
-   #lsdel="sudo nix-env -p /nix/var/nix/profiles/system --list-generations | awk '{print $1}'| paste -s -d " "";
+    lsdel="sudo nix-env -p /nix/var/nix/profiles/system --list-generations | awk '{print $1}'| paste -s -d " "";
     delgen="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations";
   
-    ga="cd ~/.dotfiles && git add .";
-    gc="cd ~/.dotfiles && git add . && git commit -m";
-    ghp="git push origin main";
-    gcl="git clone git@github.com:lrestj/nixos.git";
-    gs="cd ~/.dotfiles && git status";
+    ga="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add";
+    gc="git --git-dir $HOME/.cfg.git/ --work-tree=$HOME commit -a -m";
+    ghp="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u github main";
+    cbp=git"git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push codeberg main"
+
+    gcl="git clone --bare git@github.com:lrestj/nixos.git";
+    gs="git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status";
   };
 
 }
