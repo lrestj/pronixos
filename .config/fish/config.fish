@@ -5,7 +5,7 @@ abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
-abbr yay "cd ~/.dotfiles && sudo nix flake update"
+abbr yay "cd ~/.dotfiles/nixos && sudo nix flake update"
 abbr yup "ya pack -u"
 abbr clean "sudo nix-collect-garbage"
 abbr cleanall "sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nixos-rebuild boot"
