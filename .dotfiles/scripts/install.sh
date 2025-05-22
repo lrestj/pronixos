@@ -8,9 +8,9 @@ echo ".cfg.git" >> .gitignore &&
 
 echo "Klonuji GitHub repozitář"
 
-git clone --bare ssh://git@codeberg.org/lrestj/nixos.git $HOME/.cfg.git &&
+#git clone --bare ssh://git@codeberg.org/lrestj/nixos.git $HOME/.cfg.git &&
 
-#git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
+git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
 
 alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 
@@ -18,7 +18,9 @@ echo "Přesun konfigurace..."
 
 cfg checkout -f &&
 
-cp /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/modules &&
+cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/modules &&
+
+cfg config --local status.showUntrackedFiles no
 
 #sudo rm -r /etc/nixos
 
