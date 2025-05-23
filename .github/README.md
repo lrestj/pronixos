@@ -1,7 +1,7 @@
-### <div align="center"> 💻 My nixos config 💻 </div>
+### <div align="center"> 💻 My Nixos config 💻 </div>
 
 
-###### ⚠️ Welcome to my dotfiles. Feel free to look inside but I don't recommend to use this exact config on your system.
+###### ⚠️ Welcome to my repo. Feel free to look inside but I don't recommend to use this exact config on your system.
 
 ###### ⁉️ Also this readme file is just a reminder for me actually.
 
