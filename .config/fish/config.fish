@@ -17,7 +17,6 @@ abbr nxs "nix-shell -p"
 abbr nrs "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/"
 abbr nco "vim ~/.dotfiles/nixos/configuration.nix"
 abbr npk "vim ~/.dotfiles/nixos/modules/pkgs.nix"
-abbr nnn "nnn -dH"
 
 abbr lspkg "nix-store --query --requisites /run/current-system | grep"
 abbr lsgen "sudo nix-env -p /nix/var/nix/profiles/system --list-generations"

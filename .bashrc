@@ -21,7 +21,6 @@ alias nxs='nix-shell -p'
 alias nrs='sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/'
 alias nco='vim ~/.dotfiles/nixos/configuration.nix'
 alias npk='vim ~/.dotfiles/nixos/modules/pkgs.nix'
-alias nnn='nnn -dH'
 
 alias lspkg='nix-store --query --requisites /run/current-system | grep'
 alias lsgen='sudo nix-env -p /nix/var/nix/profiles/system --list-generations'
