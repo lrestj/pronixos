@@ -36,7 +36,7 @@ alias ghp='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push -u github main'
 alias cbp='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME push codeberg main'
 alias ppp='git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push -u github main && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push codeberg main'
 
-alias gcl='git clone --bare git@github.com:lrestj/nixos.git'
+alias gcl='git clone --bare https://codeberg.org/lrestj/nixos.git'
 alias gs='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME status'
 alias str='git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor log --pretty=format: --name-only --diff-filter=A '
 alias untrack='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --skip-worktree'
