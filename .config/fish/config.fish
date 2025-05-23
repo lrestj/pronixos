@@ -1,3 +1,6 @@
+#####  FISH CONFIG  #####
+
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
@@ -36,3 +39,5 @@ abbr untrack "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --ski
 
 end
 
+
+#####  END OF FILE  #####

@@ -1,3 +1,5 @@
+#####  BASH CONFIG  #####
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -40,3 +42,6 @@ alias str='git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor log --pre
 alias untrack='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --skip-worktree'
 
 alias config='git --git-dir=/home/libor/.cfg/ --work-tree=/home/libor'
+
+ 
+#####  END OF FILE  #####
