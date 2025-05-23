@@ -1,9 +1,11 @@
 ### <div align="center"> 💻 My Nixos config 💻 </div>
 
 
-###### ⚠️ Welcome to my repo. Feel free to look inside but I don't recommend to use this exact config on your system.
+##### ✌ Welcome to my repo. Feel free to look inside for an inspiration or just for fun. 
 
-###### ⁉️ Also this readme file is just a reminder for me actually.
+###### 🤔 I don't recommend to use this exact config on other system as it is still work in progress.
+
+###### ✅ Also this readme file is just a reminder for me actually.
 
 
 ## ⚙️ Initializing a git bare repository
