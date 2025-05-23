@@ -4,10 +4,9 @@
 
   fonts.packages = with pkgs; [
     font-awesome
-    noto-fonts-cjk-sans
+    noto-fonts
     nerd-fonts.hack
     jetbrains-mono
-    nerd-fonts.roboto-mono
     nerd-fonts.symbols-only
   ];
 

@@ -7,6 +7,7 @@
       ./hardware-configuration.nix
       ./modules/pkgs.nix
       ./modules/neovim.nix	
+      ./modules/joypixels.nix
     ];
 
 
