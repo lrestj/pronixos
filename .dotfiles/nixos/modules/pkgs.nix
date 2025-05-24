@@ -2,7 +2,14 @@
 
 {
 
-  fonts.packages = with pkgs; [
+ imports =
+    [ 
+      ./neovim.nix	
+      ./joypixels.nix
+    ];
+
+
+ fonts.packages = with pkgs; [
     font-awesome
     noto-fonts
     nerd-fonts.hack
