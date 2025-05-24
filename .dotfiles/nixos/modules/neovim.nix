@@ -40,6 +40,7 @@
           noremap <leader>fd :Telescope find_files<cr>
           noremap <leader>fg :Telescope live_grep<cr>
           noremap <leader>ff :Telescope buffers<cr>
+          noremap <leader>fj :Telescope jumplist<cr>
           noremap <leader>oo :Telescope oldfiles<cr>
           nnoremap <leader><Tab> :buffer<Space>
           nnoremap <leader><leader> :set relativenumber!<CR>
