@@ -80,7 +80,7 @@
     udiskie
     ueberzugpp
     unzip
-    vim
+    vim-full
     vlc
     waybar
     waypaper
