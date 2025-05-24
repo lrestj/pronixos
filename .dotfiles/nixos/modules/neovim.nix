@@ -67,9 +67,9 @@
           " Startify greeter
           let g:startify_update_oldfiles = 1
           let g:startify_files_number = 15
-          let g:startify_skiplist = [
-                 \ '~/.dotfiles/modules/neovim.nix',
-                 \ ]
+         " let g:startify_skiplist = [
+         "        \ '~/.dotfiles/nixos/modules/neovim.nix',
+         "        \ ]
       
           let g:startify_enable_special = 0
           let g:startify_custom_indices = ['e', 'y', 'n', 'a', 'x', 'c', 'f', 'g', 'h', 'u', 'i', 'l']
@@ -88,13 +88,13 @@
 
       	  let g:startify_bookmarks = [
                   \ { 'd':'~/.dotfiles'},
-                  \ { 'm': '~/.dotfiles/modules/' },
+                  \ { 'm': '~/.dotfiles/nixos/modules/' },
                   \ ]
 
           let g:startify_commands = [
                   \ ['󰎔 Nový soubor', ':enew'],
                   \ [' Správce souborů', ':Yazi'],
-                  \ [' Neovim init', ':e ~/.dotfiles/modules/neovim.nix' ],
+                  \ [' Neovim init', ':e ~/.dotfiles/nixos/modules/neovim.nix' ],
                   \ ]
 
           " Transparent background
@@ -110,7 +110,7 @@
                   let g:netrw_browse_split = 4
                   let g:netrw_altv = 1
                   let g:netrw_winsize = 25
-  
+                  let g:netrw_browse_split = 0
         '';
 
 
