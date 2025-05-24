@@ -45,8 +45,10 @@
           nnoremap <leader><Tab> :buffer<Space>
           nnoremap <leader><leader> :set relativenumber!<CR>
           nnoremap <leader>nn :set nohlsearch<CR>
-
           nnoremap <leader>q ZQ
+
+          " Number list macro
+          noremap <leader>n I0gvg
           
           colorscheme wildcharm
           syntax on

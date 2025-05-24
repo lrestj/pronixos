@@ -6,7 +6,7 @@ alias cfg='git --git-dir=$HOME/.cfg-git/ --work-tree=$HOME'
 
 echo ".cfg.git" >> .gitignore &&
 
-echo "Kopírování z GitHub repozitáře..."
+echo "Kopírování z CodeBerg repozitáře..."
 
 git clone --bare https://codeberg.org/lrestj/nixos.git &&
 
