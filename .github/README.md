@@ -1,4 +1,4 @@
-### <div align="center"> 💻 My Nixos config 💻 </div>
+### <div align="center"> 💻 My NixOS config 💻 </div>
 
 
 ##### ✌ Welcome to my repo. Feel free to look inside for an inspiration or just for fun. 
