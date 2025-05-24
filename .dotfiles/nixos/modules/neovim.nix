@@ -5,8 +5,8 @@
     programs.neovim = {
       enable = true;
       defaultEditor = true;
-      vimAlias = true;
-      viAlias = true;
+     # vimAlias = true;
+     # viAlias = true;
       configure = {
         customRC = ''
           let mapleader=" "

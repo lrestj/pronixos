@@ -31,6 +31,7 @@
     efibootmgr
     exfatprogs
     fastfetch
+    featherpad
     figlet
     fish
     foot
@@ -49,7 +50,6 @@
     kdePackages.breeze
     kdePackages.breeze-icons
     kdePackages.kalk
-    kdePackages.kate
     kdePackages.partitionmanager
     kdePackages.qt6ct
     kdePackages.qtsvg
@@ -80,6 +80,7 @@
     udiskie
     ueberzugpp
     unzip
+    vim
     vlc
     waybar
     waypaper
