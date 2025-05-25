@@ -42,7 +42,7 @@
           syntax on
           set wildmenu
           set wildmode=full,full
-          set wildignorecase
+          "set wildignorecase
           set wildoptions=pum,tagfile
           set mouse=a
           set nocompatible
