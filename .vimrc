@@ -38,7 +38,9 @@
           colorscheme default
           syntax on
           set wildmenu
-          set wildoptions=pum,tagfile
+          set wildmode=list:full
+          set wildignorecase
+          set wildoptions=pum
           set mouse=a
           set nocompatible
           set backspace=indent,eol,start
