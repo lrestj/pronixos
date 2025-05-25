@@ -35,12 +35,15 @@
           " Number list macro
           noremap <leader>n I0gvg
           
-          colorscheme default
+          "colorscheme wildcharm
+          set background=dark   
+          colorscheme wildcharm
+          
           syntax on
           set wildmenu
-          set wildmode=list:full
+          set wildmode=full,full
           set wildignorecase
-          set wildoptions=pum
+          set wildoptions=pum,tagfile
           set mouse=a
           set nocompatible
           set backspace=indent,eol,start
@@ -122,3 +125,9 @@
               let &t_SR = "\<Esc>[4 q"
               " Block in other modes
               let &t_EI = "\<Esc>[2 q"
+
+
+          " Transparent background
+               highlight Normal ctermbg=none
+               highlight NonText ctermbg=none
+          
