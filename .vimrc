@@ -24,7 +24,8 @@
           noremap <leader>x :bd<CR>
           noremap <leader>v :vnew<CR>
           noremap <leader>y :Yazi<CR>
-          noremap <leader>ww :w !sudo tee > /dev/null %<CR>
+          "noremap <leader>ww :w !sudo tee > /dev/null %<CR>
+          noremap <silent>  <leader>ww :SudoWrite %<CR>
           noremap <leader>s :Startify<CR>
           nnoremap <leader><Tab> :buffer<Space>
           nnoremap <leader><leader> :set relativenumber!<CR>
@@ -36,6 +37,8 @@
           
           colorscheme default
           syntax on
+          set wildmenu
+          set wildoptions=pum,tagfile
           set mouse=a
           set nocompatible
           set backspace=indent,eol,start
@@ -61,6 +64,8 @@
            Plug 'tpope/vim-sensible'
            Plug 'mhinz/vim-startify'
            Plug 'chriszarate/yazi.vim'
+           Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+           Plug 'junegunn/fzf.vim'
          call plug#end()
 
 

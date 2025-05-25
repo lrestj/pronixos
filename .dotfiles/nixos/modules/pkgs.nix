@@ -35,6 +35,7 @@
     figlet
     fish
     foot
+    fzf
     kdePackages.filelight
     font-manager
     gimp
