@@ -35,10 +35,13 @@
           " Number list macro
           noremap <leader>n I0gvg
           
-          "colorscheme wildcharm
+          "Colorscheme with transparent bcgrd
           set background=dark   
           colorscheme wildcharm
-          
+          highlight Normal ctermbg=none
+          highlight NonText ctermbg=none
+ 
+
           syntax on
           set wildmenu
           set wildmode=full,full
@@ -59,7 +62,6 @@
        
       	  let g:suda#prompt = 'Heslo: '
           
-
  
          " PLUGINS
          
@@ -72,7 +74,6 @@
            Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
            Plug 'junegunn/fzf.vim'
          call plug#end()
-
 
 
           " Startify greeter
@@ -126,8 +127,3 @@
               " Block in other modes
               let &t_EI = "\<Esc>[2 q"
 
-
-          " Transparent background
-               highlight Normal ctermbg=none
-               highlight NonText ctermbg=none
-          
