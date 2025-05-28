@@ -5,6 +5,11 @@
           nnoremap Y y$
           nnoremap <leader>q ZQ
 
+          command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+          nnoremap <leader><leader> :set relativenumber!<CR>
+          nnoremap <leader>nn :set nohlsearch<CR>
+
+
           nnoremap <A-j> :m .+1<CR>
           nnoremap <A-k> :m .-2<CR>
           inoremap <A-j> <Esc>:m .+1<CR>gi
@@ -31,13 +36,10 @@
           nnoremap <leader><Tab> :buffer<Space><Tab>
 
           noremap <leader>y :Yazi<CR>
-          command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
           noremap <leader>s :Startify<CR>
-          nnoremap <leader><leader> :set relativenumber!<CR>
-          nnoremap <leader>nn :set nohlsearch<CR>
 
-          " Number list macro
+
+          " Numbered list macro
           noremap <leader>n I0gvg
           
           "Colorscheme with transparent bg
@@ -48,6 +50,7 @@
  
 
           syntax on
+          set cul
           set wildcharm=<Tab>
           set wildmenu
           set wildoptions=pum,tagfile
@@ -61,6 +64,9 @@
           set showtabline=1
           set directory=~/Veřejné//
           set ignorecase
+          set smartcase
+          set showmatch
+          set mat=2
           set ruler
           set number
           set scrolloff=2
@@ -71,6 +77,8 @@
          call plug#begin()
            " List your plugins here
            Plug 'mhinz/vim-startify'
+           Plug 'junegunn/vim-peekaboo'
+           Plug 'LnL7/vim-nix'
            Plug 'chriszarate/yazi.vim'
            Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
            Plug 'junegunn/fzf.vim'
