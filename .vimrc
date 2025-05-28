@@ -7,9 +7,9 @@
 
           command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
           nnoremap <leader><leader> :set relativenumber!<CR>
-          nnoremap <leader>nn :set nohlsearch<CR>
+          nnoremap <leader>, :set nohlsearch<CR>
 
-          "Line up and down
+          "Line down and up
           nnoremap <A-j> :m .+1<CR>
           nnoremap <A-k> :m .-2<CR>
           inoremap <A-j> <Esc>:m .+1<CR>gi
@@ -31,8 +31,8 @@
           noremap <leader>h <C-w>H
 
           "Buffers prev, next, delete,show and new vertical split
-          noremap <C-b> :bp<CR>
-          noremap <C-n> :bn<CR>
+          noremap <leader>b :bp<CR>
+          noremap <leader>n :bn<CR>
           noremap <leader>x :bd<CR>
           nnoremap <leader><Tab> :buffer<Space><Tab>
           noremap <leader>v :vnew<CR>
@@ -41,9 +41,9 @@
           noremap <leader>y :Yazi<CR>
 
           " Numbered list macro
-          noremap <leader>n I0gvg
+          noremap <leader>l I0gvg
           
-          "Colorscheme with transparent bg
+
           set background=dark   
           colorscheme wildcharm
 
