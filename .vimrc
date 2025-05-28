@@ -9,7 +9,7 @@
           nnoremap <leader><leader> :set relativenumber!<CR>
           nnoremap <leader>nn :set nohlsearch<CR>
 
-
+          "Line up and down
           nnoremap <A-j> :m .+1<CR>
           nnoremap <A-k> :m .-2<CR>
           inoremap <A-j> <Esc>:m .+1<CR>gi
@@ -17,11 +17,12 @@
           vnoremap <A-j> :m '>+1<CR>gv
           vnoremap <A-k> :m '<-2<CR>gv
 
+          "Copy, paste to system clipboard and select all
           vnoremap <C-c> "+y
           vnoremap <C-v> "+p
           noremap <leader>a :normal! ggV$G$<CR>
 
-          noremap <C-tab> <C-w>w
+          "Windows focus and swap
           noremap <C-j> <C-w>j
           noremap <C-k> <C-w>k
           noremap <C-h> <C-w>h
@@ -29,15 +30,15 @@
           noremap <leader>l <C-w>L
           noremap <leader>h <C-w>H
 
+          "Buffers prev, next, delete,show and new vertical split
           noremap <C-b> :bp<CR>
           noremap <C-n> :bn<CR>
           noremap <leader>x :bd<CR>
-          noremap <leader>v :vnew<CR>
           nnoremap <leader><Tab> :buffer<Space><Tab>
+          noremap <leader>v :vnew<CR>
 
-          noremap <leader>y :Yazi<CR>
           noremap <leader>s :Startify<CR>
-
+          noremap <leader>y :Yazi<CR>
 
           " Numbered list macro
           noremap <leader>n I0gvg
@@ -45,32 +46,29 @@
           "Colorscheme with transparent bg
           set background=dark   
           colorscheme wildcharm
-          highlight Normal ctermbg=none
-          highlight NonText ctermbg=none
- 
+
 
           syntax on
+          set nocompatible
+          set autoread
+          set backspace=indent,eol,start
           set cul
+          set directory=~/Veřejné//
+          set hidden
+          set ignorecase
+          set incsearch
+          set laststatus=2
+          set mouse=a
+          set number
+          set ruler
+          set scrolloff=2
+          set showmatch mat=2
+          set showtabline=1
+          set smartcase
+          set tabstop=2 shiftwidth=2 expandtab
           set wildcharm=<Tab>
           set wildmenu
           set wildoptions=pum,tagfile
-          set mouse=a
-          set nocompatible
-          set backspace=indent,eol,start
-          set autoread
-          set hidden
-          set incsearch
-          set laststatus=2
-          set showtabline=1
-          set directory=~/Veřejné//
-          set ignorecase
-          set smartcase
-          set showmatch
-          set mat=2
-          set ruler
-          set number
-          set scrolloff=2
-          set tabstop=2 shiftwidth=2 expandtab
           
  
          " PLUGINS
