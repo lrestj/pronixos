@@ -4,7 +4,6 @@
 
  imports =
     [ 
-      ./neovim.nix	
       ./joypixels.nix
      # ./vim.nix
     ];
