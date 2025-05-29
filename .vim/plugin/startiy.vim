@@ -1,4 +1,5 @@
 "Startify greeter
+
    let g:startify_update_oldfiles = 1
    let g:startify_files_number = 15
 
