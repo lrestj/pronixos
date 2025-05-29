@@ -1,13 +1,16 @@
+""""" VIM CONFIGURATION """""
+
+
           let mapleader=" "
           nnoremap ; :
           nnoremap : ;
           nnoremap <BS> X
           nnoremap Y y$
           nnoremap <leader>q ZQ
-
-          command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
           nnoremap <leader><leader> :set relativenumber!<CR>
           nnoremap <leader>, :set nohlsearch<CR>
+          noremap <leader>s :Startify<CR>
+          noremap <leader>y :Yazi<CR>
 
           "Line down and up
           nnoremap <A-j> :m .+1<CR>
@@ -17,10 +20,9 @@
           vnoremap <A-j> :m '>+1<CR>gv
           vnoremap <A-k> :m '<-2<CR>gv
 
-          "Copy, paste to system clipboard and select all
-          vnoremap <C-c> "+y
-          vnoremap <C-v> "+p
+          "Select all and sudo trick
           noremap <leader>a :normal! ggV$G$<CR>
+          command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
           "Windows focus and swap
           noremap <C-j> <C-w>j
@@ -37,17 +39,13 @@
           nnoremap <leader><Tab> :buffer<Space><Tab>
           noremap <leader>v :vnew<CR>
 
-          noremap <leader>s :Startify<CR>
-          noremap <leader>y :Yazi<CR>
-
-          " Numbered list macro
+          "Numbered list macro
           noremap <leader>l I0gvg
           
 
+          "Optional settings
           set background=dark   
           colorscheme wildcharm
-
-
           syntax on
           set nocompatible
           set autoread
@@ -55,10 +53,8 @@
           set cul
           set directory=~/Veřejné//
           set hidden
-          set ignorecase
+          set ignorecase smartcase
           set incsearch
-          set spell
-          set spelllang=cs,en
           set laststatus=2
           set mouse=a
           set number
@@ -66,14 +62,15 @@
           set scrolloff=2
           set showmatch mat=2
           set showtabline=1
-          set smartcase
+          set spell spelllang=cs,en
           set tabstop=2 shiftwidth=2 expandtab
+          set ve+=onemore
           set wildcharm=<Tab>
           set wildmenu
           set wildoptions=pum,tagfile
           
  
-         " PLUGINS
+         "Plugins
          call plug#begin()
            " List your plugins here
            Plug 'mhinz/vim-startify'
@@ -85,7 +82,7 @@
          call plug#end()
 
 
-          " Startify greeter
+          "Startify greeter
           let g:startify_update_oldfiles = 1
           let g:startify_files_number = 15
       
@@ -116,7 +113,7 @@
                   \ ]
 
       
-          " NerdTree like settings
+          "NerdTree like settings
                   let g:netrw_banner = 0
                   let g:netrw_liststyle = 3
                   let g:netrw_browse_split = 4
@@ -125,7 +122,7 @@
                   let g:netrw_browse_split = 0
 
 
-          " Cursor modes change
+          "Cursor modes changes
               " Vertical bar in insert mode  
               let &t_SI = "\<Esc>[6 q"
               " Underline in replace mode
