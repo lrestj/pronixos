@@ -64,7 +64,6 @@
     set showtabline=1
     set spell spelllang=cs,en
     set tabstop=2 shiftwidth=2 expandtab
-    set ve+=onemore
     set wildcharm=<Tab>
     set wildmenu
     set wildoptions=pum,tagfile
