@@ -57,6 +57,8 @@
           set hidden
           set ignorecase
           set incsearch
+          set spell
+          set spelllang=cs,en
           set laststatus=2
           set mouse=a
           set number
