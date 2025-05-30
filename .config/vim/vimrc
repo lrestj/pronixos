@@ -56,8 +56,10 @@
     set ignorecase smartcase
     set incsearch
     set laststatus=2
+    set lazyredraw
     set mouse=a
     set number
+    set pastetoggle=<F2>
     set ruler
     set scrolloff=2
     set showmatch mat=2
