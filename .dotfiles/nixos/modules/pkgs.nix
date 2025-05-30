@@ -5,7 +5,7 @@
  imports =
     [ 
       ./joypixels.nix
-     # ./vim.nix
+      ./vimoverlay.nix
     ];
 
 
