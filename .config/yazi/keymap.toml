@@ -2,43 +2,43 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "F"
 run  = "plugin jump-to-char"
 desc = "Jump to char"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "c", "a" ]
 run  = "plugin compress"
 desc = "Archive selected files"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "<Enter>"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "M" ]
 run = "plugin bookmarks save"
 desc = "Uložit jako záložku"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "b" ]
 run = "plugin bookmarks jump"
 desc = "Jít na záložku"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "B", "d" ]
 run = "plugin bookmarks delete"
 desc = "Smazat záložku"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "B", "D" ]
 run = "plugin bookmarks delete_all"
 desc = "Smazat všechny záložky"
 
 
-[manager]
+[mgr]
 
 keymap = [
 
