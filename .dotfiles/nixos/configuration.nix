@@ -6,6 +6,7 @@
     [ # Include hardware-configuration.nix
       ./hardware-configuration.nix
       ./modules/pkgs.nix
+      ./modules/vimoverride.nix
     ];
 
 
