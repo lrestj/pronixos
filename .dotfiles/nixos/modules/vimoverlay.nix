@@ -7,7 +7,7 @@
         src = prev.fetchFromGitHub {
           owner = "vim";
           repo = "vim";
-          rev = "latest";
+          rev = "HEAD";
           hash = "sha256-4Smwlnr5V/q+pmHHMmoalRrvF2MSPRSKZstFTX4YQmA=";
         };
      });
