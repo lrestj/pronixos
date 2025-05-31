@@ -4,10 +4,11 @@
   nixpkgs.overlays = [
     (final: prev: {
       vim-full = prev.vim-full.overrideAttrs (old: {
+        gui = false;
         src = prev.fetchFromGitHub {
           owner = "vim";
           repo = "vim";
-          rev = "5199567fd0c9792827287bbd719c69cfd323ecb4";
+          rev = "latest";
           # If you don't know the hash, the first time, set:
           # hash = "";
           # then nix will fail the build with such an error message:
@@ -15,7 +16,7 @@
           # specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
           # got:    sha256-173gxk0ymiw94glyjzjizp8bv8g72gwkjhacigd1an09jshdrjb4
           hash = "sha256-4Smwlnr5V/q+pmHHMmoalRrvF2MSPRSKZstFTX4YQmA=";
-      };
+        };
      });
     })
   ];
