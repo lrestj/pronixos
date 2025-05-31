@@ -49,6 +49,7 @@
     set background=dark   
     colorscheme wildcharm
     syntax on
+    filetype plugin indent on
     set nocompatible
     set autoread
     set backspace=indent,eol,start
@@ -76,6 +77,7 @@
    "Plugins
    call plug#begin()
      " List your plugins here
+     Plug 'tpope/vim-commentary'
      Plug 'mhinz/vim-startify'
      Plug 'junegunn/vim-peekaboo'
      Plug 'LnL7/vim-nix'
