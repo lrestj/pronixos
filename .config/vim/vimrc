@@ -44,6 +44,16 @@
     "Numbered list macro
     noremap <leader>c I0gvg
     
+    "FZF search
+    set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+    nnoremap <silent> <Leader>fb :Buffers<CR>
+    nnoremap <silent> <Leader>fc :Buffers<CR>
+    nnoremap <silent> <Leader>ff :Rg<CR>
+    nnoremap <silent> <Leader>fl :BLines<CR>
+    nnoremap <silent> <Leader>fm :Marks<CR>
+    nnoremap <silent> <Leader>fj :Jumps<CR>
+    nnoremap <silent> <Leader>fh :History<CR>
+
 
     "Optional settings
     set background=dark   
