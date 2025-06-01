@@ -18,7 +18,7 @@ enable_touchpad() {
 
 # Ask user
 read -n1 -s -t8 -p "Aktivovat/zakázat touchpad [A,z] ???" input
- if [ $input = "z" ]; then
+ if [ "$input" = "z" ]; then
    disable_touchpad
  else
    enable_touchpad
