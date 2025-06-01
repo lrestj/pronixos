@@ -9,7 +9,7 @@
           owner = "vim";
           repo = "vim";
           rev = "HEAD";
-          hash = "sha256-xk6DhYk8Jy7BrUiytb2z1aKujyfGF2q1B9tk1zrZyH4=";
+          hash = "sha256-lSlG+hmvm7uImixYWbgQN4NY/aF81q9LBpORqwGj274=";
         };
      });
     })

@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export TERM:footclient
 SETUVAR __fish_initialized:3800
+SETUVAR --export cs:/run/current\x2dsystem/sw/
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
