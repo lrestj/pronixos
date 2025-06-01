@@ -17,7 +17,7 @@ enable_touchpad() {
 }
 
 # Ask user
-echo "Aktivovat/zakázat touchpad [a,z] ???"
+echo "Aktivovat/zakázat touchpad [A,z] ???"
 read -n 1 -s input
  if [ $input = "z" ]; then
   disable_touchpad
