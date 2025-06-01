@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 icon="/home/libor/.dotfiles/icons/datetime.svg"
 title=" Čas: $(date +%H:%M)"

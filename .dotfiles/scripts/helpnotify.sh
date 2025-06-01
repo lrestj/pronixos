@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 icon="/home/libor/.dotfiles/icons/help.png"
 title=" Nápověda klávesové zkratky:"

@@ -113,6 +113,7 @@
 
 
   services = {
+    envfs.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
     xserver.xkb.layout = "cz";
@@ -125,7 +126,7 @@
         theme = "chili";
       };
       autoLogin = {
-	enable = true;
+        enable = true;
         user = "libor";
       };
     };

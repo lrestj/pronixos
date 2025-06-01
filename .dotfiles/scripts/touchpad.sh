@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 # Replace {touchpad_device_name} with the actual name of your touchpad
