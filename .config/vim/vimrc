@@ -82,6 +82,7 @@
     set showmatch mat=2
     set showtabline=1
     set spelllang=cs,en
+    set showcmd
     set tabstop=2 shiftwidth=2 expandtab
     set wildcharm=<Tab>
     set wildmenu
