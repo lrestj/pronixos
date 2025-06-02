@@ -90,9 +90,9 @@
     set wildmenu
     set wildoptions=pum,tagfile
     
-    "Status bar
+    "Status bar$€kliba€ık
     
-    set statusline=%<îŸ…\ %f\ %h%w%m%r%a%y%=(reg\ %{v:register})\ %-30.(Column:%v\ Line:%l/%L%)\ [ASCII=\%03.3b]\ %P 
+    set statusline=%<îŸ…\ %f\ %h%w%m%r%a%y%=reg\ {%{v:register}}\ %-30.(Column:%v\ Line:%l/%L%)\ [ASCII=\%03.3b]\ %P 
        " set statusline +=\ %n             "buffer number
        " set statusline+=\ %F\             "file path
        " set statusline +=\ %m\            "modified flag
