@@ -46,13 +46,16 @@
     
     "FZF search
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
-    nnoremap <silent> <Leader>fb :Buffers<CR>
-    nnoremap <silent> <Leader>fc :Changes<CR>
-    nnoremap <silent> <Leader>ff :Rg<CR>
-    nnoremap <silent> <Leader>fl :BLines<CR>
-    nnoremap <silent> <Leader>fm :Marks<CR>
-    nnoremap <silent> <Leader>fj :Jumps<CR>
-    nnoremap <Leader>fh :History
+    nnoremap <A-b> :Buffers<CR>
+    nnoremap <A-c> :Changes<CR>
+    nnoremap <A-f> :Rg<CR>
+    nnoremap <A-a> :Lines<CR>
+    nnoremap <A-l> :BLines<CR>
+    nnoremap <A-m> :Marks<CR>
+    nnoremap <A-j> :Jumps<CR>
+    nnoremap <A-h> :History<CR>
+    nnoremap <A-.> :History:<CR>
+    nnoremap <A-,> :History/<CR>
 
 
     "Optional settings
