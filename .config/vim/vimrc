@@ -45,18 +45,20 @@
     noremap <leader>c I0gvg
     
     "FZF search
+    let g:fzf_vim = {}
+    let g:fzf_vim.command_prefix = 'Fzf'
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
-    nnoremap <A-b> :Buffers<CR>
-    nnoremap <A-c> :Changes<CR>
-    nnoremap <A-d> :Files<CR>
-    nnoremap <A-f> :Rg<CR>
-    nnoremap <A-a> :Lines<CR>
-    nnoremap <A-l> :BLines<CR>
-    nnoremap <A-m> :Marks<CR>
-    nnoremap <A-j> :Jumps<CR>
-    nnoremap <A-h> :History<CR>
-    nnoremap <A-.> :History:<CR>
-    nnoremap <A-,> :History/<CR>
+    nnoremap <A-b> :FzfBuffers<CR>
+    nnoremap <A-c> :FzfChanges<CR>
+    nnoremap <A-d> :FzfFiles<CR>
+    nnoremap <A-f> :FzfRg<CR>
+    nnoremap <A-a> :FzfLines<CR>
+    nnoremap <A-l> :FzfBLines<CR>
+    nnoremap <A-m> :FzfMarks<CR>
+    nnoremap <A-j> :FzfJumps<CR>
+    nnoremap <A-h> :FzfHistory<CR>
+    nnoremap <A-.> :FzfHistory:<CR>
+    nnoremap <A-,> :FzfHistory/<CR>
 
 
     "Optional settings
