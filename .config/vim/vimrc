@@ -48,6 +48,7 @@
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
     nnoremap <A-b> :Buffers<CR>
     nnoremap <A-c> :Changes<CR>
+    nnoremap <A-d> :Files<CR>
     nnoremap <A-f> :Rg<CR>
     nnoremap <A-a> :Lines<CR>
     nnoremap <A-l> :BLines<CR>
