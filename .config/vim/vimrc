@@ -94,7 +94,7 @@
     set statusline +=\ %m\         "modified flag
     set statusline+=\ %v\          "cursor column
     set statusline+=\ %l/%L\       "line/total lines
-    set statusline+=%=
+    set statusline+=%=             "indent to the end
     set statusline +=\ %p%%        "position %
 
    "Plugins
