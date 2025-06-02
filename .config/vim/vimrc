@@ -91,7 +91,7 @@
     set wildoptions=pum,tagfile
     
     "Status bar
-     :set statusline=%<\ %f\ %h%w%m%r%a%=%-33.(󰆿\ %v\ Line:%l/%L%)\ %y\ %P
+     :set statusline=%<\ %f\ %h%w%m%r%a%=%-33.(Cursor:%v\ Line:%l/%L%)\ %y\ %P
        " set statusline +=\ %n          "buffer number
        " set statusline+=\ %F\          "file path
        " set statusline +=\ %m\         "modified flag
