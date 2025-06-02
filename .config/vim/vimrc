@@ -88,14 +88,14 @@
     set wildoptions=pum,tagfile
     
     "Status bar
-    set statusline =
-    set statusline +=\ %n          "buffer number
-    set statusline+=\ %F\          "file path
-    set statusline +=\ %m\         "modified flag
-    set statusline+=\ %v\          "cursor column
-    set statusline+=\ %l/%L\       "line/total lines
-    set statusline+=%=             "indent to the end
-    set statusline +=\ %p%%        "position %
+     :set statusline=%<%f\ %h%w%m%r%a%=%-33.(%c%V\ %l/%L%)\ %y\ %P
+       " set statusline +=\ %n          "buffer number
+       " set statusline+=\ %F\          "file path
+       " set statusline +=\ %m\         "modified flag
+       " set statusline+=\ %v\          "cursor column
+       " set statusline+=\ %l/%L\       "line/total lines
+       " set statusline+=%=             "indent to the end
+       " set statusline +=\ %p%%        "position %
 
    "Plugins
    call plug#begin()
