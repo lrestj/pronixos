@@ -87,6 +87,14 @@
     set wildmenu
     set wildoptions=pum,tagfile
     
+    "Status bar
+    set statusline =
+    set statusline +=\ %n          "buffer number
+    set statusline+=\ %f\          "file path
+    set statusline +=\ %m\         "modified flag
+    set statusline+=\ %l/%L\       "line/total lines
+    set statusline+=\ %v\          "cursor column
+    set statusline +=\ %p%%        "position %
 
    "Plugins
    call plug#begin()
