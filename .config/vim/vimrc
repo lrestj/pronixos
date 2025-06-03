@@ -79,7 +79,7 @@
     
     "Statusline
      hi StatusLine ctermbg=0 ctermfg=92
-     set statusline=%f\ %m\ %<%h%w%r\ \ %y
+     set statusline=%n\ %f\ %m\ %<%h%w%r\ \ %y
      set statusline+=%=reg\ {%{v:register}}\ \%-20.(\ \ %v\ \ %l/%L%)\ \ 
     " set statusline=%f\ \%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
 
