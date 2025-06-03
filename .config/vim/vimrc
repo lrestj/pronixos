@@ -108,6 +108,7 @@
     "Transparent background    
     hi Normal ctermbg=NONE
     hi NonText ctermbg=NONE
+    hi LineNr ctermbg=NONE
 
 
 """"" END OF FILE """""
