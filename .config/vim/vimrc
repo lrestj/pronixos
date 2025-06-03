@@ -49,8 +49,8 @@
     noremap <leader>c I0gvg
     
     "Optional settings
-    set background=dark   
     colorscheme wildcharm
+    set background=dark   
     syntax on
     filetype plugin indent on
     set nocompatible
@@ -78,8 +78,9 @@
     set wildoptions=pum,tagfile
     
     "Statusline
+     hi StatusLine ctermbg=0 ctermfg=92
      set statusline=%f\ %m\ %<%h%w%r\ \ %y
-     set statusline+=%=reg\ {%{v:register}}\ \%-20.(Col:%v\ Line:%l/%L%)\ \ 
+     set statusline+=%=reg\ {%{v:register}}\ \%-20.(\ :%v\ =%l/%L%)\ \ 
     " set statusline=%f\ \%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
 
    "Plugins
