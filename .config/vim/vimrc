@@ -105,4 +105,9 @@
         let &t_EI = "\<Esc>[2 q"
 
 
+    "Transparent background    
+    hi Normal ctermbg=NONE
+    hi NonText ctermbg=NONE
+
+
 """"" END OF FILE """""
