@@ -78,7 +78,7 @@
     set wildoptions=pum,tagfile
     
     "Statusline
-     set statusline=%f\ %m%<\%h%w%r\ \ %y
+     set statusline=%f\ %m\ %<%h%w%r\ \ %y
      set statusline+=%=reg\ {%{v:register}}\ \%-20.(Col:%v\ Line:%l/%L%)\ \ 
     " set statusline=%f\ \%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
 
