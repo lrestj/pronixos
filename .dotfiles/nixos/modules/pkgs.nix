@@ -35,12 +35,10 @@
     figlet
     fish
     foot
-    fzf
     kdePackages.filelight
     font-manager
     gimp
     gthumb
-    haruna
     hunspellDicts.cs_CZ
     hunspellDicts.en_US
     hypridle
