@@ -1,5 +1,8 @@
 """"" VIM CONFIGURATION """""
 
+     
+    "source ~/.config/vim/plugin/startiy.vim
+
 
     let mapleader=" "
     nnoremap ; :
@@ -55,7 +58,7 @@
     nnoremap <A-a> :FzfLines<CR>
     nnoremap <A-l> :FzfBLines<CR>
     nnoremap <A-m> :FzfMarks<CR>
-    nnoremap <A-j> :FzfJumps<CR>
+    nnoremap <A-u> :FzfJumps<CR>
     nnoremap <A-h> :FzfHistory<CR>
     nnoremap <A-.> :FzfHistory:<CR>
     nnoremap <A-,> :FzfHistory/<CR>
@@ -90,17 +93,9 @@
     set wildmenu
     set wildoptions=pum,tagfile
     
-    "Status bar$€kliba€ýk
-    
-    set statusline=%<îŸ…\ %f\ %h%w%m%r%a%y%=reg\ {%{v:register}}\ %-30.(Column:%v\ Line:%l/%L%)\ [ASCII=\%03.3b]\ %P 
-       " set statusline +=\ %n             "buffer number
-       " set statusline+=\ %F\             "file path
-       " set statusline +=\ %m\            "modified flag
-       " set statusline+=\ %v\             "cursor column
-       " set statusline+=\ %l/%L\          "line/total lines
-       " set statusline+=%=                "indent to the end
-       " set statusline +=\ %p%%           "position %
-       " set statusline += %{v:register}\  "active copy/paste register
+    "Statusline
+    set statusline=%<îŸ…\ %f\ %h%w%m%r%a\ \ %y%=reg\ {%{v:register}}\ %-30.(Column:%v\ Line:%l/%L%)\ [ASCII=\%03.3b]\ %P 
+  
 
    "Plugins
    call plug#begin()
