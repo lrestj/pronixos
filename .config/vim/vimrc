@@ -1,8 +1,8 @@
-""""" VIM CONFIGURATION """""
 
-     
+""""" VIM CONFIGURATION """""
     "source ~/.config/vim/plugin/startiy.vim
 
+     
 
     let mapleader=" "
     nnoremap ; :
@@ -94,9 +94,9 @@
     set wildoptions=pum,tagfile
     
     "Statusline
-     set statusline=\ %f\%<\ %h%w%m%r%a\ \ %y
-     set statusline+=%=reg\ {%{v:register}}\ \%-30.(Column:%v\ Line:%l/%L%)\ [ASCII=\%03.3b]\ %P 
-    " set statusline=%f\%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
+     set statusline=%f\ %m%<\%h%w%r\ \ %y
+     set statusline+=%=reg\ {%{v:register}}\ \%-20.(Col:%v\ Line:%l/%L%)\ \ 
+    " set statusline=%f\ \%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
 
    "Plugins
    call plug#begin()
