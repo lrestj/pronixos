@@ -67,6 +67,14 @@
           set shada=!,'30,<50,s10,h
       	  let g:suda#prompt = 'Heslo: '
           
+           
+          "Statusline
+          highlight StatusLine guifg=#153bda guibg=#000000         
+          set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
+          set statusline+=%=reg\ {%{v:register}}\ \\ 
+
+
+
           " Startify greeter
           let g:startify_update_oldfiles = 1
           let g:startify_files_number = 15
@@ -105,8 +113,8 @@
                   highlight NonText guibg=none
                   highlight Normal ctermbg=none
                   highlight NonText ctermbg=none
-      
-      
+         
+               
           " NerdTree like settings
                   let g:netrw_banner = 0
                   let g:netrw_liststyle = 3

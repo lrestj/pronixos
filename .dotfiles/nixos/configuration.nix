@@ -63,14 +63,14 @@
         search --set=myroot --fs-uuid 69FC-8252
         chainloader /EFI/debian/grubx64.efi
         }
-        #menuentry "endeavourOS" --class endeavourOS {
-        #set root=(hd0,1)
-        #chainloader /EFI/endeavouros/grubx64.efi
-        #}
-        menuentry "Fedora" --class fedora {
+        menuentry "endeavourOS" --class endeavourOS {
         set root=(hd0,1)
-        chainloader /EFI/fedora/shimx64.efi
+        chainloader /EFI/endeavouros/grubx64.efi
         }
+        # menuentry "Fedora" --class fedora {
+        # set root=(hd0,1)
+        # chainloader /EFI/fedora/shimx64.efi
+        # }
         menuentry "Restartovat" --class restart {
         echo "Restartování..."
         reboot
