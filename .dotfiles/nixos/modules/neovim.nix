@@ -83,7 +83,7 @@
          "        \ ]
       
           let g:startify_enable_special = 0
-          let g:startify_custom_indices = ['e', 'y', 'n', 'a', 'x', 'c', 'f', 'g', 'h', 'u', 'i', 'l']
+          let g:startify_custom_indices = ['e', 'y', 'n', 'a', 'x', 'f', 'g', 'h', 'u', 'i', 'l', 'w']
           let g:startify_custom_header = 'startify#pad(split(system("figlet -w 100 Neovim -f cybermedium"), "\n"))'
       
           let s:nvim_version = matchstr(execute('version'), 'NVIM v\zs[^\n]*')
@@ -100,6 +100,7 @@
       	  let g:startify_bookmarks = [
                   \ { 'd':'~/.dotfiles'},
                   \ { 'm': '~/.dotfiles/nixos/modules/' },
+                  \ { 'c': '~/.config' },
                   \ ]
 
           let g:startify_commands = [
