@@ -5,7 +5,7 @@
  imports =
     [ 
       ./joypixels.nix
-      ./neovim.nix
+      # ./neovim.nix
     ];
 
 
@@ -59,6 +59,7 @@
     libreoffice-fresh
     mako
     mpv
+    neovim
     networkmanagerapplet
     kdePackages.okular
     kdePackages.oxygen-icons
