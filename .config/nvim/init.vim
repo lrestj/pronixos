@@ -13,6 +13,7 @@
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
     noremap <leader>y :Yazi<CR>
+    noremap <leader>w :so %<CR>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
@@ -25,6 +26,7 @@
     "Select all and sudo trick
     noremap <leader>a :normal! ggV$G$<CR>
     command! W execute 'SudaWrite<CR>'
+
 
     "Windows focus, rearrange and swap
     noremap <C-j> <C-w>j
