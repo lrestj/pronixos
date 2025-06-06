@@ -7,7 +7,6 @@
     nnoremap ; :
     nnoremap : ;
     nnoremap <BS> X
-    nnoremap Y y$
     nnoremap <leader>q ZQ
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
@@ -42,6 +41,15 @@
     noremap <leader>x :bd<CR>
     nnoremap <leader><Tab> :buffer<Space><Tab>
     noremap <leader>v :vnew<CR>
+
+    "Telescope search
+    noremap <A-d> :Telescope find_files<cr>
+    noremap <A-g> :Telescope live_grep<cr>
+    noremap <A-b> :Telescope buffers<cr>
+    noremap <A-u> :Telescope jumplist<cr>
+    noremap <A-o> :Telescope oldfiles<cr>
+    noremap <A-c> :Telescope changes<cr>
+
 
     "Numbered list macro
     noremap <leader>c I0gvg
