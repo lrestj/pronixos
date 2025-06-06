@@ -1,20 +1,16 @@
 "FZF search
 
-let g:fzf_vim = {}
-let g:fzf_vim.command_prefix = 'Fzf'
-
-set grepprg=rg\ --vimgrep\ --smart-case\ --follow
-nnoremap <A-b> :FzfBuffers<CR>
-nnoremap <A-c> :FzfChanges<CR>
-nnoremap <A-d> :FzfFiles<CR>
-nnoremap <A-f> :FzfRg<CR>
-nnoremap <A-a> :FzfLines<CR>
-nnoremap <A-l> :FzfBLines<CR>
-nnoremap <A-m> :FzfMarks<CR>
-nnoremap <A-u> :FzfJumps<CR>
-nnoremap <A-h> :FzfHistory<CR>
-nnoremap <A-.> :FzfHistory:<CR>
-nnoremap <A-,> :FzfHistory/<CR>
+nnoremap <A-b> :FzfLua buffers<CR>
+nnoremap <A-c> :FzfLua changes<CR>
+nnoremap <A-d> :FzfLua files<CR>
+nnoremap <A-f> :FzfLua grep<CR>
+nnoremap <A-a> :FzfLua lines<CR>
+nnoremap <A-l> :FzfLua bLines<CR>
+nnoremap <A-m> :FzfLua marks<CR>
+nnoremap <A-u> :FzfLua jumps<CR>
+nnoremap <A-h> :FzfLua oldfiles<CR>
+nnoremap <A-.> :FzfLua command_history<CR>
+nnoremap <A-,> :FzfLua search_history<CR>
 
 
 """"" END OF FILE """"""

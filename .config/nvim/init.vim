@@ -77,8 +77,9 @@
      Plug 'LnL7/vim-nix'
      Plug 'mikavilpas/yazi.nvim'
      Plug 'nvim-lua/plenary.nvim'
-     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-     Plug 'junegunn/fzf.vim'  
+     Plug 'ibhagwan/fzf-lua'
+     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+     "Plug 'junegunn/fzf.vim'  
 
    call plug#end()
 
