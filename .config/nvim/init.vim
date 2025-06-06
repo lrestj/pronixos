@@ -1,6 +1,7 @@
 """"" NEOVIM CONFIGURATION """""
 
     "source ~/.config/nvim/plugin/startify.vim
+    "source ~/.config/nvim/plugin/fzf.vim
 
     "My remaps
     let mapleader=" "
@@ -42,15 +43,6 @@
     nnoremap <leader><Tab> :buffer<Space><Tab>
     noremap <leader>v :vnew<CR>
 
-    "Telescope search
-    noremap <A-d> :Telescope find_files<cr>
-    noremap <A-g> :Telescope live_grep<cr>
-    noremap <A-b> :Telescope buffers<cr>
-    noremap <A-u> :Telescope jumplist<cr>
-    noremap <A-o> :Telescope oldfiles<cr>
-    noremap <A-c> :Telescope changes<cr>
-
-
     "Numbered list macro
     noremap <leader>c I0gvg
     
@@ -71,6 +63,7 @@
     set shada=!,'30,<50,s10,h
     let g:suda#prompt = 'Heslo: '
 
+
     "Statusline
     highlight StatusLine guifg=#153bda guibg=#000000         
     set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
@@ -84,8 +77,9 @@
      Plug 'LnL7/vim-nix'
      Plug 'mikavilpas/yazi.nvim'
      Plug 'nvim-lua/plenary.nvim'
-     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
-                              " or    , { 'branch': '0.1.x' }
+     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+     Plug 'junegunn/fzf.vim'  
+
    call plug#end()
 
 
