@@ -13,7 +13,7 @@
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
     noremap <leader>y :Yazi<CR>
-    noremap <leader>w :so %<CR>
+    noremap <silent><leader>w :so %<CR>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
@@ -67,7 +67,7 @@
 
 
     "Statusline
-    highlight StatusLine guifg=#153bda guibg=#000000         
+    hi StatusLine guifg=#153bda guibg=#000000         
     set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
     set statusline+=%=reg\ {%{v:register}}\ \\ 
 
