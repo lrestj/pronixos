@@ -100,6 +100,7 @@
     Plug 'nvim-lua/plenary.nvim'
     Plug 'ibhagwan/fzf-lua'
     Plug 'lambdalisue/vim-suda'
+    Plug 'stevearc/oil.nvim'
     call plug#end()
 
 
