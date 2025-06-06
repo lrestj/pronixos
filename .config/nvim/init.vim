@@ -27,7 +27,6 @@
     noremap <leader>a :normal! ggV$G$<CR>
     command! W execute 'SudaWrite<CR>'
 
-
     "Windows focus, rearrange and swap
     noremap <C-j> <C-w>j
     noremap <C-k> <C-w>k
@@ -65,47 +64,43 @@
     set shada=!,'30,<50,s10,h
     let g:suda#prompt = 'Heslo: '
 
-
     "Statusline
     hi StatusLine guifg=#153bda guibg=#000000         
     set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
     set statusline+=%=reg\ {%{v:register}}\ \\ 
 
-   "Plugins
-   call plug#begin()
-     " List your plugins here
-     Plug 'mhinz/vim-startify'
-     Plug 'junegunn/vim-peekaboo'
-     Plug 'LnL7/vim-nix'
-     Plug 'mikavilpas/yazi.nvim'
-     Plug 'nvim-lua/plenary.nvim'
-     Plug 'ibhagwan/fzf-lua'
-     Plug 'lambdalisue/vim-suda'
-
-   call plug#end()
-
-
-        " Transparent background
-        high Normal guibg=none
-        high NonText guibg=none
-        high LineNr guibg=none
+    " Transparent background
+    high Normal guibg=none
+    high NonText guibg=none
+    high LineNr guibg=none
          
+    " Toggle background transparency
+    let t:isTransparent = 0
+    function! BGToggleTransparency()
+      if t:isTransparent == 0
+        hi Normal guibg=black
+        set background=dark
+        let t:isTransparent = 1
+      else
+        hi Normal guibg=none
+        hi NonText guibg=none
+        hi LineNr guibg=none
+        let t:isTransparent = 0
+      endif
+    endfunction
+    nnoremap <silent><A-t> :call BGToggleTransparency()<CR>
 
-     " Toggle background transparency
-     let t:isTransparent = 0
-     function! BGToggleTransparency()
-       if t:isTransparent == 0
-         hi Normal guibg=black
-         set background=dark
-         let t:isTransparent = 1
-       else
-          hi Normal guibg=none
-          hi NonText guibg=none
-          hi LineNr guibg=none
-         let t:isTransparent = 0
-       endif
-     endfunction
-     nnoremap <silent><A-t> :call BGToggleTransparency()<CR>
+    "Plugins
+    call plug#begin()
+    " List your plugins here
+    Plug 'mhinz/vim-startify'
+    Plug 'junegunn/vim-peekaboo'
+    Plug 'LnL7/vim-nix'
+    Plug 'mikavilpas/yazi.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'ibhagwan/fzf-lua'
+    Plug 'lambdalisue/vim-suda'
+    call plug#end()
 
 
 """"" END OF FILE """""
