@@ -12,8 +12,8 @@
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
-    noremap <leader>y :Yazi<CR>
-    noremap <silent><leader>w :so %<CR>
+    noremap <leader>y :Tfm<cr>
+    noremap <silent><leader>w :so %<cr>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
@@ -96,11 +96,10 @@
     Plug 'mhinz/vim-startify'
     Plug 'junegunn/vim-peekaboo'
     Plug 'LnL7/vim-nix'
-    Plug 'mikavilpas/yazi.nvim'
+    Plug 'Rolv-Apneseth/tfm.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'ibhagwan/fzf-lua'
     Plug 'lambdalisue/vim-suda'
-    Plug 'stevearc/oil.nvim'
     call plug#end()
 
 
