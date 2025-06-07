@@ -112,6 +112,7 @@
         enable = true;
         xwayland.enable = true;
       };
+    dconf.enable = true;  
     kdeconnect.enable = true;
     git = {
       enable = true;
