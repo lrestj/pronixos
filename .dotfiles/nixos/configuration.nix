@@ -10,7 +10,7 @@
 
 
   environment.variables = {
-    EDITOR = "vim";
+    # EDITOR = "nvim";
   };
 
 
@@ -24,6 +24,11 @@
       experimental-features = [ "nix-command" "flakes" ];
       download-buffer-size = 94371840;
     };
+    gc = {
+	  	automatic = true;
+	  	dates = "weekly";
+	  	options = "--delete-older-than 10d";
+	  };
   };
   security = {
     rtkit.enable = true;
@@ -58,6 +63,7 @@
       theme = ./grubtheme;
       device = "nodev";
       efiSupport = true;
+      configurationLimit = 10;
       extraEntries = ''
         menuentry "Debian" --class debian {
         search --set=myroot --fs-uuid 69FC-8252

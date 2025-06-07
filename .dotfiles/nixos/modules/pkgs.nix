@@ -19,7 +19,6 @@
 
 
   environment.systemPackages = with pkgs; [
-    audacity
     kdePackages.ark
     reaper  
     reaper-reapack-extension
@@ -71,7 +70,6 @@
     qimgv
     qjackctl
     qpwgraph
-    ranger
     ripgrep
     rofi rofimoji
     sddm-chili-theme
@@ -88,7 +86,6 @@
     wl-clipboard
     wlogout
     wlsunset
-    xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xdg-utils
