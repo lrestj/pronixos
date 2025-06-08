@@ -34,14 +34,14 @@
         "battery",
         "power-profiles-daemon",
         "hyprland/language",
-        "custom/power",
+        "custom/power"
     ],
 
     "custom/menu": {
         "format": "{}  👑 Menu  ",
         "tooltip": false,
         "on-click": "pkill rofi || rofi -show drun -show-icons",
-        "on-click-right": "wlogout",
+        "on-click-right": "wlogout"
     },
 
     "cpu": {
@@ -53,10 +53,7 @@
     },
 
     "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon} 📝+Office",
         "format-icons": ["", "", ""],
         "on-click": "geany",
@@ -106,7 +103,7 @@
         "format": "  {percent}% {icon} ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "pkill footclient || footclient",
-        "on-click-right": "pkill btop || footclient --app-id btop -e btop",
+        "on-click-right": "pkill btop || footclient --app-id btop -e btop"
     },
 
     "tray": {
@@ -153,7 +150,7 @@
         "format": "{}",
         "min-length" : 4,
         "format-cs": "🇨🇿",
-        "format-en": "🇺🇸",
+        "format-en": "🇺🇸"
     },
 
     "custom/power": {
