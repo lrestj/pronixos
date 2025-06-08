@@ -54,7 +54,7 @@
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon} 📝+Office",
         "format-icons": ["", "", ""],
-        "on-click": "featherpad",
+        "on-click": "geany",
         "on-click-right": "libreoffice",
         "on-click-middle": "footclient -e vim"
     },

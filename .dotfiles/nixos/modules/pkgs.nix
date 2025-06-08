@@ -30,13 +30,13 @@
     efibootmgr
     exfatprogs
     fastfetch
-    featherpad
     figlet
     fish
     foot
     fzf
     kdePackages.filelight
     font-manager
+    geany
     gimp
     gthumb
     hunspellDicts.cs_CZ
