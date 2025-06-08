@@ -74,26 +74,15 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
 
 #clock,
 #battery,
 #cpu,
 #memory,
-#disk,
-#network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
 #idle_inhibitor,
-#scratchpad,
 #power-profiles-daemon,
-#mpd {
+#tray {
     padding: 0 10px;
     color: #ffffff;
 }
@@ -248,14 +237,6 @@ label:focus {
 #idle_inhibitor.activated {
     background-color: green;
     color: #000000;
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
 }
 
 #custom-power {
