@@ -150,7 +150,8 @@
         "format": "{}",
         "min-length" : 4,
         "format-cs": "🇨🇿",
-        "format-en": "🇺🇸"
+        "format-en": "🇺🇸",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
 
     "custom/power": {
