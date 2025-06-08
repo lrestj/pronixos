@@ -59,7 +59,7 @@
     set scrolloff=2
     set showmatch mat=2
     set spelllang=cs,en
-    set tabstop=3 shiftwidth=3 expandtab
+    set tabstop=4 shiftwidth=4 expandtab
     set wildcharm=<Tab>
     set shada=!,'30,<50,s10,h
     let g:suda#prompt = 'Heslo: '
