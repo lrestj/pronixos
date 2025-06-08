@@ -42,6 +42,7 @@
         "on-click": "pkill rofi || rofi -show drun -show-icons",
         "on-click-right": "wlogout",
     },
+
     "cpu": {
         "format": "{usage}%   Skener + 🧮 ",
         "tooltip": false,
@@ -49,6 +50,7 @@
         "on-click-right": "pkill kalk || kalk",
         "on-click-middle": "pkill btop || footclient -e btop"
     },
+
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -60,12 +62,14 @@
         "on-click-right": "libreoffice",
         "on-click-middle": "footclient -e vim"
     },
+
     "memory": {
         "format": "{}%    Internet + 💾",
         "on-click": "brave",
         "on-click-right": "pkill pcmanfm-qt || pcmanfm-qt",
         "on-click-middle": "pkill yazi || footclient -e yazi"
     },
+
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -74,59 +78,7 @@
         },
         "on-click-right": "waybar --config ~/.config/waybar/config-taskbar"
     },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        "timezone": "Europe/Prague",
-        "locale": "cs_CZ.UTF-8",
-        "format": "{:%H:%M 🕘}",
-        "tooltip-format": "<big>{:L%e L%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:L%A %d.%m.%Y}"
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "  {percent}% {icon} ",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-click": "pkill footclient || footclient",
-        "on-click-right": "pkill btop || footclient --app-id btop -e btop",
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-        "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
+
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}   {format_source}",
@@ -144,9 +96,67 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pkill pavucontrol || pavucontrol"
+
+    "on-click": "pkill pavucontrol || pavucontrol"
     },
 
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+        "timezone": "Europe/Prague",
+        "locale": "cs_CZ.UTF-8",
+        "format": "{:%H:%M 🕘}",
+        "tooltip-format": "<big>{:L%e L%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:L%A %d.%m.%Y}"
+    },
+
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "  {percent}% {icon} ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "pkill footclient || footclient",
+        "on-click-right": "pkill btop || footclient --app-id btop -e btop",
+    },
+
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
     "hyprland/language": {
         "format": "{}",
         "min-length" : 4,
@@ -165,7 +175,7 @@
 			"uspat": "systemctl suspend",
 			"odhlásit": "hyprctl dispatch exit"
 		}
-    }
+  }
 }, 
 
 
