@@ -1,6 +1,7 @@
 // -*- mode: jsonc -*-
 
 // WAYBAR AT THE TOP
+
 [{
     //"layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
@@ -70,6 +71,7 @@
         "on-click-middle": "pkill yazi || footclient -e yazi"
     },
 
+
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -96,8 +98,15 @@
             "car": "",
             "default": ["", "", ""]
         },
+        "on-click": "pkill pavucontrol || pavucontrol"
+    },
 
-    "on-click": "pkill pavucontrol || pavucontrol"
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "  {percent}% {icon} ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "pkill footclient || footclient",
+        "on-click-right": "pkill btop || footclient --app-id btop -e btop",
     },
 
     "tray": {
@@ -111,14 +120,6 @@
         "format": "{:%H:%M 🕘}",
         "tooltip-format": "<big>{:L%e L%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:L%A %d.%m.%Y}"
-    },
-
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "  {percent}% {icon} ",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-click": "pkill footclient || footclient",
-        "on-click-right": "pkill btop || footclient --app-id btop -e btop",
     },
 
     "battery": {
@@ -148,15 +149,6 @@
             "power-saver": ""
         }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
     "hyprland/language": {
         "format": "{}",
         "min-length" : 4,
@@ -166,20 +158,21 @@
 
     "custom/power": {
         "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"vypnout": "poweroff",
-			"restart": "reboot",
-			"uspat": "systemctl suspend",
-			"odhlásit": "hyprctl dispatch exit"
-		}
-  }
+		    "tooltip": false,
+		    "menu": "on-click",
+		    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		    "menu-actions": {
+		    	  "vypnout": "poweroff",
+		    	  "restart": "reboot",
+		    	  "uspat": "systemctl suspend",
+		    	  "odhlásit": "hyprctl dispatch exit"
+		    }
+    }
 }, 
 
 
 // TASK BAR AT THE RIGHT
+
 {
     "layer": "top", // Waybar at top layer
     "position": "right", // Waybar position (top|bottom|left|right)
