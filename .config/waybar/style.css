@@ -49,8 +49,10 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#clock:hover,
+#backlight:hover,
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #A2780E;
 }
 
 #workspaces button {
