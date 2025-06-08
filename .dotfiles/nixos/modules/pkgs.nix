@@ -43,7 +43,6 @@
     hunspellDicts.en_US
     hypridle
     hyprlock
-    hyprpolkitagent
     hyprshot
     jq
     kdePackages.breeze
@@ -57,6 +56,7 @@
     krename
     libnotify
     libreoffice-fresh
+    lxqt.lxqt-policykit
     mako
     mpv
     neovim

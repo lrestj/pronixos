@@ -41,7 +41,7 @@
         "on-click-right": "wlogout",
     },
     "cpu": {
-        "format": "{usage}%   Skener + 🧮 ",
+        "format": "{usage}%   Skener + 🧮 ",
         "tooltip": false,
         "on-click": "pkill simple-scan || simple-scan",
         "on-click-right": "pkill kalk || kalk",
