@@ -14,6 +14,7 @@
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
     noremap <leader>y :Yazi<CR>
+    nnoremap <leader>w :so $MYVIMRC<CR>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
