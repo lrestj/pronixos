@@ -14,7 +14,6 @@
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
     noremap <leader>y :Yazi<CR>
-    vnoremap <C-c> :w !xclip -i -sel c<CR><CR>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
