@@ -1,4 +1,3 @@
-
 """"" VIM CONFIGURATION """""
 "
     "source ~/.config/vim/plugin/startiy.vim
@@ -72,9 +71,10 @@
     set showmatch mat=2
     set showtabline=1
     set spelllang=cs,en
-    set tabstop=2 shiftwidth=2 expandtab
+    set softtabstop=4 shiftwidth=4 expandtab
     set wildcharm=<Tab>
     set wildmenu
+    set wildmode=full:lastused
     set wildoptions=pum,tagfile
     
     "Statusline
@@ -127,5 +127,6 @@
        endif
      endfunction
      nnoremap <A-t> :call BGToggleTransparency()<CR>
+
 
 """"" END OF FILE """""

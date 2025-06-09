@@ -5,7 +5,7 @@
  imports =
     [ 
       ./joypixels.nix
-      # ./neovim.nix
+       ./vimoverlay.nix
     ];
 
 
@@ -79,6 +79,7 @@
     udiskie
     ueberzugpp
     unzip
+    vim-full
     vlc
     waybar
     waypaper
