@@ -51,6 +51,7 @@
     colorscheme wildcharm
     set background=dark   
     filetype plugin indent on
+    set wildmode=full:lastused
     set cul
     set directory=~/Veřejné//
     set ignorecase smartcase
