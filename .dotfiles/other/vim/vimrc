@@ -86,6 +86,7 @@
    "Plugins
    call plug#begin()
      " List your plugins here
+     Plug 'jasonccox/vim-wayland-clipboard'
      Plug 'tpope/vim-commentary'
      Plug 'mhinz/vim-startify'
      Plug 'junegunn/vim-peekaboo'
