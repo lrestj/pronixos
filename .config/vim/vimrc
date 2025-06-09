@@ -71,7 +71,7 @@
     set showmatch mat=2
     set showtabline=1
     set spelllang=cs,en
-    set tabstop=2 shiftwidth=2 expandtab
+    set softtabstop=4 shiftwidth=4 expandtab
     set wildcharm=<Tab>
     set wildmenu
     set wildoptions=pum,tagfile
