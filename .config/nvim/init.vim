@@ -49,7 +49,6 @@
     
     "Optional settings
     colorscheme wildcharm
-    set background=dark   
     filetype plugin indent on
     set wildmode=full:lastused
     set cul
