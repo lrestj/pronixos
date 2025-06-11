@@ -89,7 +89,8 @@
      " List your plugins here
      Plug 'tpope/vim-commentary'
      Plug 'mhinz/vim-startify'
-     Plug 'utubo/vim-registers-lite'
+     " Plug 'utubo/vim-registers-lite'
+     Plug 'junegunn/vim-peekaboo'
      Plug 'LnL7/vim-nix'
      Plug 'chriszarate/yazi.vim'
      Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
