@@ -9,6 +9,7 @@
     nnoremap : ;
     nnoremap <BS> X
     nnoremap Y y$
+    map <C-c> "+y
     nnoremap <leader>q ZQ
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
