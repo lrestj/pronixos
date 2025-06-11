@@ -12,7 +12,6 @@
     # EDITOR = "nvim";
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
   nixpkgs.config.allowUnfree = true;
@@ -31,10 +30,10 @@
       download-buffer-size = 94371840;
     };
     gc = {
-	  	automatic = true;
-	  	dates = "weekly";
-	  	options = "--delete-older-than 14d";
-	  };
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 14d";
+    };
   };
   
   security = {
@@ -56,41 +55,44 @@
     packages = with pkgs; [];
   };
 
-  boot.loader = {
-    timeout = 2;
-    systemd-boot.enable = false;
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
-      enable = true;
-      theme = ./grubtheme;
-      device = "nodev";
-      efiSupport = true;
-      configurationLimit = 10;
-      extraEntries = ''
-        menuentry "Debian" --class debian {
-        search --set=myroot --fs-uuid 69FC-8252
-        chainloader /EFI/debian/grubx64.efi
-        }
-        menuentry "endeavourOS" --class endeavourOS {
-        set root=(hd0,1)
-        chainloader /EFI/endeavouros/grubx64.efi
-        }
-        # menuentry "Fedora" --class fedora {
-        # set root=(hd0,1)
-        # chainloader /EFI/fedora/shimx64.efi
-        # }
-        menuentry "Restartovat" --class restart {
-        echo "Restartování..."
-        reboot
-        }
-        menuentry "Vypnout" --class shutdown {
-        echo "Vypínání..."
-        halt
-        }
-      '';
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+    loader = {
+      timeout = 2;
+      systemd-boot.enable = false;
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot";
+      };
+      grub = {
+        enable = true;
+        theme = ./grubtheme;
+        device = "nodev";
+        efiSupport = true;
+        configurationLimit = 10;
+        extraEntries = ''
+          menuentry "Debian" --class debian {
+          search --set=myroot --fs-uuid 69FC-8252
+          chainloader /EFI/debian/grubx64.efi
+          }
+          menuentry "endeavourOS" --class endeavourOS {
+          set root=(hd0,1)
+          chainloader /EFI/endeavouros/grubx64.efi
+          }
+          # menuentry "Fedora" --class fedora {
+          # set root=(hd0,1)
+          # chainloader /EFI/fedora/shimx64.efi
+          # }
+          menuentry "Restartovat" --class restart {
+          echo "Restartování..."
+          reboot
+          }
+          menuentry "Vypnout" --class shutdown {
+          echo "Vypínání..."
+          halt
+          }
+        '';
+      };
     };
   };
 
@@ -121,6 +123,7 @@
   };
 
   services = {
+    power-profiles-daemon.enable = true;
     envfs.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
@@ -138,7 +141,6 @@
         user = "libor";
       };
     };
-    power-profiles-daemon.enable = true;
     pipewire = {
       enable = true;
       alsa = {
@@ -158,8 +160,8 @@
       };
     };
 
-  # To add the printer run:
-  # NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'
+    # To add the printer run:
+    # NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'
     printing = {
       enable = true;
       drivers = [ pkgs.hplip ];
