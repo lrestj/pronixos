@@ -8,17 +8,23 @@
       ./modules/pkgs.nix
     ];
 
-
   environment.variables = {
     # EDITOR = "nvim";
   };
-
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
   nixpkgs.config.allowUnfree = true;
-  hardware.cpu.intel.updateMicrocode = true;
+
+  hardware = {
+    cpu.intel.updateMicrocode = true;
+    sane = {
+      enable = true; # enables support for SANE scanners
+      extraBackends = [ pkgs.hplip ];
+    };
+  };
+  
   nix = {
     settings = {
       experimental-features = [ "nix-command" "flakes" ];
@@ -30,6 +36,7 @@
 	  	options = "--delete-older-than 14d";
 	  };
   };
+  
   security = {
     rtkit.enable = true;
     polkit.enable = true;
@@ -42,14 +49,12 @@
     AllowSuspendThenHibernate=no
   '';
 
-
   users.users.libor = {
     isNormalUser = true;
     description = "libor";
     extraGroups = [ "networkmanager" "wheel" "scanners" "lp" "input" ];
     packages = with pkgs; [];
   };
-
 
   boot.loader = {
     timeout = 2;
@@ -89,7 +94,6 @@
     };
   };
 
-
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
@@ -99,7 +103,6 @@
       #allowedUDPPorts = [ ... ];
     };
   };
-
 
   # Select internationalisation properties.
   console.keyMap = "cz-lat2";
@@ -116,7 +119,6 @@
     LC_TELEPHONE = "cs_CZ.UTF-8";
     LC_TIME = "cs_CZ.UTF-8";
   };
-
 
   services = {
     envfs.enable = true;
@@ -156,7 +158,6 @@
       };
     };
 
-
   # To add the printer run:
   # NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'
     printing = {
@@ -176,11 +177,6 @@
       };
     };
   };
-  hardware.sane = {
-    enable = true; # enables support for SANE scanners
-    extraBackends = [ pkgs.hplip ];
-  };
-
 
   # NFS Synology shares:
   fileSystems."/data/nfs/FilmyNas" = {
@@ -198,7 +194,6 @@
      fsType = "nfs";
      options = [ "users" "nofail" ];
    };
-  
   
   # Release version of the first install of this system
   system.stateVersion = "24.05";

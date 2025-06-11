@@ -10,7 +10,7 @@
           repo = "vim";
           rev = "HEAD";
           # hash = "sha256-28q2FuAI/lUrLQWiGY358+52cRzV3NcO1jyrrgQ21Ik=";
-          hash = "sha256-SgeLx4z3ys74GdZjG26AVdXtenIbvkJCdBiEhnwUOok=";
+          hash = "sha256-28q2FuAI/lUrLQWiGY358+52cRzV3NcO1jyrrgQ21Ik=";
         };
      });
     })
