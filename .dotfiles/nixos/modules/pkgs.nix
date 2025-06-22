@@ -61,6 +61,7 @@
     mpv
     neovim
     networkmanagerapplet
+    nwg-look
     kdePackages.okular
     kdePackages.oxygen-icons
     pamixer
