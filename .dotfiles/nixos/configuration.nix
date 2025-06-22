@@ -8,10 +8,6 @@
         ./modules/pkgs.nix
       ];
 
-  environment.variables = {
-      # EDITOR = "nvim";
-  };
-
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
   nixpkgs.config.allowUnfree = true;
@@ -42,7 +38,6 @@
   };
 
   systemd.sleep.extraConfig = ''
-      #AllowSuspend=no
       AllowHibernation=no
       AllowHybridSleep=no
       AllowSuspendThenHibernate=no
@@ -52,7 +47,6 @@
       isNormalUser = true;
       description = "libor";
       extraGroups = [ "networkmanager" "wheel" "scanners" "lp" "input" ];
-      packages = with pkgs; [];
   };
 
   boot = {
@@ -76,13 +70,9 @@
                   chainloader /EFI/debian/grubx64.efi
                   }
                   menuentry "endeavourOS" --class endeavourOS {
-                  set root=(hd0,1)
+                  search --set=myroot --fs-uuid 69FC-8252
                   chainloader /EFI/endeavouros/grubx64.efi
                   }
-                  # menuentry "Fedora" --class fedora {
-                  # set root=(hd0,1)
-                  # chainloader /EFI/fedora/shimx64.efi
-                  # }
                   menuentry "Restartovat" --class restart {
                   echo "Restartování..."
                   reboot
@@ -106,7 +96,7 @@
       };
   };
 
-  # Select internationalisation properties.
+  # Locale settings
   console.keyMap = "cz-lat2";
   time.timeZone = "Europe/Prague";
   i18n.defaultLocale = "cs_CZ.UTF-8";
@@ -201,6 +191,5 @@
   system.stateVersion = "24.05";
 
 }
-
 
 #####  END OF FILE  #####
