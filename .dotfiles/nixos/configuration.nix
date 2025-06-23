@@ -66,11 +66,11 @@
               configurationLimit = 10;
               extraEntries = ''
                   menuentry "Debian" --class debian {
-                  search --set=myroot --fs-uuid 69FC-8252
+                  search --set=myroot --fs-uuid 546E-8CCF                 
                   chainloader /EFI/debian/grubx64.efi
                   }
                   menuentry "endeavourOS" --class endeavourOS {
-                  search --set=myroot --fs-uuid 69FC-8252
+                  search --set=myroot --fs-uuid 546E-8CCF                 
                   chainloader /EFI/endeavouros/grubx64.efi
                   }
                   menuentry "Restartovat" --class restart {

@@ -45,7 +45,6 @@
       jq
       kdePackages.breeze
       kdePackages.breeze-icons
-      kdePackages.kalk
       kdePackages.partitionmanager
       kdePackages.qt6ct
       kdePackages.qtsvg
@@ -66,6 +65,7 @@
       pavucontrol
       pcmanfm-qt
       pdfarranger
+      qalculate-qt
       qimgv
       qjackctl
       qpwgraph
