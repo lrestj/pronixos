@@ -53,35 +53,19 @@
       kernelPackages = pkgs.linuxPackages_latest;
       loader = {
           timeout = 2;
-          systemd-boot.enable = false;
+          systemd-boot = {
+              enable = true;
+              configurationLimit = 7;
+              extraEntries = {
+                  "debian.conf" = ''
+                      title Debian
+                      efi /EFI/debian/shimx64.efi
+                  '';
+                };
+          };
           efi = {
               canTouchEfiVariables = true;
               efiSysMountPoint = "/boot";
-          };
-          grub = {
-              enable = true;
-              theme = ./grubtheme;
-              device = "nodev";
-              efiSupport = true;
-              configurationLimit = 10;
-              extraEntries = ''
-                  menuentry "Debian" --class debian {
-                  search --set=myroot --fs-uuid 546E-8CCF                 
-                  chainloader /EFI/debian/grubx64.efi
-                  }
-                  menuentry "endeavourOS" --class endeavourOS {
-                  search --set=myroot --fs-uuid 546E-8CCF                 
-                  chainloader /EFI/endeavouros/grubx64.efi
-                  }
-                  menuentry "Restartovat" --class restart {
-                  echo "Restartování..."
-                  reboot
-                  }
-                  menuentry "Vypnout" --class shutdown {
-                  echo "Vypínání..."
-                  halt
-                  }
-              '';
           };
       };
   };
@@ -188,7 +172,7 @@
   };
   
   # Release version of the first install of this system
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.05";
 
 }
 
