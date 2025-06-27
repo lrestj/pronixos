@@ -49,6 +49,7 @@
       kdePackages.qt6ct
       kdePackages.qtsvg
       kdePackages.qtwayland
+      kdePackages.kcalc
       killall
       krename
       libnotify
@@ -65,7 +66,6 @@
       pavucontrol
       pcmanfm-qt
       pdfarranger
-      qalculate-qt
       qimgv
       qjackctl
       qpwgraph
