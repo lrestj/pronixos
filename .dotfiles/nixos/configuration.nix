@@ -11,9 +11,17 @@
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
   nixpkgs.config.allowUnfree = true;
+  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
   hardware = {
       cpu.intel.updateMicrocode = true;
+      graphics = {
+          enable = true;
+          extraPackages = with pkgs; [
+              intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
+              #intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
+          ];
+      }; 
       sane = {
           enable = true; # enables support for SANE scanners
           extraBackends = [ pkgs.hplip ];
@@ -61,7 +69,7 @@
                       title Debian
                       efi /EFI/debian/shimx64.efi
                   '';
-                };
+              };
           };
           efi = {
               canTouchEfiVariables = true;
