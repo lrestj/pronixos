@@ -59,6 +59,7 @@
 
   boot = {
       kernelPackages = pkgs.linuxPackages_latest;
+      kernel.sysctl."vm.swappiness" = 10;
       loader = {
           timeout = 2;
           systemd-boot = {
