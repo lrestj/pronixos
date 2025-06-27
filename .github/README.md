@@ -43,7 +43,7 @@ cfg push
 💬 Set up your alias before starting. Just type it in your terminal or add it to your .bashrc, config.fish.
 
 ```
-alias cfg='git --git-dir=$HOME/.cfg-git/ --work-tree=$HOME'
+alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 ```
 
 💬 Add your git bare repository to a .gitignore file. This will help you avoid any recursion problems.
@@ -55,12 +55,12 @@ echo ".cfg.git" >> .gitignore
 💬 You’re now ready to clone your dotfiles into a git bare repository.
 
 ```
-git clone --bare https://codeberg.org/lrestj/nixos.git
+git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git
 ```
 or with ssh key activated:
 
 ```
-git clone --bare git@github.com:lrestj/nixos.git $HOME/.cfg.git
+git clone --bare git@github.com:lrestj/nixos.git /home/libor/.cfg.git
 ```
 
 💬 Make sure that your alias is defined in your current shell scope.
