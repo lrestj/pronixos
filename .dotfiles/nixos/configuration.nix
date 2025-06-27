@@ -19,7 +19,6 @@
           enable = true;
           extraPackages = with pkgs; [
               intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
-              #intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
           ];
       }; 
       sane = {
@@ -31,7 +30,7 @@
   nix = {
       settings = {
           experimental-features = [ "nix-command" "flakes" ];
-          download-buffer-size = 94371840;
+          download-buffer-size = 125829120;
       };
       gc = {
           automatic = true;
