@@ -19,6 +19,7 @@
           enable = true;
           extraPackages = with pkgs; [
               intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
+              libvdpau-va-gl
           ];
       }; 
       sane = {
@@ -68,8 +69,8 @@
                       title Debian
                       efi /EFI/debian/shimx64.efi
                   '';
-              };
-          };
+             };
+         };
           efi = {
               canTouchEfiVariables = true;
               efiSysMountPoint = "/boot";
