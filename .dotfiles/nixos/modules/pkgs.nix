@@ -16,7 +16,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      kdePackages.ark
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
@@ -31,7 +30,6 @@
       fish
       foot
       fzf
-      kdePackages.filelight
       font-manager
       geany
       gimp
@@ -42,13 +40,17 @@
       hyprlock
       hyprshot
       jq
+      kdePackages.ark
       kdePackages.breeze
       kdePackages.breeze-icons
+      kdePackages.filelight
+      kdePackages.kcalc
+      kdePackages.okular
+      kdePackages.oxygen-icons
       kdePackages.partitionmanager
       kdePackages.qt6ct
       kdePackages.qtsvg
       kdePackages.qtwayland
-      kdePackages.kcalc
       killall
       krename
       libnotify
@@ -59,8 +61,6 @@
       neovim
       networkmanagerapplet
       nwg-look
-      kdePackages.okular
-      kdePackages.oxygen-icons
       pamixer
       pavucontrol
       pcmanfm-qt
