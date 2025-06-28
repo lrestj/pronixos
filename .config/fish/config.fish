@@ -15,6 +15,7 @@ abbr cleanall "sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nix
 abbr reb "reboot"
 abbr nxs "nix-shell -p"
 abbr nrs "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/"
+abbr test "sudo nixos-rebuild test --flake ~/.dotfiles/nixos/"
 abbr nco "$EDITOR ~/.dotfiles/nixos/configuration.nix"
 abbr npk "$EDITOR ~/.dotfiles/nixos/modules/pkgs.nix"
 
