@@ -57,11 +57,6 @@ echo ".cfg.git" >> .gitignore
 ```
 git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git
 ```
-or with ssh key activated:
-
-```
-git clone --bare git@github.com:lrestj/nixos.git /home/libor/.cfg.git
-```
 
 💬 Make sure that your alias is defined in your current shell scope.
 
@@ -71,23 +66,13 @@ alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 
 💬 Checkout the contents of your bare repository to your $HOME directory.
 
-```
-cfg checkout
-```
+⚠️ This command will overwrite similarly named files in your new installation.
 
-
-⚠️ This command might return some errors as you might have similarly named files already in your new installation.
-```
-error: The following untracked working tree files would be overwritten by checkout:
-    .bashrc
-    .gitignore
-Please move or remove them before you can switch branches.
-Aborting
-```
-💬 You can force checkout with -f argument to overwrite existing files.
 ```
 cfg checkout -f
 ```
+
+
 
 💬 Once you run `cfg status`, you may see a lot of untracked files again. Run this command to hide them.
 
