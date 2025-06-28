@@ -62,7 +62,7 @@ git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
 ```
 
-💬 Once you run `cfg status`, you may see a lot of untracked files again. Run this command to hide them.
+💬 Run this command to hide untracked files again.
 
 ```
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
