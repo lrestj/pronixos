@@ -50,11 +50,11 @@
     noremap <leader>c I0gvg
     
     "Optional settings
+    set nocompatible
     set background=dark   
     colorscheme wildcharm
     syntax on
     filetype plugin indent on
-    set nocompatible
     set autoread
     set backspace=indent,eol,start
     set cul
@@ -73,38 +73,35 @@
     set showmatch mat=2
     set showtabline=1
     set spelllang=cs,en
-    " set softtabstop=4 shiftwidth=4 expandtab
+    set softtabstop=4 shiftwidth=4 expandtab
     set wildcharm=<Tab>
     set wildmenu
     set wildoptions=pum,tagfile
     
     "Statusline
-     hi StatusLine ctermbg=0 ctermfg=92
-     set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
-     set statusline+=%=reg\ {%{v:register}}\ \ 
-    " set statusline=%f\ \%<\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P    "default vim
+    hi StatusLine ctermbg=0 ctermfg=92
+    set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
+    set statusline+=%=reg\ {%{v:register}}\ \ 
 
-   "Plugins
-   call plug#begin()
-     " List your plugins here
-     Plug 'tpope/vim-commentary'
-     Plug 'mhinz/vim-startify'
-     " Plug 'utubo/vim-registers-lite'
-     Plug 'junegunn/vim-peekaboo'
-     Plug 'LnL7/vim-nix'
-     Plug 'chriszarate/yazi.vim'
-     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-     Plug 'junegunn/fzf.vim'
-   call plug#end()
+     "Plugins
+     call plug#begin()
+     "List your plugins here
+         Plug 'tpope/vim-commentary'
+         Plug 'mhinz/vim-startify'
+         Plug 'junegunn/vim-peekaboo'
+         Plug 'LnL7/vim-nix'
+         Plug 'chriszarate/yazi.vim'
+         Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+         Plug 'junegunn/fzf.vim'
+     call plug#end()
 
 
-    "Cursor modes changes
-        " Vertical bar in insert mode  
-        let &t_SI = "\<Esc>[6 q"
-        " Underline in replace mode
-        let &t_SR = "\<Esc>[4 q"
-        " Block in other modes
-        let &t_EI = "\<Esc>[2 q"
+    "Vertical bar cursor in insert mode  
+    let &t_SI = "\<Esc>[6 q"
+    "Underline cursor in replace mode
+    let &t_SR = "\<Esc>[4 q"
+    "Block cursor in other modes
+    let &t_EI = "\<Esc>[2 q"
 
 
     "Transparent background    
@@ -113,7 +110,7 @@
      hi LineNr ctermbg=NONE
     
 
-     " Toggle background transparency
+     "Toggle background transparency
      let t:isTransparent = 0
      function! BGToggleTransparency()
        if t:isTransparent == 0
