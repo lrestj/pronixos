@@ -62,20 +62,14 @@ git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
 ```
 
-💬 Run this command to hide untracked files again.
+💬 Run this command to hide untracked files.
 
 ```
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 ```
 
 
-👍 Your set up is now complete and you can add and update files using your `cfg` alias and git commands.
+👍 Your set up is now complete again.
 
-```
-cfg status
-cfg add .bashrc
-cfg commit -m "Add bashrc"
-cfg push
-```
 <div align="center"> 🔔&nbsp🔔&nbsp🔔&nbsp🔔&nbsp🔔 </div>
 <div align="center"> 🇪 🇴 🇫 </div>
