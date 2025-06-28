@@ -70,7 +70,6 @@
       qpwgraph
       ripgrep
       rofi rofimoji
-      sddm-chili-theme
       simple-scan
       slurp
       swaybg

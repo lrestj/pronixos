@@ -117,7 +117,7 @@
           sddm = {
               enable = true;
               wayland.enable = true;
-              theme = "chili";
+              theme = "elarun";
           };
           autoLogin = {
               enable = true;
