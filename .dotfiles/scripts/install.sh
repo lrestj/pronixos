@@ -16,13 +16,23 @@ cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/ &&
 
 # git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
-echo "Konfigurace proběhla úspěšně."
+echo "Probíhá konfigurace systému..."
 
-ls --color=auto /home/.dotfiles/
+sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos/ &&
 
 echo "Nyní lze smazat původní adresář nixos."
 
 echo " #sudo rm -r /etc/nixos "
+
+git config --global user.email "rest@seznam.cz"
+git config --global user.name "LrestJ"
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote remove origin
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github git@github.com:lrestj/nixos.git
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/nixos.git
+
+echo "Codeberg and Github remote repos added"
+echo -e "\n"
+echo "Konec instalace" 
 
 
 ##### END OF FILE #####
