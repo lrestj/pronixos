@@ -1,24 +1,30 @@
-{pkgs, ...}: 
-    let
+{ config, pkgs, ... }:
 
-  sddm-astronaut = pkgs.sddm-astronaut.override {
-    themeConfig = {
-      AccentColor = "#746385";
-      FormPosition = "left";
-
-      ForceHideCompletePassword = true;
-    };
+let
+  custom-sddm-astronaut = pkgs.sddm-astronaut.override {
+    embeddedTheme = "jake_the_dog";
   };
-    in {
+
+in {
   services.displayManager.sddm = {
     enable = true;
-    package = pkgs.kdePackages.sddm; # qt6 sddm version
-
-    theme = "sddm-astronaut-theme";
-    extraPackages = [sddm-astronaut];
-
     wayland.enable = true;
+    package = pkgs.kdePackages.sddm;
+    theme = "sddm-astronaut-theme";
+    settings = {
+      Theme = {
+        Current = "sddm-astronaut-theme";
+        # CursorTheme = "Bibata-Modern-Ice";
+        CursorSize = 24;
+      };
+    };
+    extraPackages = with pkgs; [
+      custom-sddm-astronaut
+    ];
   };
 
-  environment.systemPackages = [sddm-astronaut];
+  environment.systemPackages = with pkgs; [
+    custom-sddm-astronaut
+    kdePackages.qtmultimedia
+  ];
 }

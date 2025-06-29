@@ -6,6 +6,7 @@
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
         ./modules/pkgs.nix
+        ./modules/sddm.nix
       ];
 
   xdg.portal.enable = true;
@@ -114,11 +115,6 @@
       journald.extraConfig = "SystemMaxUse=50M";
       getty.autologinUser = "libor";
       displayManager = {
-          sddm = {
-              enable = true;
-              wayland.enable = true;
-              theme = "elarun";
-          };
           autoLogin = {
               enable = true;
               user = "libor";
