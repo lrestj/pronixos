@@ -1,7 +1,7 @@
-libinput error: event11 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_00 is missing
-libinput error: event11 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_01 is missing
-libinput error: event11 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_35 is missing
-libinput error: event11 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_36 is missing
+libinput error: event12 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_00 is missing
+libinput error: event12 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_01 is missing
+libinput error: event12 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_35 is missing
+libinput error: event12 - SynPS/2 Synaptics TouchPad: libinput bug: kernel fuzz of 8 but LIBINPUT_FUZZ_36 is missing
 The XKEYBOARD keymap compiler (xkbcomp) reports:
 > Warning:          Could not resolve keysym XF86RefreshRateToggle
 > Warning:          Could not resolve keysym XF86Accessibility

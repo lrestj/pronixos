@@ -70,7 +70,6 @@
       qpwgraph
       ripgrep
       rofi rofimoji
-      elegant-sddm
       simple-scan
       slurp
       swaybg
