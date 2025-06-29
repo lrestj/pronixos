@@ -117,7 +117,8 @@
           sddm = {
               enable = true;
               wayland.enable = true;
-              theme = "elarun";
+              # package = pkgs.kdePackages.sddm;
+              theme = "sugar-dark";
           };
           autoLogin = {
               enable = true;

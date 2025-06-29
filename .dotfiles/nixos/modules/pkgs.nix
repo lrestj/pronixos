@@ -70,6 +70,7 @@
       qpwgraph
       ripgrep
       rofi rofimoji
+      sddm-sugar-dark libsForQt5.qt5.qtgraphicaleffects
       simple-scan
       slurp
       swaybg
