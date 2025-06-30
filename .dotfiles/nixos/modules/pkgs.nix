@@ -16,6 +16,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      lxappearance
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
@@ -24,6 +25,7 @@
       brightnessctl
       btop
       clipse
+      dconf-editor
       efibootmgr
       exfatprogs
       fastfetch
