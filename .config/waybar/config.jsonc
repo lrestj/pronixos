@@ -48,7 +48,7 @@
         "format": "{usage}%   Skener + 🧮 ",
         "tooltip": false,
         "on-click": "pkill simple-scan || simple-scan",
-        "on-click-right": "pkill kcalc || kcalc",
+        "on-click-right": "pkill $kalk || $kalk",
         "on-click-middle": "pkill btop || footclient -e btop"
     },
 

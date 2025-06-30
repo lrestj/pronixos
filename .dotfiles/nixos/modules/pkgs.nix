@@ -19,6 +19,7 @@
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
+      baobab
       brave
       brightnessctl
       btop
@@ -33,6 +34,7 @@
       font-manager
       geany
       gimp
+      gnome-calculator
       gthumb
       hunspellDicts.cs_CZ
       hunspellDicts.en_US
@@ -43,8 +45,6 @@
       kdePackages.ark
       kdePackages.breeze
       kdePackages.breeze-icons
-      kdePackages.filelight
-      kdePackages.kcalc
       kdePackages.okular
       kdePackages.oxygen-icons
       kdePackages.partitionmanager
