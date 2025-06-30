@@ -19,6 +19,7 @@
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
+      bibata-cursors
       brave
       brightnessctl
       btop
