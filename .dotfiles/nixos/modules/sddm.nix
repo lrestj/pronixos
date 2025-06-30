@@ -16,7 +16,7 @@ in
         settings = {
             Theme = {
                 Current = "sddm-astronaut-theme";
-                CursorTheme = "Bibata-Modern-Ice";
+                CursorTheme = "breeze_cursors";
                 CursorSize = 24;
             };
         };
