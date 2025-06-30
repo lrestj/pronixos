@@ -25,6 +25,8 @@ abbr lsdel ".dotfiles/scripts/genlist.sh"
 abbr delgen "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
 abbr makecurrent "sudo /run/current-system/bin/switch-to-configuration boot"
 
+abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
+
 abbr cfg "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME"
 abbr ga "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add"
 abbr gc --set-cursor -- "git --git-dir $HOME/.cfg.git/ --work-tree=$HOME commit -a -m \"%\""
