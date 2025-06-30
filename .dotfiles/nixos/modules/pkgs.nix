@@ -16,7 +16,10 @@
   
   
   environment.systemPackages = with pkgs; [
-      lxappearance
+      xfce.thunar
+      whitesur-gtk-theme
+      whitesur-icon-theme
+      whitesur-cursors
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
