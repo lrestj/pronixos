@@ -64,7 +64,7 @@
     "memory": {
         "format": "{}%    Internet + 💾",
         "on-click": "brave",
-        "on-click-right": "pkill nemo || nemo",
+        "on-click-right": "pkill pcmanfm-qt || pcmanfm-qt",
         "on-click-middle": "pkill yazi || footclient -e yazi"
     },
 

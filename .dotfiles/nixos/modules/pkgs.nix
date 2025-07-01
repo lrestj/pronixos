@@ -50,12 +50,12 @@
       lxqt.lxqt-policykit
       mako
       mpv
-      nemo-with-extensions
       neovim
       networkmanagerapplet
       nwg-look
       pamixer
       pavucontrol
+      pcmanfm-qt
       pdfarranger
       reaper  
       reaper-reapack-extension
