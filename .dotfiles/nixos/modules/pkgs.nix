@@ -16,6 +16,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      tela-icon-theme
       baobab
       bibata-cursors
       brave
