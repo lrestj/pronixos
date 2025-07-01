@@ -17,7 +17,7 @@ in
             Theme = {
                 Current = "sddm-astronaut-theme";
                 CursorTheme = "Bibata-Modern-Classic";
-                CursorSize = 20;
+                CursorSize = "20";
             };
         };
         extraPackages = with pkgs; [
