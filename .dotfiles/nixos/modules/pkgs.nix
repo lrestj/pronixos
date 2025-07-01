@@ -40,7 +40,9 @@
       hypridle
       hyprlock
       hyprshot
+      hyprpolkitagent
       jq
+      kdePackages.qt6ct
       killall
       krename
       libnotify
