@@ -22,6 +22,7 @@
       brightnessctl
       btop
       clipse
+      colloid-gtk-theme
       dconf-editor
       efibootmgr
       eog
