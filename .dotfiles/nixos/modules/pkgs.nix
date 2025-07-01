@@ -41,13 +41,6 @@
       hyprlock
       hyprshot
       jq
-      kdePackages.ark
-      kdePackages.breeze
-      kdePackages.breeze-icons
-      kdePackages.partitionmanager
-      kdePackages.qt6ct
-      kdePackages.qtsvg
-      kdePackages.qtwayland
       killall
       krename
       libnotify
@@ -62,9 +55,6 @@
       pamixer
       pavucontrol
       pdfarranger
-      qimgv
-      qjackctl
-      qpwgraph
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
@@ -113,6 +103,7 @@
           xwayland.enable = true;
       };
       dconf.enable = true;  
+      gnome-disks.enable = true;
       git = {
           enable = true;
           config = {
