@@ -24,6 +24,7 @@
       clipse
       dconf-editor
       efibootmgr
+      eog
       evince
       exfatprogs
       fastfetch
@@ -80,6 +81,7 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
       xdg-utils
+      xnviewmp
       xournalpp
       yazi
       ytdownloader

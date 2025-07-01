@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pcmanfm-qt
+Comment=Browse the file system and manage the files
+Exec=pcmanfm-qt %U
+Icon=/home/libor/.dotfiles/icons/pcmanfm.png
+Terminal=false
+Type=Application
+Categories=FileManager;Utility;Core;Qt
+MimeType=inode/directory;  # Add all supported MIME types
+
