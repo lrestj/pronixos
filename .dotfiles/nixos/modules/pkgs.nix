@@ -16,13 +16,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      xfce.thunar
-      whitesur-gtk-theme
-      whitesur-icon-theme
-      whitesur-cursors
-      reaper  
-      reaper-reapack-extension
-      reaper-sws-extension
       baobab
       brave
       brightnessctl
@@ -34,9 +27,9 @@
       fastfetch
       figlet
       fish
+      font-manager
       foot
       fzf
-      font-manager
       geany
       gimp
       gnome-calculator
@@ -51,7 +44,6 @@
       kdePackages.breeze
       kdePackages.breeze-icons
       kdePackages.okular
-      kdePackages.oxygen-icons
       kdePackages.partitionmanager
       kdePackages.qt6ct
       kdePackages.qtsvg
@@ -63,16 +55,19 @@
       lxqt.lxqt-policykit
       mako
       mpv
+      nemo-with-extensions
       neovim
       networkmanagerapplet
       nwg-look
       pamixer
       pavucontrol
-      pcmanfm-qt
       pdfarranger
       qimgv
       qjackctl
       qpwgraph
+      reaper  
+      reaper-reapack-extension
+      reaper-sws-extension
       ripgrep
       rofi rofimoji
       simple-scan
@@ -86,6 +81,8 @@
       waybar
       waypaper
       wget
+      whitesur-cursors
+      whitesur-icon-theme
       wl-clipboard
       wlogout
       wlsunset
