@@ -29,6 +29,7 @@
       exfatprogs
       fastfetch
       figlet
+      file-roller
       fish
       font-manager
       foot
