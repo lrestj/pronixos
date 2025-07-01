@@ -44,6 +44,8 @@
       hyprshot
       jq
       kdePackages.qt6ct
+      kdePackages.qtsvg
+      kdePackages.qtwayland
       killall
       krename
       libnotify
