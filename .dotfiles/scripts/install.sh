@@ -24,6 +24,8 @@ echo "Nyní lze smazat původní adresář nixos."
 
 echo " #sudo rm -r /etc/nixos "
 
+xdg-user-dir-update
+
 git config --global user.email "rest@seznam.cz"
 git config --global user.name "LrestJ"
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote remove origin

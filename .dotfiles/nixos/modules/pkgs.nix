@@ -85,6 +85,7 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
       xdg-utils
+      xdg-user-dirs
       xnviewmp
       xournalpp
       yazi
