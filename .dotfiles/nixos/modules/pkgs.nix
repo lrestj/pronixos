@@ -23,6 +23,7 @@
       clipse
       dconf-editor
       efibootmgr
+      evince
       exfatprogs
       fastfetch
       figlet
@@ -43,7 +44,6 @@
       kdePackages.ark
       kdePackages.breeze
       kdePackages.breeze-icons
-      kdePackages.okular
       kdePackages.partitionmanager
       kdePackages.qt6ct
       kdePackages.qtsvg
