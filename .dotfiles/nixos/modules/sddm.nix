@@ -16,8 +16,8 @@ in
         settings = {
             Theme = {
                 Current = "sddm-astronaut-theme";
-                CursorTheme = "breeze_cursors";
-                CursorSize = 24;
+                CursorTheme = "Bibata-Modern-Classic";
+                CursorSize = 20;
             };
         };
         extraPackages = with pkgs; [

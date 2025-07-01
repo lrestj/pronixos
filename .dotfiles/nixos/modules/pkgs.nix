@@ -17,6 +17,7 @@
   
   environment.systemPackages = with pkgs; [
       baobab
+      bibata-cursors
       brave
       brightnessctl
       btop
@@ -73,7 +74,6 @@
       waybar
       waypaper
       wget
-      whitesur-cursors
       whitesur-icon-theme
       wl-clipboard
       wlogout
