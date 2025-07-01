@@ -16,7 +16,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      tela-icon-theme
       baobab
       bibata-cursors
       brave
@@ -71,6 +70,7 @@
       simple-scan
       slurp
       swaybg
+      tela-icon-theme
       udiskie
       ueberzugpp
       unzip
