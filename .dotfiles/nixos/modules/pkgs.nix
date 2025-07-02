@@ -23,7 +23,6 @@
       brightnessctl
       btop
       clipse
-      colloid-gtk-theme
       dconf-editor
       efibootmgr
       eog
@@ -70,7 +69,6 @@
       simple-scan
       slurp
       swaybg
-      tela-icon-theme
       udiskie
       ueberzugpp
       unzip
