@@ -17,7 +17,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      xfce.thunar
       baobab
       bibata-cursors
       brave
@@ -62,7 +61,6 @@
       nwg-look
       pamixer
       pavucontrol
-      pcmanfm-qt
       pdfarranger
       reaper  
       reaper-reapack-extension
@@ -109,12 +107,19 @@
   
   
   programs = {
-      hyprland = {
+      xfconf.enable = true;
+      thunar = {
           enable = true;
-          xwayland.enable = true;
+          plugins = with pkgs.xfce; [ 
+              thunar-archive-plugin
+              thunar-volman
+          ];
+      };
+      hyprland = {
+           enable = true;
+           xwayland.enable = true;
       };
       dconf.enable = true;  
-      xfconf.enable = true;
       gnome-disks.enable = true;
       git = {
           enable = true;

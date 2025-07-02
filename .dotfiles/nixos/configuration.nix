@@ -110,6 +110,7 @@
       power-profiles-daemon.enable = true;
       envfs.enable = true;
       gvfs.enable = true;
+      tumbler.enable = true;
       udisks2.enable = true;
       xserver.xkb.layout = "cz";
       journald.extraConfig = "SystemMaxUse=50M";

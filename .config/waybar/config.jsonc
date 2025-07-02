@@ -64,7 +64,7 @@
     "memory": {
         "format": "{}%    Internet + 💾",
         "on-click": "brave",
-        "on-click-right": "pkill pcmanfm-qt || pcmanfm-qt",
+        "on-click-right": "pkill thunar || thunar",
         "on-click-middle": "pkill yazi || footclient -e yazi"
     },
 
