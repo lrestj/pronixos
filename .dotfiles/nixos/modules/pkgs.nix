@@ -4,6 +4,7 @@
 
   imports = [ 
       ./joypixels.nix
+      #./overlay.nix
   ]; 
   
   fonts.packages = with pkgs; [
@@ -16,6 +17,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      xfce.thunar
       baobab
       bibata-cursors
       brave
@@ -112,6 +114,7 @@
           xwayland.enable = true;
       };
       dconf.enable = true;  
+      xfconf.enable = true;
       gnome-disks.enable = true;
       git = {
           enable = true;
