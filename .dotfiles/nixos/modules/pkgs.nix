@@ -17,6 +17,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      alacritty
       baobab
       bibata-cursors
       brave
@@ -49,7 +50,6 @@
       kdePackages.qtsvg
       kdePackages.qtwayland
       killall
-      kitty
       krename
       libnotify
       libreoffice-fresh

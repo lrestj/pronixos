@@ -14,3 +14,8 @@ background = "#000f0f"
 import = [
     "~/.config/alacritty/themes/themes/blood_moon.toml"
 ]
+
+[terminal]
+shell="fish"
+
+
