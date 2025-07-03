@@ -50,6 +50,8 @@ echo ".cfg.git" >> .gitignore
 💬 Clone your dotfiles into a git bare repository.
 
 ```
+git clone --bare https://github.com/lrestj/nixos.git /home/libor/.cfg.git
+
 git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git
 ```
 

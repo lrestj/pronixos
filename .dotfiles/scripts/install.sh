@@ -6,7 +6,8 @@ echo ".cfg.git" >> .gitignore &&
 
 echo "kopírování z Codeberg repozitáře..."
 
-git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git &&
+git clone --bare https://github.com/lrestj/nixos.git /home/libor/.cfg.git
+# git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git &&
 
 echo "Přesun konfigurace..."
 
