@@ -49,6 +49,7 @@
       kdePackages.qtsvg
       kdePackages.qtwayland
       killall
+      kitty
       krename
       libnotify
       libreoffice-fresh
