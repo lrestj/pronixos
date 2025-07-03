@@ -17,7 +17,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      fluent-icon-theme
       alacritty
       baobab
       bibata-cursors
@@ -34,6 +33,7 @@
       figlet
       file-roller
       fish
+      fluent-icon-theme
       font-manager
       foot
       fzf
@@ -79,7 +79,6 @@
       waybar
       waypaper
       wget
-      whitesur-icon-theme
       wl-clipboard
       wlogout
       wlsunset
