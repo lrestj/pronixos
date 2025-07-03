@@ -17,6 +17,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      fluent-icon-theme
       alacritty
       baobab
       bibata-cursors
