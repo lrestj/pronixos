@@ -53,6 +53,7 @@
     },
 
     "temperature": {
+        "thermal-zone": 0,
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon} 📝+Office",
         "format-icons": ["", "", ""],
