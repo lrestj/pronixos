@@ -31,3 +31,4 @@
 .viminfo.tmp
 .wget-hsts
 Dokumenty/
+.local/share/applications/mimeapps.list
