@@ -1,9 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
-Version=1.0
-Type=Application
-NoDisplay=true
-Exec=footclient -e vim %f
 Name=Vim 
+Version=9.1
+Type=Application
+NoDisplay=false
+Terminal=false
+Exec=footclient -T Vim -e vim %f
 Comment=Vlastní definice footclient -e vim %f
 Icon=gvim
