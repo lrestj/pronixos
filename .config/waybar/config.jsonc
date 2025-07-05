@@ -104,7 +104,7 @@
         "format": "  {percent}% {icon} ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "pkill footclient || footclient",
-        "on-click-right": "pkill btop || footclient --app-id btop -e btop"
+        "on-click-right": "pkill btop || footclient -T btop -e btop"
     },
 
     "tray": {
