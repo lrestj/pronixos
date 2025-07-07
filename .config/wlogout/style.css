@@ -30,7 +30,7 @@ button:focus, button:active, button:hover {
 }
 
 #logout {
-    background-image: image(url("/home/libor/.dotfiles/icons/kate.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    background-image: image(url("/home/libor/.dotfiles/icons/textedit.png"), url("/usr/local/share/wlogout/icons/logout.png"));
 }
 
 #suspend {

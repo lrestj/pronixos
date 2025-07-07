@@ -18,7 +18,7 @@
 }
 {
     "label" : "logout",
-    "action" : "kate",
+    "action" : "geany",
     "text" : "Textový editor  [ k ]",
     "keybind" : "k"
 }
