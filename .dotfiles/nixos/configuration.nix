@@ -67,9 +67,9 @@
               enable = true;
               configurationLimit = 7;
               extraEntries = {
-                  "debian.conf" = ''
-                      title Debian
-                      efi /EFI/debian/shimx64.efi
+                  "opensuse.conf" = ''
+                      title openSUSE Tumbleweed
+                      efi /EFI/opensuse/shim.efi
                   '';
              };
          };
