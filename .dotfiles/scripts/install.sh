@@ -1,27 +1,24 @@
 #!/bin/bash
 
-echo "Spouštím instalaci..."
+tput setaf 166 bold; echo "Spouštím instalaci..."
 
 echo ".cfg.git" >> .gitignore &&
 
-echo "kopírování z Codeberg repozitáře..."
+tput setaf 166 bold; echo "Kopírování z repozitáře..."
 
 git clone --bare https://github.com/lrestj/nixos.git /home/libor/.cfg.git
-# git clone --bare https://codeberg.org/lrestj/nixos.git /home/libor/.cfg.git &&
 
-echo "Přesun konfigurace..."
+tput setaf 166 bold; echo "Přesun konfigurace..."
 
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
 
 cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/ && 
 
-# git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
-
-echo "Probíhá konfigurace systému..."
+tput setaf 166 bold; echo "Probíhá konfigurace systému..."
 
 sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos/ &&
 
-echo "Nyní lze smazat původní adresář nixos."
+tput setaf 166 bold; echo "Nyní lze smazat původní adresář nixos."
 
 echo " #sudo rm -r /etc/nixos "
 
@@ -34,9 +31,8 @@ git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github gi
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/nixos.git
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/nixos.git
 
-echo "Remote repos added"
 echo -e "\n"
-echo "Konec instalace" 
+tput setaf 166 bold; echo "Konec instalace" 
 
 
 ##### END OF FILE #####
