@@ -4,11 +4,11 @@
   programs.xfconf.enable = true;
   nixpkgs.overlays = [
     (final: prev: {
-      xfce.thunar = prev.xfce.thunar.overrideAttrs (old: {
+      vim-full = prev.vim-full.overrideAttrs (old: {
         gui = false;
         src = prev.fetchFromGitHub {
-          owner = "xfce-mirror";
-          repo = "thunar";
+          owner = "vim";
+          repo = "vim";
           rev = "latest";
           # If you don't know the hash, the first time, set:
           # hash = "";

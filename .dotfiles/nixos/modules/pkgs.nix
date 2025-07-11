@@ -4,7 +4,7 @@
 
   imports = [ 
       ./joypixels.nix
-      #./overlay.nix
+      # ./vimoverlay.nix
   ]; 
   
   fonts.packages = with pkgs; [
