@@ -46,7 +46,7 @@
               install = pkgs.writeShellApplication {
                   name = "install";
                   runtimeInputs = with pkgs; [ git ]; # deps
-                  text = ''${../scripts/datetimenotify.sh} "$@"''; # the script
+                  text = ''${./datetimenotify.sh} "$@"''; # the script
               };
 
       });
