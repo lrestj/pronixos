@@ -36,3 +36,4 @@ Dokumenty/
 .config/font-manager/
 .config/fontconfig/
 .config/geany/session.conf
+.local/share/sddm/
