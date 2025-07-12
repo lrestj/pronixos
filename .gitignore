@@ -36,3 +36,4 @@ Dokumenty/
 .local/state/lesshst
 .config/font-manager/
 .config/fontconfig/
+.config/geany/session.conf

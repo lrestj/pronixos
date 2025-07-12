@@ -22,7 +22,7 @@ tput setaf 166 bold; echo "Nyní lze smazat původní adresář nixos."
 
 echo " #sudo rm -r /etc/nixos "
 
-xdg-user-dir-update
+mkdir Dokumenty Public Videa Stažené Temp Hudba Obrázky
 
 git config --global user.email "rest@seznam.cz"
 git config --global user.name "LrestJ"
