@@ -13,8 +13,10 @@
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
+      pkgs = import nixpkgs { inherit system; };
     in
   {
+      
       nixosConfigurations = {
           nixos = lib.nixosSystem {
               specialArgs = { inherit inputs; };
@@ -26,6 +28,15 @@
 		  })
               ];
           };
+        };
+      packages.default = pkgs.writeScriptBin "runme" ''
+        echo "I am currently being run!"
+      '';
+
+      # An app that uses the `runme` package
+      apps.default = {
+        type = "app";
+        program = "${self.packages.${system}.runme}/bin/runme";
       };
   }; 
 }
