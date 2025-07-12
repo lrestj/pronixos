@@ -38,7 +38,7 @@
     ],
 
     "custom/menu": {
-        "format": "{}  👑 Menu  ",
+        "format": "{}   Menu  ",
         "tooltip": false,
         "on-click": "pkill rofi || rofi -show drun -show-icons",
         "on-click-right": "wlogout"
