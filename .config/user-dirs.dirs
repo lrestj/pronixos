@@ -6,8 +6,8 @@
 # absolute path. No other format is supported.
 # 
 XDG_DOWNLOAD_DIR="$HOME/Stažené"
-XDG_TEMPLATES_DIR="$HOME/Šablony"
-XDG_PUBLICSHARE_DIR="$HOME/Veřejné"
+XDG_TEMPLATES_DIR="$HOME/Temp"
+XDG_PUBLICSHARE_DIR="$HOME/Public"
 XDG_DOCUMENTS_DIR="$HOME/Dokumenty"
 XDG_MUSIC_DIR="$HOME/Hudba"
 XDG_PICTURES_DIR="$HOME/Obrázky"
