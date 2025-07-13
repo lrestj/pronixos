@@ -33,7 +33,6 @@
       figlet
       file-roller
       fish
-      fluent-icon-theme
       font-manager
       foot
       fzf
@@ -47,6 +46,7 @@
       hyprlock
       hyprshot
       jq
+      kdePackages.breeze-icons
       kdePackages.qt6ct
       kdePackages.qtsvg
       kdePackages.qtwayland
