@@ -69,7 +69,7 @@
               extraEntries = {
                   "opensuse.conf" = ''
                       title openSUSE Tumbleweed
-                      efi /EFI/opensuse/shim.efi
+                      efi /EFI/opensuse/grubx64.efi
                   '';
              };
          };
