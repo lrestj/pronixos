@@ -37,7 +37,6 @@
       foot
       fzf
       geany
-      # gimp
       gnome-calculator
       gthumb
       hunspellDicts.cs_CZ
@@ -63,6 +62,7 @@
       pamixer
       pavucontrol
       pdfarranger
+      pinta
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
