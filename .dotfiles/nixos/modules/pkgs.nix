@@ -37,7 +37,7 @@
       foot
       fzf
       geany
-      gimp
+      # gimp
       gnome-calculator
       gthumb
       hunspellDicts.cs_CZ
