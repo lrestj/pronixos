@@ -62,7 +62,6 @@
       pamixer
       pavucontrol
       pdfarranger
-      pinta
       reaper  
       reaper-reapack-extension
       reaper-sws-extension
