@@ -115,12 +115,6 @@
       xserver.xkb.layout = "cz";
       journald.extraConfig = "SystemMaxUse=50M";
       getty.autologinUser = "libor";
-      displayManager = {
-          autoLogin = {
-              enable = true;
-              user = "libor";
-          };
-      };
       pipewire = {
           enable = true;
           alsa = {
