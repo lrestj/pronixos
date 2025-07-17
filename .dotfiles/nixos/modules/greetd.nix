@@ -1,14 +1,24 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
+
+let
+  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  session = "${pkgs.hyprland}/bin/Hyprland";
+  username = "libor";
+in
 
 {
   services.greetd = {
-      enable = true;
-      settings = rec {
-          initial_session = {
-              command = "${pkgs.hyprland}/bin/Hyprland";
-              user = "libor";
-          };
-          default_session.command = "${pkgs.greetd.greetd}/bin/agreety --cmd ${pkgs.bashInteractive}/bin/bash"; = initial_session;
+    enable = true;
+    settings = {
+      initial_session = {
+        command = "${session}";
+        user = "${username}";
       };
+      default_session = {
+        command = "${tuigreet} --greeting 'Vítej v NixOS!' --asterisks --remember --remember-user-session --time --cmd ${session}";
+        user = "greeter";
+      };
+    };
   };
 }
+
