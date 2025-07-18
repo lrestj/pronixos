@@ -360,7 +360,7 @@ return {
                 {
                     title = "Enter password:",
                     obscure = true,
-                    position = {"top-center", y = 3, w = 40}
+                    pos= {"top-center", y = 3, w = 40}
                 }
             )
             if event ~= 1 then
@@ -386,7 +386,7 @@ return {
                 ya.input(
                 {
                     title = string.format("Enter compression level (%s - %s)", archive_level_min, archive_level_max),
-                    position = {"top-center", y = 3, w = 40}
+                    pos= {"top-center", y = 3, w = 40}
                 }
             )
             if event ~= 1 then
