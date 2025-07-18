@@ -29,8 +29,6 @@ git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github gi
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/nixos.git
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/nixos.git
 
-ya pkg add KKV9/compress
-
 echo -e "\n"
 tput setaf 166 bold; echo "Konec instalace" 
 
