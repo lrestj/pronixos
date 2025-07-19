@@ -16,4 +16,8 @@
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-column-widths" type="string" value="50,50,111,50,50,50,50,50,797,50,50,92,50,139"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
+  <property name="hidden-bookmarks" type="array">
+    <value type="string" value="file:///home/libor/Desktop"/>
+    <value type="string" value="recent:///"/>
+  </property>
 </channel>
