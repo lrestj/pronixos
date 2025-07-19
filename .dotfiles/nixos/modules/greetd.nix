@@ -1,22 +1,33 @@
-{ pkgs, ... }:
-
-let
-  session = "${pkgs.hyprland}/bin/Hyprland";
-in
-
 {
+  pkgs,
+  inputs,
+  ...
+}: let
+  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  hyprland-session = "${pkgs.hyprland}/bin/Hyprland";
+in {
   services.greetd = {
     enable = true;
-    settings = rec {
-      initial_session = {
-        command = "${session}";
-        user = "libor";
-      };
+    settings = {
       default_session = {
-        command = "${pkgs.greetd.greetd}/bin/agreety --cmd ${session}";
-        user = "libor";
+        command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format %c --remember --remember-session --sessions ${hyprland-session}";
+        user = "greeter";
       };
     };
   };
-}
 
+  # this is a life saver.
+  # literally no documentation about this anywhere.
+  # might be good to write about this...
+  # https://www.reddit.com/r/NixOS/comments/u0cdpi/tuigreet_with_xmonad_how/
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    StandardError = "journal"; # Without this errors will spam on screen
+    # Without these bootlogs will spam on screen
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVTDisallocate = true;
+  };
+}
