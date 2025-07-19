@@ -6,7 +6,7 @@
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
         ./modules/pkgs.nix
-        ./modules/sddm.nix
+        ./modules/greetd.nix
         ./modules/console.nix
 
       ];
