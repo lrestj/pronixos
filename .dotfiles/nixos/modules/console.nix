@@ -2,7 +2,7 @@
 
 {
 
-  console.enable = false;
+  console.enable = true;
   services.kmscon = {
       enable = true;
       autologinUser = "libor";

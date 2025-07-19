@@ -6,7 +6,7 @@
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
         ./modules/pkgs.nix
-        ./modules/greetd.nix
+        ./modules/sddm.nix
         ./modules/console.nix
 
       ];
@@ -93,7 +93,6 @@
   };
 
   # Locale settings
-  # console.keyMap = "cz";
   console.useXkbConfig = true;
   time.timeZone = "Europe/Prague";
   i18n.defaultLocale = "cs_CZ.UTF-8";
