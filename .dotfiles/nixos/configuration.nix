@@ -7,6 +7,8 @@
         ./hardware-configuration.nix
         ./modules/pkgs.nix
         ./modules/greetd.nix
+        ./modules/console.nix
+
       ];
 
   xdg.portal.enable = true;
@@ -91,7 +93,8 @@
   };
 
   # Locale settings
-  console.keyMap = "cz-lat2";
+  # console.keyMap = "cz";
+  console.useXkbConfig = true;
   time.timeZone = "Europe/Prague";
   i18n.defaultLocale = "cs_CZ.UTF-8";
   i18n.extraLocaleSettings = {

@@ -15,7 +15,7 @@ in
         user = "${username}";
       };
       default_session = {
-        command = "${tuigreet} --greeting 'Vítej v NixOS!' --asterisks --remember --remember-user-session --time --cmd ${session}";
+        command = "${tuigreet} --greeting 'Vítej v NixOS!' --asterisks --remember --remember-user-session --time --time-format %c --cmd ${session}";
         user = "greeter";
       };
     };
