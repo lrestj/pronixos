@@ -101,10 +101,10 @@ button:hover {
 #idle_inhibitor,
 #pulseaudio,
 #backlight,
-#battery,
-#clock,
-#power-profiles-daemon,
 #tray,
+#clock,
+#battery,
+#power-profiles-daemon,
 #custom-power{
 border-radius: 26px 26px 26px 26px;
 margin-top: 4px;
@@ -129,12 +129,10 @@ margin-bottom: 1px;
 #memory {
 background-color: #7f7f7f;
 color: #000000;
-/* font-weight: bold; */
 }
 
 #clock {
 background-color: #64727D;
-
 }
 
 #battery {
@@ -189,12 +187,12 @@ label:focus {
 }
 
 #backlight {
-    background-color: #475757;
+    background-color: #64727D;
     color: #ffffff;
 }
 
 #pulseaudio {
-    background-color: #312C2C;
+    background-color: #64727D;
     color: #ffffff;
 }
 
