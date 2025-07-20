@@ -123,25 +123,12 @@ margin-bottom: 1px;
     margin-right: 0;
 }
 
-#custom-menu {
-background-color: #232334;
-color: #bbccdd;
-}
-
-#cpu {
-    background-color: #232334;
-    color: #bbccdd;
-}
-
-#temperature {
-background-color: #232334;
-color: #bbccdd;
-padding: 0 10px;
-}
-
+#custom-menu, 
+#cpu, 
+#temperature, 
 #memory {
-    background-color: #232334;
-    color: #bbccdd;
+background-color: #252562;
+color: #bbccdd;
 }
 
 #clock {

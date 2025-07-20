@@ -38,14 +38,14 @@
     ],
 
     "custom/menu": {
-        "format": "{}   Menu  ",
+        "format": "   Menu  ",
         "tooltip": false,
         "on-click": "pkill rofi || rofi -show drun -show-icons",
         "on-click-right": "wlogout"
     },
 
     "cpu": {
-        "format": "{usage}%   Skener + 🧮 ",
+        "format": "{usage}%   Skener + 🧮",
         "tooltip": false,
         "on-click": "pkill simple-scan || simple-scan",
         "on-click-right": "pkill $kalk || $kalk",
@@ -55,7 +55,7 @@
     "temperature": {
         "thermal-zone": 0,
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon} 📝+Office",
+        "format": "  {temperatureC}°C {icon} 📝+Office  ",
         "format-icons": ["", "", ""],
         "on-click": "geany",
         "on-click-right": "libreoffice",
@@ -63,7 +63,7 @@
     },
 
     "memory": {
-        "format": "{}%    Internet + 💾",
+        "format": "{}%    Web + 💾",
         "on-click": "brave",
         "on-click-right": "pkill thunar || thunar",
         "on-click-middle": "pkill yazi || footclient -e yazi"
