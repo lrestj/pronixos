@@ -127,8 +127,9 @@ margin-bottom: 1px;
 #cpu, 
 #temperature, 
 #memory {
-background-color: #252562;
-color: #bbccdd;
+background-color: #7f7f7f;
+color: #000000;
+/* font-weight: bold; */
 }
 
 #clock {
