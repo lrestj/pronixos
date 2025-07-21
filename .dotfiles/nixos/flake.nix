@@ -7,7 +7,7 @@
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
       # yazi.url = "github:sxyazi/yazi";
       waybar = {
-          url = "github:alexays/waybar";
+          url = "github:alexays/waybar?rev=e45883088d5d75515632729157231fdd8ac0e4a5";
           inputs.nixpkgs.follows = "nixpkgs";
       };
   };
