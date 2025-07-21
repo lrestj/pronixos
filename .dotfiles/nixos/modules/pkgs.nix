@@ -4,7 +4,7 @@
 
   imports = [ 
       ./joypixels.nix
-      # ./vimoverlay.nix
+      ./overlay.nix
   ]; 
   
   fonts.packages = with pkgs; [
@@ -75,7 +75,6 @@
       unzip
       vim-full
       vlc
-      waybar
       waypaper
       wget
       wl-clipboard

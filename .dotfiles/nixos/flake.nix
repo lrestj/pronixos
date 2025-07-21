@@ -5,11 +5,15 @@
   
   inputs = {
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
-      yazi.url = "github:sxyazi/yazi";
+      # yazi.url = "github:sxyazi/yazi";
+      waybar = {
+          url = "github:alexays/waybar";
+          inputs.nixpkgs.follows = "nixpkgs";
+      };
   };
 
 
-  outputs = { self, nixpkgs, yazi, ... }@inputs:
+  outputs = { self, nixpkgs, waybar, ... }@inputs:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
@@ -22,7 +26,10 @@
               modules = [
                   ./configuration.nix
                   ({ pkgs, ... }: {
-		  environment.systemPackages = [ yazi.packages.${pkgs.system}.default ];
+                    environment.systemPackages = [
+                        # yazi.packages.${pkgs.system}.default
+                        waybar.packages.${pkgs.system}.waybar
+                    ];
 		  })
               ];
           };

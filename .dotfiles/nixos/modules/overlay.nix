@@ -4,11 +4,10 @@
   programs.xfconf.enable = true;
   nixpkgs.overlays = [
     (final: prev: {
-      vim-full = prev.vim-full.overrideAttrs (old: {
-        gui = false;
+      waybar = prev.waybar.overrideAttrs (old: {
         src = prev.fetchFromGitHub {
-          owner = "vim";
-          repo = "vim";
+          owner = "Alexays";
+          repo = "Waybar";
           rev = "latest";
           # If you don't know the hash, the first time, set:
           # hash = "";
