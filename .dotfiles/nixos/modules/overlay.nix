@@ -1,21 +1,15 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
-  programs.xfconf.enable = true;
   nixpkgs.overlays = [
     (final: prev: {
-      waybar = prev.waybar.overrideAttrs (old: {
+      vim-full = prev.vim-full.overrideAttrs (old: {
+        name = "Vim-full-git";
         src = prev.fetchFromGitHub {
-          owner = "Alexays";
-          repo = "Waybar";
-          rev = "latest";
-          # If you don't know the hash, the first time, set:
-          # hash = "";
-          # then nix will fail the build with such an error message:
-          # hash mismatch in fixed-output derivation '/nix/store/m1ga09c0z1a6n7rj8ky3s31dpgalsn0n-source':
-          # specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
-          # got:    sha256-173gxk0ymiw94glyjzjizp8bv8g72gwkjhacigd1an09jshdrjb4
-          hash = "";
+          owner = "vim";
+          repo = "vim";
+          rev = "HEAD";
+          hash = "sha256-zyPtFqfJPzlb/QBxQ0j3hzWe9+0kTFH/XQ3aGp2jc2w=";
         };
      });
     })
