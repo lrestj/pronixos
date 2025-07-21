@@ -4,7 +4,7 @@
 
   imports = [ 
       ./joypixels.nix
-      ./overlay.nix
+      # ./overlay.nix
   ]; 
   
   fonts.packages = with pkgs; [
@@ -86,6 +86,7 @@
       xdg-user-dirs
       xnviewmp
       xournalpp
+      yazi
       ytdownloader
       zip p7zip
       (pkgs.writeScriptBin "sct" ''
