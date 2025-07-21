@@ -13,11 +13,18 @@
   };
 
 
-  outputs = { self, nixpkgs, waybar, ... }@inputs:
+  outputs = {
+      self,
+      nixpkgs,
+      waybar,
+      # yazi,
+      ... }@inputs:
+
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
     in
+
   {
       nixosConfigurations = {
           nixos = lib.nixosSystem {

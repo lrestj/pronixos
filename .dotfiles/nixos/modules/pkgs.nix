@@ -105,6 +105,8 @@
   
   programs = {
       xfconf.enable = true;
+      dconf.enable = true;  
+      gnome-disks.enable = true;
       thunar = {
           enable = true;
           plugins = with pkgs.xfce; [ 
@@ -116,8 +118,6 @@
            enable = true;
            xwayland.enable = true;
       };
-      dconf.enable = true;  
-      gnome-disks.enable = true;
       git = {
           enable = true;
           config = {
