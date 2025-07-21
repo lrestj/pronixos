@@ -5,9 +5,10 @@
   
   inputs = {
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
+      hyprland.url = "github:hyprwm/Hyprland";
       # yazi.url = "github:sxyazi/yazi";
       waybar = {
-          url = "github:alexays/waybar?rev=e45883088d5d75515632729157231fdd8ac0e4a5";
+          url = "github:alexays/waybar";
           inputs.nixpkgs.follows = "nixpkgs";
       };
   };
