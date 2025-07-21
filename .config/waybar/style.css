@@ -136,13 +136,13 @@ background-color: #64727D;
 }
 
 #battery {
-background-color: #170349;
+background-color: #64727D;
 color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
 color: #ffffff;
-background-color: #1E90FF;
+background-color: #64727D;
 }
 
 @keyframes blink {
@@ -168,7 +168,8 @@ padding-right: 10px;
 }
 
 #power-profiles-daemon.performance {
-background-color: #f53c3c;
+/* background-color: #f53c3c; */
+background-color: #64727D;
 color: #ffffff;
 }
 
@@ -206,7 +207,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #5528c8;
+    background-color: #64727D;
 }
 
 #tray > .passive {
