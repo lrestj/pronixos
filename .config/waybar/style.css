@@ -270,3 +270,11 @@ label:focus {
     padding-left: 15px;
 }
 
+menu {
+	border-radius: 15px;
+	background: #161320;
+	color: #B5E8E0;
+}
+menuitem {
+	border-radius: 15px;
+}
