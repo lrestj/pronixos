@@ -67,7 +67,7 @@
     },
 
     "memory": {
-        "format": "{}%  ",
+        "format": "  {}% ",
         "on-click": "brave",
         "on-click-right": "pkill thunar || thunar",
         "on-click-middle": "pkill yazi || footclient -e yazi"
