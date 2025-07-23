@@ -98,9 +98,11 @@ button:hover {
 #cpu,
 #temperature,
 #custom-scan,
+#custom-office,
 #custom-kalk,
 #custom-text,
 #custom-fm,
+#custom-browser,
 #memory,
 #idle_inhibitor,
 #pulseaudio,
@@ -137,12 +139,20 @@ color: #000000;
 
 #custom-scan{
         font-size: 17px;
-        background-image: url('/home/libor/.dotfiles/icons/skener2.png');
+        background-image: url('/home/libor/.dotfiles/icons/skener.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left : 8;
+}
+    
+#custom-office{
+        font-size: 17px;
+        background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
 }
-    
 
 #custom-kalk{
         font-size: 17px;
@@ -159,7 +169,6 @@ color: #000000;
         background-size: contain;
 }
 
-
 #custom-fm{
         font-size: 19px;
         background-image: url('/home/libor/.dotfiles/icons/fm.png');
@@ -168,6 +177,13 @@ color: #000000;
         background-size: contain;
 }
 
+#custom-browser{
+        font-size: 19px;
+        background-image: url('/home/libor/.dotfiles/icons/brave.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
 
 #clock {
 background-color: #64727D;

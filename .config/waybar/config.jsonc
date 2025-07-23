@@ -20,9 +20,11 @@
         "temperature",
         "memory",
         "custom/scan",
+        "custom/office",
         "custom/kalk",
         "custom/text",
         "custom/fm",
+        "custom/browser",
         "custom/media"
     ],
     "modules-center": [
@@ -59,28 +61,46 @@
     "temperature": {
         "thermal-zone": 0,
         "critical-threshold": 80,
-        "format": "  {temperatureC}°C Office  ",
+        "format": "  {temperatureC} °C  ",
         "format-icons": ["", "", ""],
         "on-click": "libreoffice"
     },
-    "custom/scan": {
+
+    "memory": {
+        "format": "{}%  ",
+        "on-click": "brave",
+        "on-click-right": "pkill thunar || thunar",
+        "on-click-middle": "pkill yazi || footclient -e yazi"
+    },
+
+   "custom/scan": {
         //"format":"<U+F44E>",
         "format":"      ",
         "tooltip-format": "Skener",
         "on-click": "pkill simple-scan || simple-scan"
     },
+
+    "custom/office": {
+        //"format":"<U+F44E>",
+        "format":"      ",
+        "tooltip-format": "LibreOffice",
+        "on-click": "libreoffice"
+    },
+
     "custom/kalk": {
         //"format":"<U+F44E>",
         "format":"      ",
         "tooltip-format": "Kalkulačka",
         "on-click": "pkill $kalk || $kalk"
     },
+
     "custom/text": {
       //"format":"<U+F44E>",
         "format":"      ",
         "tooltip-format": "Textový editor",
         "on-click": "pkill geany || geany"
     },
+
    "custom/fm": {
         //"format":"<U+F44E>",
         "format":"      ",
@@ -88,14 +108,12 @@
         "on-click": "pkill thunar || thunar"
     },
 
-
-    "memory": {
-        "format": "{}%    Web ",
-        "on-click": "brave",
-        "on-click-right": "pkill thunar || thunar",
-        "on-click-middle": "pkill yazi || footclient -e yazi"
+   "custom/browser": {
+        //"format":"<U+F44E>",
+        "format":"      ",
+        "tooltip-format": "Internet",
+        "on-click": "brave"
     },
-
 
     "idle_inhibitor": {
         "format": "{icon}",
