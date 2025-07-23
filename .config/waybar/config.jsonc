@@ -65,19 +65,19 @@
     "custom/kalk": {
         //"format":"<U+F44E>",
         "format":"      ",
-        "tooltip": false,
+        "tooltip-format": "Kalkulačka",
         "on-click": "pkill $kalk || $kalk"
     },
     "custom/text": {
         //"format":"<U+F44E>",
         "format":"      ",
-        "tooltip": false,
+        "tooltip-format": "Textový editor",
         "on-click": "pkill geany || geany"
     },
    "custom/fm": {
         //"format":"<U+F44E>",
         "format":"      ",
-        "tooltip": false,
+        "tooltip-format": "Soubory",
         "on-click": "pkill thunar || thunar"
     },
 
