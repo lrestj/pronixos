@@ -19,6 +19,9 @@
         "cpu",
         "temperature",
         "memory",
+        "custom/kalk",
+        "custom/text",
+        "custom/fm",
         "custom/media"
     ],
     "modules-center": [
@@ -45,7 +48,7 @@
     },
 
     "cpu": {
-        "format": "{usage}%   Skener + 🧮",
+        "format": "{usage}%   Skener ",
         "tooltip": false,
         "on-click": "pkill simple-scan || simple-scan",
         "on-click-right": "pkill $kalk || $kalk",
@@ -55,15 +58,32 @@
     "temperature": {
         "thermal-zone": 0,
         "critical-threshold": 80,
-        "format": "  {temperatureC}°C {icon} 📝+Office  ",
+        "format": "  {temperatureC}°C Office  ",
         "format-icons": ["", "", ""],
-        "on-click": "geany",
-        "on-click-right": "libreoffice",
-        "on-click-middle": "footclient -e vim"
+        "on-click": "libreoffice"
+    },
+    "custom/kalk": {
+        //"format":"<U+F44E>",
+        "format":"      ",
+        "tooltip": false,
+        "on-click": "pkill $kalk || $kalk"
+    },
+    "custom/text": {
+        //"format":"<U+F44E>",
+        "format":"      ",
+        "tooltip": false,
+        "on-click": "pkill geany || geany"
+    },
+   "custom/fm": {
+        //"format":"<U+F44E>",
+        "format":"      ",
+        "tooltip": false,
+        "on-click": "pkill thunar || thunar"
     },
 
+
     "memory": {
-        "format": "{}%    Web + 💾",
+        "format": "{}%    Web ",
         "on-click": "brave",
         "on-click-right": "pkill thunar || thunar",
         "on-click-middle": "pkill yazi || footclient -e yazi"

@@ -97,6 +97,9 @@ button:hover {
 #custom-menu,
 #cpu,
 #temperature,
+#custom-kalk,
+#custom-text,
+#custom-fm,
 #memory,
 #idle_inhibitor,
 #pulseaudio,
@@ -130,6 +133,31 @@ margin-bottom: 1px;
 background-color: #7f7f7f;
 color: #000000;
 }
+
+#custom-kalk{
+        font-size: 20px;
+        background-image: url('/home/libor/.dotfiles/icons/calc.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+#custom-text{
+        font-size: 20px;
+        background-image: url('/home/libor/.dotfiles/icons/text.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
+
+#custom-fm{
+        font-size: 20px;
+        background-image: url('/home/libor/.dotfiles/icons/fm.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
 
 #clock {
 background-color: #64727D;
