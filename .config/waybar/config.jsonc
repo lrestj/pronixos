@@ -49,7 +49,7 @@
     },
 
     "cpu": {
-        "format": "{usage}%",
+        "format": "  {usage}%",
         "tooltip": false,
         "on-click": "",
         "on-click-right": "",
