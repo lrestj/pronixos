@@ -51,9 +51,9 @@
     "cpu": {
         "format": "{usage}%",
         "tooltip": false,
-        "on-click": "pkill simple-scan || simple-scan",
-        "on-click-right": "pkill $kalk || $kalk",
-        "on-click-middle": "pkill btop || footclient -e btop"
+        "on-click": "",
+        "on-click-right": "",
+        "on-click-middle": ""
     },
 
     "temperature": {

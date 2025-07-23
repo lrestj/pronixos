@@ -136,7 +136,7 @@ color: #000000;
 }
 
 #custom-scan{
-        font-size: 18px;
+        font-size: 17px;
         background-image: url('/home/libor/.dotfiles/icons/skener2.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -145,14 +145,14 @@ color: #000000;
     
 
 #custom-kalk{
-        font-size: 19px;
+        font-size: 17px;
         background-image: url('/home/libor/.dotfiles/icons/calc.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
 }
 #custom-text{
-        font-size: 19px;
+        font-size: 17px;
         background-image: url('/home/libor/.dotfiles/icons/text.png');
         background-position: center;
         background-repeat: no-repeat;
