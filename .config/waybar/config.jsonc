@@ -66,7 +66,7 @@
     "custom/scan": {
         //"format":"<U+F44E>",
         "format":"      ",
-        "tooltip-format": "Kalkulačka",
+        "tooltip-format": "Skener",
         "on-click": "pkill simple-scan || simple-scan"
     },
     "custom/kalk": {
