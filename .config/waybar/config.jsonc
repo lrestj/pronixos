@@ -61,8 +61,8 @@
     "temperature": {
         "thermal-zone": 0,
         "critical-threshold": 80,
-        "format": "  {temperatureC} °C  ",
-        "format-icons": ["", "", ""],
+        "format": " {icon} {temperatureC} °C  ",
+        "format-icons": ["", "", ""],
         "on-click": "libreoffice"
     },
 
