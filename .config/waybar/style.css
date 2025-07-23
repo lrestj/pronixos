@@ -138,51 +138,51 @@ color: #000000;
 }
 
 #custom-scan{
-        font-size: 17px;
-        background-image: url('/home/libor/.dotfiles/icons/skener.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left : 8;
+font-size: 17px;
+background-image: url('/home/libor/.dotfiles/icons/skener.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+margin-left : 8;
 }
     
 #custom-office{
-        font-size: 17px;
-        background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+font-size: 18px;
+background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 #custom-kalk{
-        font-size: 17px;
-        background-image: url('/home/libor/.dotfiles/icons/calc.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+font-size: 18px;
+background-image: url('/home/libor/.dotfiles/icons/calc.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 #custom-text{
-        font-size: 17px;
-        background-image: url('/home/libor/.dotfiles/icons/text.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+font-size: 18px;
+background-image: url('/home/libor/.dotfiles/icons/text.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 #custom-fm{
-        font-size: 19px;
-        background-image: url('/home/libor/.dotfiles/icons/fm.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+font-size: 19px;
+background-image: url('/home/libor/.dotfiles/icons/fm.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 #custom-browser{
-        font-size: 19px;
-        background-image: url('/home/libor/.dotfiles/icons/brave.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+font-size: 19px;
+background-image: url('/home/libor/.dotfiles/icons/brave.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 #clock {
@@ -284,6 +284,11 @@ label:focus {
 
 #custom-power {
     padding-left: 15px;
+    font-size: 20px;
+    background-image: url('/home/libor/.dotfiles/icons/power.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* END OF FILE */
