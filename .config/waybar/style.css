@@ -97,6 +97,7 @@ button:hover {
 #custom-menu,
 #cpu,
 #temperature,
+#custom-scan,
 #custom-kalk,
 #custom-text,
 #custom-fm,
@@ -133,6 +134,15 @@ margin-bottom: 1px;
 background-color: #7f7f7f;
 color: #000000;
 }
+
+#custom-scan{
+        font-size: 18px;
+        background-image: url('/home/libor/.dotfiles/icons/skener.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+    
 
 #custom-kalk{
         font-size: 19px;
