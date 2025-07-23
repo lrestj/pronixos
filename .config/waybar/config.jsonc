@@ -45,7 +45,7 @@
 
     "custom/menu": {
         "format": "   Menu  ",
-        "tooltip": false,
+        "tooltip-format": "Aplikace",
         "on-click": "pkill rofi || rofi -show drun -show-icons",
         "on-click-right": "wlogout"
     },
@@ -208,8 +208,8 @@
         "menu-actions": {
             "uspat": "systemctl suspend",
             "odhlásit": "hyprctl dispatch exit",
-            "vypnout": "poweroff",
-            "restart": "reboot"
+            "vypnout": "systemctl poweroff",
+            "restart": "systemctl reboot"
         }
     }
 }, 
