@@ -63,54 +63,48 @@
         "critical-threshold": 80,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
-        "on-click": "libreoffice"
+        "on-click": ""
     },
 
     "memory": {
         "format": "  {}% ",
-        "on-click": "brave",
-        "on-click-right": "pkill thunar || thunar",
-        "on-click-middle": "pkill yazi || footclient -e yazi"
+        "on-click": "",
+        "on-click-right": "",
+        "on-click-middle": ""
     },
 
    "custom/scan": {
-        //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "Skener",
         "on-click": "pkill simple-scan || simple-scan"
     },
 
     "custom/office": {
-        //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "LibreOffice",
         "on-click": "libreoffice"
     },
 
     "custom/kalk": {
-        //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "Kalkulačka",
         "on-click": "pkill $kalk || $kalk"
     },
 
     "custom/text": {
-      //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "Textový editor",
         "on-click": "pkill geany || geany"
     },
 
    "custom/fm": {
-        //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "Soubory",
         "on-click": "pkill thunar || thunar"
     },
 
    "custom/browser": {
-        //"format":"<U+F44E>",
-        "format":"      ",
+        "format":"       ",
         "tooltip-format": "Internet",
         "on-click": "brave"
     },
@@ -186,10 +180,10 @@
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
-            "default": "",
-            "performance": "",
+            "default": "  ",
+            "performance": "  ",
             "balanced": " ",
-            "power-saver": ""
+            "power-saver": " "
         }
     },
     "hyprland/language": {
@@ -234,3 +228,5 @@
         "on-click-right": "close"
     }
 }]
+
+// END OF FILE

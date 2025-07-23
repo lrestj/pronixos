@@ -49,10 +49,29 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#custom-menu:hover,
 #clock:hover,
 #backlight:hover,
 #pulseaudio:hover {
     background-color: #A2780E;
+}
+#custom-scan:hover,
+#custom-office:hover,
+#custom-kalk:hover,
+#custom-text:hover,
+#custom-fm:hover,
+#custom-browser:hover {
+    background-color: #000000;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
 }
 
 #workspaces button {
@@ -85,7 +104,7 @@ button:hover {
 #idle_inhibitor,
 #power-profiles-daemon,
 #tray {
-    padding: 0 10px;
+    padding: 0 7px;
     color: #ffffff;
 }
 
@@ -112,91 +131,81 @@ button:hover {
 #battery,
 #power-profiles-daemon,
 #custom-power{
-border-radius: 26px 26px 26px 26px;
-margin-top: 4px;
-margin-bottom: 1px;
+    border-radius: 26px 26px 26px 26px;
+    margin-top: 4px;
+    margin-bottom: 1px;
 }
 
 
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
 
 #custom-menu, 
 #cpu, 
 #temperature, 
 #memory {
-background-color: #7f7f7f;
-color: #000000;
+    background-color: #7f7f7f;
+    color: #000000;
 }
 
 #custom-scan{
-font-size: 17px;
-background-image: url('/home/libor/.dotfiles/icons/skener.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-margin-left : 8;
+    font-size: 17px;
+    background-image: url('/home/libor/.dotfiles/icons/skener.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left : 8;
 }
     
 #custom-office{
-font-size: 18px;
-background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #custom-kalk{
-font-size: 18px;
-background-image: url('/home/libor/.dotfiles/icons/calc.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/calc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 #custom-text{
-font-size: 18px;
-background-image: url('/home/libor/.dotfiles/icons/text.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/text.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #custom-fm{
-font-size: 19px;
-background-image: url('/home/libor/.dotfiles/icons/fm.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+    font-size: 19px;
+    background-image: url('/home/libor/.dotfiles/icons/fm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #custom-browser{
-font-size: 19px;
-background-image: url('/home/libor/.dotfiles/icons/brave.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+    font-size: 19px;
+    background-image: url('/home/libor/.dotfiles/icons/brave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #clock {
-background-color: #64727D;
+    background-color: #64727D;
 }
 
 #battery {
-background-color: #64727D;
-color: #ffffff;
+    background-color: #64727D;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
-color: #ffffff;
-background-color: #64727D;
+    color: #ffffff;
+    background-color: #64727D;
 }
 
 @keyframes blink {
@@ -208,33 +217,36 @@ background-color: #64727D;
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-background-color: #f53c3c;
-color: #ffffff;
-animation-name: blink;
-animation-duration: 0.5s;
-animation-timing-function: steps(12);
-animation-iteration-count: infinite;
-animation-direction: alternate;
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #power-profiles-daemon {
-padding-right: 10px;
+    padding-right: 0px;
 }
 
 #power-profiles-daemon.performance {
 /* background-color: #f53c3c; */
-background-color: #64727D;
-color: #ffffff;
+    padding: 0 3px;
+    background-color: #64727D;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-background-color: #2980b9;
-color: #ffffff;
+    padding-right: 4px;   
+    background-color: #2980b9;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-background-color: #2ecc71;
-color: #000000;
+    padding-right: 4px;   
+    background-color: #2ecc71;
+    color: #000000;
 }
 
 label:focus {
