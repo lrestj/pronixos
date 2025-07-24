@@ -14,11 +14,11 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "custom/menu",
+        // "custom/menu",
+        "memory",
         "hyprland/submap",
         "cpu",
         "temperature",
-        "memory",
         "custom/scan",
         "custom/office",
         "custom/kalk",
@@ -50,6 +50,12 @@
         "on-click-right": "wlogout"
     },
 
+    "memory": {
+        "format": "   {}% ",
+        "on-click": "pkill rofi || rofi -show drun -show-icons",
+        "on-click-right": "wlogout"
+    },
+
     "cpu": {
         "format": "  {usage}%",
         "tooltip": false,
@@ -64,13 +70,6 @@
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
         "on-click": ""
-    },
-
-    "memory": {
-        "format": "  {}% ",
-        "on-click": "",
-        "on-click-right": "",
-        "on-click-middle": ""
     },
 
    "custom/scan": {

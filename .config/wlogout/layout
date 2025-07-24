@@ -6,7 +6,7 @@
 }
 {
     "label" : "hibernate",
-    "action" : "dolphin",
+    "action" : "thunar",
     "text" : "Správce souborů  [ s ]",
     "keybind" : "s"
 }
