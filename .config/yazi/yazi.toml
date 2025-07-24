@@ -58,8 +58,8 @@ play = [
 
 [open]
 prepend_rules = [
-	{ name = "*.vim", use = "edit" },
-	{ name = "vimrc", use = "edit" },
+	# { name = "*.vim", use = "edit" },
+	# { name = "vimrc", use = "edit" },
 ]
 
 rules = [
@@ -82,7 +82,7 @@ rules = [
     # Data file
 	{ mime = "data", use = [ "edit", "reveal" ] },
 	# Fallback
-	{ name = "*", use = [ "open", "reveal" ] },
+	{ name = "*", use = [ "edit", "open", "reveal" ] },
 ]
 
 [tasks]
