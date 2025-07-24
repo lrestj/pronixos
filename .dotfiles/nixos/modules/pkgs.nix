@@ -86,7 +86,6 @@
       xdg-user-dirs
       xnviewmp
       xournalpp
-      yazi
       ytdownloader
       zip p7zip
       (pkgs.writeScriptBin "sct" ''

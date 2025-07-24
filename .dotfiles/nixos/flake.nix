@@ -6,7 +6,7 @@
   inputs = {
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
       hyprland.url = "github:hyprwm/Hyprland";
-      # yazi.url = "github:sxyazi/yazi";
+      yazi.url = "github:sxyazi/yazi";
       waybar = {
           url = "github:alexays/waybar";
           inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +18,7 @@
       self,
       nixpkgs,
       waybar,
-      # yazi,
+      yazi,
       ... }@inputs:
 
     let
@@ -35,7 +35,7 @@
                   ./configuration.nix
                   ({ pkgs, ... }: {
                     environment.systemPackages = [
-                        # yazi.packages.${pkgs.system}.default
+                        yazi.packages.${pkgs.system}.default
                         waybar.packages.${pkgs.system}.waybar
                     ];
 		  })
