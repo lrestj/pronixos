@@ -222,7 +222,7 @@
     // Modules configuration
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 26,
+        "icon-size": 32,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-right": "close"

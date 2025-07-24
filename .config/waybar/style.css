@@ -116,12 +116,6 @@ button:hover {
 #custom-menu,
 #cpu,
 #temperature,
-#custom-scan,
-#custom-office,
-#custom-kalk,
-#custom-text,
-#custom-fm,
-#custom-browser,
 #memory,
 #idle_inhibitor,
 #pulseaudio,
@@ -136,14 +130,22 @@ button:hover {
     margin-bottom: 1px;
 }
 
-
-
 #custom-menu, 
 #cpu, 
 #temperature, 
 #memory {
     background-color: #7f7f7f;
     color: #000000;
+}
+
+#custom-scan,
+#custom-office,
+#custom-kalk,
+#custom-text,
+#custom-fm,
+#custom-browser {
+    margin-top: 4px;
+    margin-bottom: 1px;
 }
 
 #custom-scan{
@@ -303,4 +305,7 @@ label:focus {
     background-size: contain;
 }
 
+#taskbar button {
+    padding: 5 2px;
+}
 /* END OF FILE */
