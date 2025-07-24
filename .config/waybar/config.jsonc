@@ -69,7 +69,8 @@
         "critical-threshold": 80,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
-        "on-click": "pkill btop || footclient -T btop -e btop"
+        "on-click": "pkill btop || footclient -T btop -e btop",
+        "on-click-right": ""
     },
 
    "custom/scan": {
