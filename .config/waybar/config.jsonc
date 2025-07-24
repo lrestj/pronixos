@@ -92,13 +92,13 @@
     },
 
     "custom/text": {
-        "format":"       ",
+        "format":"     ",
         "tooltip-format": "Textový editor",
         "on-click": "pkill geany || geany"
     },
 
    "custom/fm": {
-        "format":"       ",
+        "format":"        ",
         "tooltip-format": "Soubory",
         "on-click": "pkill thunar || thunar"
     },
