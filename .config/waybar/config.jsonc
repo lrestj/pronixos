@@ -59,7 +59,7 @@
     "cpu": {
         "format": "  {usage}%",
         "tooltip": false,
-        "on-click": "",
+        "on-click": "footclient",
         "on-click-right": "",
         "on-click-middle": ""
     },
@@ -69,7 +69,7 @@
         "critical-threshold": 80,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
-        "on-click": ""
+        "on-click": "pkill btop || footclient -T btop -e btop"
     },
 
    "custom/scan": {
