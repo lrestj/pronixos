@@ -56,6 +56,7 @@ button:hover {
     background-color: #A2780E;
 }
 #custom-scan:hover,
+#custom-power:hover,
 #custom-office:hover,
 #custom-kalk:hover,
 #custom-text:hover,
@@ -123,8 +124,7 @@ button:hover {
 #tray,
 #clock,
 #battery,
-#power-profiles-daemon,
-#custom-power{
+#power-profiles-daemon{
     border-radius: 26px 26px 26px 26px;
     margin-top: 4px;
     margin-bottom: 1px;
@@ -142,6 +142,7 @@ button:hover {
 #custom-office,
 #custom-kalk,
 #custom-text,
+#custom-power, 
 #custom-fm,
 #custom-browser {
     margin-top: 4px;
@@ -298,7 +299,7 @@ label:focus {
 
 #custom-power {
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 13px;
     background-image: url('/home/libor/.dotfiles/icons/power.png');
     background-position: center;
     background-repeat: no-repeat;

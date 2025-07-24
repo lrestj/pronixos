@@ -188,7 +188,7 @@
         }
     },
     "hyprland/language": {
-        "format": "{}",
+        "format": " {} ",
         "min-length" : 4,
         "format-cs": "🇨🇿",
         "format-en": "🇺🇸",
@@ -196,8 +196,8 @@
     },
 
     "custom/power": {
-        "format" : " ",
-        "tooltip": false,
+        "format" : "  ",
+        "tooltip-format": "Vypnout...",
         "menu": "on-click",
         "menu-file": "~/.config/waybar/power_menu.xml",
         "menu-actions": {
