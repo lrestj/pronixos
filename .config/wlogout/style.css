@@ -1,44 +1,57 @@
 * {
-	background-image: none;
-	box-shadow: none;
+    background-image: none;
+    box-shadow: none;
 }
 
 window {
-	background-color: rgba(12, 12, 12, 0.9);
+    background-color: rgba(12, 12, 12, 0.9);
 }
 
 button {
     border-radius: 0;
     border-color: black;
-	text-decoration-color: #FFFFFF;
-    color: #FFFFFF;
-	background-color: #1E1E1E;
-	border-style: solid;
-	border-width: 1px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
+    color: #BFBFBF;
+    background-color: #1E1E1E;
+    border-style: solid;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 15%;
+    font-size: 14px;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #3700B3;
-	outline-style: none;
+    background-color: #3700B3;
+    outline-style: none;
 }
 
-#lock {
-    background-image: image(url("/home/libor/.dotfiles/icons/brave.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+
+#browser {
+    background-image: image(url("/home/libor/.dotfiles/icons/brave.png"));
+}
+
+#text {
+    background-image: image(url("/home/libor/.dotfiles/icons/notes.png"));
+}
+
+#office {
+    background-image: image(url("/home/libor/.dotfiles/icons/libreoffice.png"));
+}
+
+#kalk {
+    background-image: image(url("//home/libor/.dotfiles/icons/kalk.png"));
+}
+
+#skener {
+    background-image: image(url("//home/libor/.dotfiles/icons/skener.png"));
+}
+
+#fm {
+    background-image: image(url("//home/libor/.dotfiles/icons/fm.png"));
 }
 
 #logout {
-    background-image: image(url("/home/libor/.dotfiles/icons/text.png"), url("/usr/local/share/wlogout/icons/logout.png"));
-}
-
-#suspend {
-    background-image: image(url("/home/libor/.dotfiles/icons/libreoffice.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
-}
-
-#hibernate {
-    background-image: image(url("//home/libor/.dotfiles/icons/pcmanfm.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+    background-image: image(url("//home/libor/.dotfiles/icons/logout.png"));
 }
 
 #shutdown {

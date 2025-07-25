@@ -1,25 +1,55 @@
 {
-    "label" : "lock",
+    "label" : "fm",
+    "action" : "thunar",
+    "text" : "Správce souborů  [ f ]",
+    "keybind" : "f"
+}
+{
+    "label" : "text",
+    "action" : "geany",
+    "text" : "Textový editor  [ t ]",
+    "keybind" : "t"
+}
+{
+    "label" : "skener",
+    "action" : "simple-scan",
+    "text" : "Skener [ s ]",
+    "keybind" : "s"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Odhlásit  [ o ]",
+    "keybind" : "t"
+}
+{
+    "label" : "browser",
     "action" : "brave",
     "text" : "Prohlížeč internetu  [ b ]",
     "keybind" : "b"
 }
 {
-    "label" : "hibernate",
-    "action" : "thunar",
-    "text" : "Správce souborů  [ s ]",
-    "keybind" : "s"
-}
-{
-    "label" : "suspend",
+    "label" : "office",
     "action" : "libreoffice",
     "text" : "LibreOffice  [ l ]",
     "keybind" : "l"
 }
 {
+    "label" : "kalk",
+    "action" : "gnome-calculator",
+    "text" : "Kalkulačka  [ k ]",
+    "keybind" : "k"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Restart  [ r ]",
+    "keybind" : "r"
+}
+{
     "label" : "logout",
-    "action" : "geany",
-    "text" : "Textový editor  [ t ]",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Odhlásit  [ o ]",
     "keybind" : "t"
 }
 {
@@ -34,3 +64,10 @@
     "text" : "Vypnout  [ v ]",
     "keybind" : "v"
 }
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Vypnout  [ v ]",
+    "keybind" : "v"
+}
+
