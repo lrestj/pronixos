@@ -49,6 +49,9 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#cpu:hover,
+#temperature:hover,
+#memory:hover,
 #custom-menu:hover,
 #clock:hover,
 #backlight:hover,
@@ -84,7 +87,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #A2780E;
 }
 
 #workspaces button.active {
