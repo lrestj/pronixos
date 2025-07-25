@@ -58,6 +58,10 @@ button:focus, button:active, button:hover {
     background-image: image(url("//home/libor/.dotfiles/icons/vim.png"));
 }
 
+#yazi {
+    background-image: image(url("//home/libor/.dotfiles/icons/yazi.png"));
+}
+
 #logout {
     background-image: image(url("//home/libor/.dotfiles/icons/logout.png"));
 }
