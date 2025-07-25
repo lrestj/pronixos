@@ -9,6 +9,10 @@ in {
   services.greetd = {
     enable = true;
     settings = {
+      initial_session = {
+        command = "${hyprland-session}";
+        user = "libor";
+      };
       default_session = {
         command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format %c --remember --remember-session --sessions ${hyprland-session}";
         user = "greeter";
