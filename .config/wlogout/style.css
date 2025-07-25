@@ -50,12 +50,20 @@ button:focus, button:active, button:hover {
     background-image: image(url("//home/libor/.dotfiles/icons/fm.png"));
 }
 
+#term {
+    background-image: image(url("//home/libor/.dotfiles/icons/term.png"));
+}
+
+#vim {
+    background-image: image(url("//home/libor/.dotfiles/icons/vim.png"));
+}
+
 #logout {
     background-image: image(url("//home/libor/.dotfiles/icons/logout.png"));
 }
 
 #shutdown {
-    background-image: image(url("/home/libor/.dotfiles/icons/shutdown.png"));
+    background-image: image(url("/home/libor/.dotfiles/icons/power.png"));
 }
 
 #reboot {

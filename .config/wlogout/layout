@@ -47,21 +47,15 @@
     "keybind" : "r"
 }
 {
-    "label" : "logout",
-    "action" : "hyprctl dispatch exit",
-    "text" : "Odhlásit  [ o ]",
-    "keybind" : "t"
+    "label" : "term",
+    "action" : "$TERM",
+    "text" : "Terminal  [ e ]",
+    "keybind" : "e"
 }
 {
-    "label" : "reboot",
-    "action" : "systemctl reboot",
-    "text" : "Restart  [ r ]",
-    "keybind" : "r"
-}
-{
-    "label" : "shutdown",
-    "action" : "systemctl poweroff",
-    "text" : "Vypnout  [ v ]",
+    "label" : "vim",
+    "action" : "footclient -T Vim -e vim",
+    "text" : "Vim editor  [ v ]",
     "keybind" : "v"
 }
 {
@@ -70,4 +64,9 @@
     "text" : "Vypnout  [ v ]",
     "keybind" : "v"
 }
-
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Vypnout  [ v ]",
+    "keybind" : "v"
+}
