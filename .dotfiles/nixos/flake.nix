@@ -34,10 +34,10 @@
               modules = [
                   ./configuration.nix
                   ({ pkgs, ... }: {
-                    environment.systemPackages = [
-                        yazi.packages.${pkgs.system}.default
-                        waybar.packages.${pkgs.system}.waybar
-                    ];
+                      environment.systemPackages = [
+                          yazi.packages.${pkgs.system}.default
+                          waybar.packages.${pkgs.system}.waybar
+                      ];
 		  })
               ];
           };
