@@ -36,3 +36,5 @@ Dokumenty/
 .config/fontconfig/
 .config/geany/session.conf
 .local/share/sddm/
+.local/share/nvim/
+.local/state/nvim/
