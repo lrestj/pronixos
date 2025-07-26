@@ -53,7 +53,7 @@
     "memory": {
         "format": "   {}% ",
         "on-click": "pkill rofi || rofi -show drun -show-icons",
-        "on-click-right": "wlogout -s -c 5 -r 5"
+        "on-click-right": "wlogout -T 20 -L 20 -R 700 -B 455 -s -c 5 -r 5"
     },
 
     "cpu": {
