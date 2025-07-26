@@ -51,7 +51,7 @@
     },
 
     "memory": {
-        "format": "   {}% ",
+        "format": "  Menu   {}% ",
         "on-click": "pkill rofi || rofi -show drun -show-icons",
         "on-click-right": "wlogout -b 2 -T 10 -L 10 -R 980 -B 525 -s -c 5 -r 5 -l ~/.config/wlogout/menu"
     },
