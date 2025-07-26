@@ -1,0 +1,72 @@
+{
+    "label" : "browser",
+    "action" : "brave",
+    "text" : "Internet  ",
+    "keybind" : "b"
+}
+{
+    "label" : "fm",
+    "action" : "thunar",
+    "text" : "Soubory  ",
+    "keybind" : "f"
+}
+{
+    "label" : "kalk",
+    "action" : "gnome-calculator",
+    "text" : "    Kalkulačka  ",
+    "keybind" : "k"
+}
+{
+    "label" : "text",
+    "action" : "geany",
+    "text" : "   Text editor  ",
+    "keybind" : "t"
+}
+{
+    "label" : "office",
+    "action" : "libreoffice",
+    "text" : "   LibreOffice  ",
+    "keybind" : "l"
+}
+{
+    "label" : "skener",
+    "action" : "simple-scan",
+    "text" : "Skener  ",
+    "keybind" : "s"
+}
+{
+    "label" : "term",
+    "action" : "$TERM",
+    "text" : "  Terminal  ",
+    "keybind" : "e"
+}
+{
+    "label" : "vim",
+    "action" : "footclient -T Vim -e vim",
+    "text" : "    Vim editor  ",
+    "keybind" : "v"
+}
+{
+    "label" : "yazi",
+    "action" : "footclient -T Yazi -e yazi",
+    "text" : "Yazi FM  ",
+    "keybind" : "y"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "  Odhlásit  ",
+    "keybind" : "o"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Restart  ",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : " Vypnout  ",
+    "keybind" : "v"
+}
