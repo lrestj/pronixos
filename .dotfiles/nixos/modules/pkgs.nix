@@ -56,7 +56,6 @@
       lxqt.lxqt-policykit
       mako
       mpv
-      neovim
       networkmanagerapplet
       nwg-look
       pamixer
