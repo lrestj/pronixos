@@ -1,0 +1,23 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : "   Zamknout  ",
+    "keybind" : "z"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Odhlásit  ",
+    "keybind" : "o"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Restart  ",
+    "keybind" : "r"
+}{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Vypnout  ",
+    "keybind" : "v"
+}

@@ -63,7 +63,10 @@ button:focus, button:active, button:hover {
     background-image: image(url("//home/libor/.dotfiles/icons/yazi.png"));
 }
 
-#logout {
+#lock {
+    background-image: image(url("//home/libor/.dotfiles/icons/lock.png"));
+
+}#logout {
     background-image: image(url("//home/libor/.dotfiles/icons/logout.png"));
 }
 
