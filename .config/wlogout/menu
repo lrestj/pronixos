@@ -54,7 +54,7 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit",
+    "action" : "sleep 1 && hyprctl dispatch exit",
     "text" : "  Odhlásit  ",
     "keybind" : "o"
 }
