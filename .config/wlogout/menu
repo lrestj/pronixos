@@ -41,16 +41,16 @@
     "keybind" : "e"
 }
 {
-    "label" : "vim",
-    "action" : "footclient -T Vim -e vim",
-    "text" : "    Vim editor  ",
-    "keybind" : "v"
-}
-{
     "label" : "yazi",
     "action" : "footclient -T Yazi -e yazi",
     "text" : "Yazi FM  ",
     "keybind" : "y"
+}
+{
+    "label" : "vim",
+    "action" : "footclient -T Vim -e vim",
+    "text" : "    Vim editor  ",
+    "keybind" : "v"
 }
 {
     "label" : "logout",
