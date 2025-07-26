@@ -7,7 +7,7 @@
 {
     "label" : "text",
     "action" : "geany",
-    "text" : "Text editor  ",
+    "text" : " Text editor  ",
     "keybind" : "t"
 }
 {
@@ -31,13 +31,13 @@
 {
     "label" : "office",
     "action" : "libreoffice",
-    "text" : "LibreOffice  ",
+    "text" : " LibreOffice  ",
     "keybind" : "l"
 }
 {
     "label" : "kalk",
     "action" : "gnome-calculator",
-    "text" : "Kalkulačka  ",
+    "text" : "  Kalkulačka  ",
     "keybind" : "k"
 }
 {
@@ -55,7 +55,7 @@
 {
     "label" : "vim",
     "action" : "footclient -T Vim -e vim",
-    "text" : "Vim editor  ",
+    "text" : "  Vim editor  ",
     "keybind" : "v"
 }
 {
