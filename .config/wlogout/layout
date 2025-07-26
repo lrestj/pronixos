@@ -25,7 +25,7 @@
 {
     "label" : "browser",
     "action" : "brave",
-    "text" : "Prohlížeč internetu  [ b ]",
+    "text" : "Internet  [ b ]",
     "keybind" : "b"
 }
 {
