@@ -38,3 +38,5 @@ Dokumenty/
 .local/share/sddm/
 .local/share/nvim/
 .local/state/nvim/
+.config/QtProject.conf
+.config/libreoffice/4/user/store/
