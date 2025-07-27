@@ -8,8 +8,8 @@
         src = prev.fetchFromGitHub {
           owner = "vim";
           repo = "vim";
-          rev = "HEAD";
-          hash = "sha256-zyPtFqfJPzlb/QBxQ0j3hzWe9+0kTFH/XQ3aGp2jc2w=";
+          rev = "latest";
+          hash = "";
         };
      });
     })
