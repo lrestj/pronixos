@@ -1,5 +1,5 @@
 """"" VIM CONFIGURATION """""
-"
+
     "source ~/.config/vim/plugin/startiy.vim
     "source ~/.config/vim/plugin/fzf.vim
 
