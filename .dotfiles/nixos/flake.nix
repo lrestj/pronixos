@@ -21,16 +21,11 @@
       yazi,
       ... }@inputs:
 
-    let
-      system = "x86_64-linux";
-      lib = nixpkgs.lib;
-    in
-
   {
       nixosConfigurations = {
-          nixos = lib.nixosSystem {
+          nixos = nixpkgs.lib.nixosSystem {
+              system = "x86_64-linux";
               specialArgs = { inherit inputs; };
-              inherit system;
               modules = [
                   ./configuration.nix
                   ({ pkgs, ... }: {
