@@ -29,7 +29,15 @@
               specialArgs = { inherit inputs; };
               modules = [
                   ./configuration.nix
-                  { nixpkgs.overlays = [ inputs.vim-overlay.overlays.default ];}
+                  { nixpkgs.overlays = [ 
+                      (inputs.vim-overlay.overlays.features {
+                           compiledby = "Libor";
+                           lua = true;
+                           ruby = true;
+                           cscope = true;
+                           sodium = true;
+                      })
+                  ];}
                   ({ pkgs, ... }: {
                       environment.systemPackages = [
                           yazi.packages.${pkgs.system}.default
