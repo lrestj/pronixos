@@ -10,8 +10,8 @@
    let g:startify_custom_indices = ['e','v','a','y','x','f','g','h','n','u','i','o','p','l','k','j','w']
    let g:startify_custom_header = 'startify#pad(split(system("figlet -w 100 Vim -f cybermedium"), "\n"))'
 
-   let s:vim_version = matchstr(execute('version'), 'Vi IMproved \zs\d[^ ]*')
-   let s:ascii = [ ' verze ' . s:vim_version ]
+   let s:vim_version = matchstr(execute('version'), 'záplaty: \zs\d[^ ][^a-z]\d\d\d')
+   let s:ascii = [ ' verze 9.' . s:vim_version ]
    let g:startify_custom_footer = startify#center(s:ascii)
 
    let g:startify_lists = [
