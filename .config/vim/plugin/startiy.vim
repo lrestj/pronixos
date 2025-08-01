@@ -12,7 +12,6 @@
 
    let s:vim_version = matchstr(execute('version'), 'Vi IMproved \zs\d[^ ]*')
    let s:vim_patch = matchstr(execute('version'), 'záplaty: \zs\d[^ ][^a-z]\d\{3}')
-
    let s:ascii = [ ' verze ' . s:vim_version . ' patch ' . s:vim_patch]
    let g:startify_custom_footer = startify#center(s:ascii)
 
@@ -33,6 +32,5 @@
            \ ['󰎔 Nový soubor', ':enew'],
            \ [' Vim config', ':e ~/.config/vim/vimrc' ],
            \ ]
-
 
 """"" END OF FILE """""
