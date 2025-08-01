@@ -11,7 +11,7 @@
    let g:startify_custom_header = 'startify#pad(split(system("figlet -w 100 Vim -f cybermedium"), "\n"))'
 
    let s:vim_version = matchstr(execute('version'), 'Vi IMproved \zs\d[^ ]*')
-   let s:vim_patch = matchstr(execute('version'), 'záplaty: \zs\d[^ ][^a-z]\d\d\d')
+   let s:vim_patch = matchstr(execute('version'), 'záplaty: \zs\d[^ ][^a-z]\d\{3}')
 
    let s:ascii = [ ' verze ' . s:vim_version . ' patch ' . s:vim_patch]
    let g:startify_custom_footer = startify#center(s:ascii)
