@@ -33,5 +33,4 @@
            \ [' Vim config', ':e ~/.config/vim/vimrc' ],
            \ ]
 
-
 """"" END OF FILE """""
