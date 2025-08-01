@@ -7,7 +7,7 @@
                  \ ]
          
    let g:startify_enable_special = 0
-   let g:startify_custom_indices = ['e','v','a','y','x','f','g','h','n','u','i','o','p','l','k','j','w']
+   let g:startify_custom_indices = ['e','v','a','y','x','f','g','h','j','k','l','n','u','i','o','p','w']
    let g:startify_custom_header = 'startify#pad(split(system("figlet -w 100 Vim -f cybermedium"), "\n"))'
 
    let s:vim_version = matchstr(execute('version'), 'Vi IMproved \zs\d[^ ]*')
