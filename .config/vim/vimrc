@@ -70,7 +70,7 @@
     set showmatch mat=2
     set spelllang=cs,en
     set softtabstop=4 shiftwidth=4 expandtab
-    :set viminfo='34,<50,s10,h
+    set viminfo='33,<50,s10,h
     set wildcharm=<Tab>
     set wildoptions=pum,tagfile
     set undofile

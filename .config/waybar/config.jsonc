@@ -202,7 +202,7 @@
         "menu-file": "~/.config/waybar/power_menu.xml",
         "menu-actions": {
             "uspat": "systemctl suspend",
-            "odhlásit": "hyprctl dispatch exit",
+            "odhlásit": "sleep 1 && hyprctl dispatch exit",
             "vypnout": "systemctl poweroff",
             "restart": "systemctl reboot"
         }
