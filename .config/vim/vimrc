@@ -22,10 +22,10 @@
     vnoremap <A-j> :m '>+1<CR>gv
     vnoremap <A-k> :m '<-2<CR>gv
 
-    "Select all, sudo trick and numbered list
+    "Select all, numbered list and sudo trick
     noremap <leader>a :normal! ggV$G$<CR>
-    command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
     noremap <leader>c I0gvg
+    command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
     "Buffers prev, next, delete,show and new vertical split
     noremap <leader>b :bp<CR>
@@ -55,19 +55,16 @@
     syntax on
     filetype plugin indent on
     set autoread hidden
-    set ruler number cul
+    set number cul
     set directory=~/Public/
     set ignorecase smartcase
     set incsearch
     set laststatus=2
-    set lazyredraw
     set mouse=a
-    set scrolloff=2
-    set showmatch mat=3
+    set showmatch
     set spelllang=cs,en
     set softtabstop=4 shiftwidth=4 expandtab
     set viminfo='33,<50,s10,h
-    set wildcharm=<Tab>
     set wildoptions=pum,tagfile
     set undofile undolevels=5000
     set undodir=~/.config/vim/undodir
