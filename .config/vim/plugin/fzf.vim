@@ -6,8 +6,8 @@ let g:fzf_vim.command_prefix = 'Fzf'
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 nnoremap <A-b> :FzfBuffers<CR>
 nnoremap <A-c> :FzfChanges<CR>
-nnoremap <A-d> :FzfFiles<CR>
-nnoremap <A-f> :FzfRg<CR>
+nnoremap <A-f> :FzfFiles<CR>
+nnoremap <A-s> :FzfRg<CR>
 nnoremap <A-a> :FzfLines<CR>
 nnoremap <A-l> :FzfBLines<CR>
 nnoremap <A-m> :FzfMarks<CR>

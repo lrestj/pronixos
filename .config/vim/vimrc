@@ -1,6 +1,5 @@
 """"" VIM CONFIGURATION """""
 
-    "source ~/.config/vim/plugin/startiy.vim
     "source ~/.config/vim/plugin/fzf.vim
 
     "My remaps
@@ -13,9 +12,8 @@
     nnoremap <leader>q ZQ
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
-    noremap <leader>s :Startify<CR>
     noremap <leader>y :Yazi<CR>
-    nnoremap <leader>o :browse old<CR>
+    nnoremap <leader>o :FzfHistory<CR>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
@@ -87,9 +85,7 @@
     call plug#begin()
         "List your plugins here
         Plug 'tpope/vim-commentary'
-        " Plug 'mhinz/vim-startify'
         Plug 'junegunn/vim-peekaboo'
-        " Plug 'LnL7/vim-nix'
         Plug 'chriszarate/yazi.vim'
         Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
         Plug 'junegunn/fzf.vim'
