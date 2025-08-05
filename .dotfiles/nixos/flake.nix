@@ -6,7 +6,6 @@
   inputs = {
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
       hyprland.url = "github:hyprwm/Hyprland";
-      yazi.url = "github:sxyazi/yazi";
       nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
       waybar = {
           url = "github:alexays/waybar";
@@ -30,7 +29,6 @@
                   inputs.nix-flatpak.nixosModules.nix-flatpak
                   ({ pkgs, ... }: {
                       environment.systemPackages = [
-                        inputs.yazi.packages.${pkgs.system}.default
                         inputs.waybar.packages.${pkgs.system}.waybar
                       ];
 		  })
