@@ -52,16 +52,15 @@
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
     nnoremap <A-b> :FzfBuffers<CR>
     nnoremap <A-c> :FzfChanges<CR>
-    nnoremap <A-f> :FzfFiles<CR>
+    nnoremap <A-d> :FzfFiles<CR>
     nnoremap <A-s> :FzfRg<CR>
     nnoremap <A-a> :FzfLines<CR>
     nnoremap <A-l> :FzfBLines<CR>
     nnoremap <A-m> :FzfMarks<CR>
     nnoremap <A-u> :FzfJumps<CR>
-    nnoremap <A-h> :FzfHistory<CR>
+    nnoremap <A-f> :FzfHistory<CR>
     nnoremap <A-.> :FzfHistory:<CR>
     nnoremap <A-,> :FzfHistory/<CR>
-    nnoremap <leader>o :FzfHistory<CR>
 
     "Optional settings
     set background=dark   
