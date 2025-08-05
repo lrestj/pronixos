@@ -62,7 +62,7 @@
     nnoremap <A-.> :FzfHistory:<CR>
     nnoremap <A-,> :FzfHistory/<CR>
 
-    "Optional settings
+    "My settings
     set background=dark   
     colorscheme wildcharm
     syntax on
@@ -98,7 +98,6 @@
 
     "Plugins
     call plug#begin()
-        "List your plugins here
         Plug 'tpope/vim-commentary'
         Plug 'junegunn/vim-peekaboo'
         Plug 'chriszarate/yazi.vim'
