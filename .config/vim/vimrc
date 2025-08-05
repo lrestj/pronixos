@@ -11,6 +11,7 @@
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>y :Yazi<CR>
+    noremap <A-r> :registers
     noremap <A-v> :e ~/.config/vim/vimrc<CR>
 
     "Line down and up
@@ -32,9 +33,7 @@
     noremap <leader>x :bd<CR>
     noremap <leader>v :vnew<CR>
 
-    "Peekaboo and FZF settings
-    let g:peekaboo_prefix = '"'
-    let g:peekaboo_ins_prefix = '<c-e>'
+    "FZF settings
     let g:fzf_vim = {}
     let g:fzf_vim.command_prefix = 'Fzf'
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
@@ -82,7 +81,6 @@
     "Plugins
     call plug#begin()
         Plug 'tpope/vim-commentary'
-        Plug 'junegunn/vim-peekaboo'
         Plug 'chriszarate/yazi.vim'
         Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
         Plug 'junegunn/fzf.vim'
