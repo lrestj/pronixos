@@ -52,9 +52,9 @@
     nnoremap <A-b> :FzfBuffers<CR>
     nnoremap <A-c> :FzfChanges<CR>
     nnoremap <A-d> :FzfFiles<CR>
-    nnoremap <A-s> :FzfRg<CR>
-    nnoremap <A-a> :FzfLines<CR>
-    nnoremap <A-l> :FzfBLines<CR>
+    nnoremap <A-a> :FzfRg<CR>
+    nnoremap <A-l> :FzfLines<CR>
+    nnoremap <A-s> :FzfBLines<CR>
     nnoremap <A-m> :FzfMarks<CR>
     nnoremap <A-u> :FzfJumps<CR>
     nnoremap <A-f> :FzfHistory<CR>
