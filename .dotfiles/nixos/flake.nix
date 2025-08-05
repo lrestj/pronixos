@@ -7,7 +7,7 @@
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
       hyprland.url = "github:hyprwm/Hyprland";
       yazi.url = "github:sxyazi/yazi";
-      vim-overlay.url = "github:kawarimidoll/vim-overlay";
+      nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
       waybar = {
           url = "github:alexays/waybar";
           inputs.nixpkgs.follows = "nixpkgs";
@@ -18,8 +18,6 @@
   outputs = {
       self,
       nixpkgs,
-      waybar,
-      yazi,
       ... }@inputs:
 
   {
@@ -29,19 +27,11 @@
               specialArgs = { inherit inputs; };
               modules = [
                   ./configuration.nix
-                  { nixpkgs.overlays = [ 
-                      (inputs.vim-overlay.overlays.features {
-                           compiledby = "Libor";
-                           lua = true;
-                           ruby = true;
-                           cscope = true;
-                           sodium = true;
-                      })
-                  ];}
+                  inputs.nix-flatpak.nixosModules.nix-flatpak
                   ({ pkgs, ... }: {
                       environment.systemPackages = [
-                          yazi.packages.${pkgs.system}.default
-                          waybar.packages.${pkgs.system}.waybar
+                        inputs.yazi.packages.${pkgs.system}.default
+                        inputs.waybar.packages.${pkgs.system}.waybar
                       ];
 		  })
               ];

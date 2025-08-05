@@ -11,10 +11,15 @@
 
       ];
 
+
+
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
   nixpkgs.config.allowUnfree = true;
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+  environment.sessionVariables = {
+      LIBVA_DRIVER_NAME = "iHD";
+      NIXOS_OZONE_WL = "1";
+  };
 
   hardware = {
       cpu.intel.updateMicrocode = true;
