@@ -61,11 +61,8 @@
     set incsearch
     set laststatus=2
     set mouse=a
-    set showmatch
     set spelllang=cs,en
     set softtabstop=4 shiftwidth=4 expandtab
-    set viminfo='33,<50,s10,h
-    set wildoptions=pum,tagfile
     set undofile undolevels=5000
     set undodir=~/.config/vim/undodir
     command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
