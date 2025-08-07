@@ -3,11 +3,11 @@
 {
   nixpkgs.overlays = [
     (final: prev: {
-      vim-full = prev.vim-full.overrideAttrs (old: {
-        name = "Vim-full-git";
+      btop = prev.btop.overrideAttrs (old: {
+        name = "btop-git";
         src = prev.fetchFromGitHub {
-          owner = "vim";
-          repo = "vim";
+          owner = "aristocratos";
+          repo = "btop";
           rev = "latest";
           hash = "";
         };

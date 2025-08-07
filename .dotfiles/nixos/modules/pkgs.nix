@@ -17,7 +17,7 @@
   
   
   environment.systemPackages = with pkgs; [
-      qutebrowser
+      fzf fd bat
       alacritty
       baobab
       bibata-cursors
