@@ -59,7 +59,7 @@
     "cpu": {
         "format": "  {usage}%",
         "tooltip": false,
-        "on-click": "footclient",
+        "on-click": "foot",
         "on-click-right": "",
         "on-click-middle": ""
     },
@@ -69,7 +69,7 @@
         "critical-threshold": 80,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
-        "on-click": "pkill btop || footclient -T btop -e btop",
+        "on-click": "pkill btop || foot -T btop -e btop",
         "on-click-right": ""
     },
 
@@ -143,8 +143,8 @@
         // "device": "acpi_video1",
         "format": "  {percent}% {icon} ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-click-right": "pkill footclient || footclient",
-        "on-click": "pkill btop || footclient -T btop -e btop"
+        "on-click-right": "pkill foot || foot",
+        "on-click": "pkill btop || foot -T btop -e btop"
     },
 
     "tray": {

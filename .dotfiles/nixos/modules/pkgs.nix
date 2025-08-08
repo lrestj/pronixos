@@ -17,6 +17,7 @@
   
   
   environment.systemPackages = with pkgs; [
+      alacritty
       baobab
       bibata-cursors
       brave
@@ -68,6 +69,7 @@
       simple-scan
       slurp
       swaybg
+      tmux
       udiskie
       ueberzugpp
       unzip

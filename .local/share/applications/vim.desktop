@@ -5,6 +5,6 @@ Version=9.1
 Type=Application
 NoDisplay=false
 Terminal=false
-Exec=footclient -T Vim -e vim %f
+Exec=foot -T Vim -e vim %f
 Comment=Vlastní definice footclient -e vim %f
 Icon=gvim
