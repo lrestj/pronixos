@@ -17,8 +17,6 @@
   
   
   environment.systemPackages = with pkgs; [
-      fzf fd bat
-      alacritty
       baobab
       bibata-cursors
       brave
