@@ -54,6 +54,7 @@ set number cul
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
+set laststatus=2
 set mouse=a
 set spelllang=cs,en
 set softtabstop=4 shiftwidth=4 expandtab

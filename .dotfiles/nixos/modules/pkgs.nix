@@ -20,94 +20,99 @@
       inherit (config.nixpkgs) config;
     };
 
-  environment.systemPackages = [
-     pkgsStable.vim-full
-     pkgs.alacritty
-     pkgs.baobab
-     pkgs.bibata-cursors
-     pkgs.brave
-     pkgs.brightnessctl
-     pkgs.btop
-     pkgs.clipse
-     pkgs.dconf-editor
-     pkgs.efibootmgr
-     pkgs.eog
-     pkgs.evince
-     pkgs.exfatprogs
-     pkgs.fastfetch
-     pkgs.figlet
-     pkgs.file-roller
-     pkgs.fish
-     pkgs.font-manager
-     pkgs.foot
-     pkgs.fzf
-     pkgs.geany
-     pkgs.gnome-calculator
-     pkgs.gthumb
-     pkgs.hunspellDicts.cs_CZ
-     pkgs.hunspellDicts.en_US
-     pkgs.hypridle
-     pkgs.hyprlock
-     pkgs.hyprshot
-     pkgs.jq
-     pkgs.kdePackages.breeze-icons
-     pkgs.kdePackages.qt6ct
-     pkgs.kdePackages.qtsvg
-     pkgs.kdePackages.qtwayland
-     pkgs.killall
-     pkgs.krename
-     pkgs.libnotify
-     pkgs.libreoffice-fresh
-     pkgs.lxqt.lxqt-policykit
-     pkgs.mako
-     pkgs.mpv
-     pkgs.networkmanagerapplet
-     pkgs.nwg-look
-     pkgs.pamixer
-     pkgs.pavucontrol
-     pkgs.pdfarranger
-     pkgs.reaper  
-     pkgs.reaper-reapack-extension
-     pkgs.reaper-sws-extension
-     pkgs.ripgrep
-     pkgs.rofi
-     pkgs.rofimoji
-     pkgs.simple-scan
-     pkgs.slurp
-     pkgs.swaybg
-     pkgs.tmux
-     pkgs.udiskie
-     pkgs.ueberzugpp
-     pkgs.unzip
-     pkgs.vlc
-     pkgs.waypaper
-     pkgs.wget
-     pkgs.wl-clipboard
-     pkgs.wlogout
-     pkgs.wlsunset
-     pkgs.xdg-desktop-portal-gtk
-     pkgs.xdg-desktop-portal-hyprland
-     pkgs.xdg-utils
-     pkgs.xdg-user-dirs
-     pkgs.xnviewmp
-     pkgs.xournalpp
-     pkgs.yazi
-     pkgs.ytdownloader
-     pkgs.zip
-     pkgs.p7zip
-      (pkgs.writeScriptBin "sct" ''
-          #!/bin/sh
-          killall wlsunset &> /dev/null;
-          if [ $# -eq 1 ]; then
-            temphigh=$(( $1 + 1 ))
-            templow=$1
-            wlsunset -t $templow -T $temphigh &> /dev/null &
-          else
-            killall wlsunset &> /dev/null;
-          fi
-      '')
-  ];
-  
+    environment.systemPackages =
+        (with pkgs; [
+            alacritty
+            baobab
+            bibata-cursors
+            brave
+            brightnessctl
+            btop
+            clipse
+            dconf-editor
+            efibootmgr
+            eog
+            evince
+            exfatprogs
+            fastfetch
+            figlet
+            file-roller
+            fish
+            font-manager
+            foot
+            fzf
+            geany
+            gnome-calculator
+            gthumb
+            hunspellDicts.cs_CZ
+            hunspellDicts.en_US
+            hypridle
+            hyprlock
+            hyprshot
+            jq
+            kdePackages.breeze-icons
+            kdePackages.qt6ct
+            kdePackages.qtsvg
+            kdePackages.qtwayland
+            killall
+            krename
+            libnotify
+            libreoffice-fresh
+            lxqt.lxqt-policykit
+            mako
+            mpv
+            networkmanagerapplet
+            nwg-look
+            pamixer
+            pavucontrol
+            pdfarranger
+            reaper  
+            reaper-reapack-extension
+            reaper-sws-extension
+            ripgrep
+            rofi
+            rofimoji
+            simple-scan
+            slurp
+            swaybg
+            tmux
+            udiskie
+            ueberzugpp
+            unzip
+            vlc
+            waypaper
+            wget
+            wl-clipboard
+            wlogout
+            wlsunset
+            xdg-desktop-portal-gtk
+            xdg-desktop-portal-hyprland
+            xdg-utils
+            xdg-user-dirs
+            xnviewmp
+            xournalpp
+            yazi
+            ytdownloader
+            zip
+            p7zip
+            (pkgs.writeScriptBin "sct" ''
+                #!/bin/sh
+                killall wlsunset &> /dev/null;
+                if [ $# -eq 1 ]; then
+                    temphigh=$(( $1 + 1 ))
+                    templow=$1
+                    wlsunset -t $templow -T $temphigh &> /dev/null &
+                else
+                    killall wlsunset &> /dev/null;
+                fi
+            '')
+            ])
+
+        ++
+
+        (with pkgsStable; [
+            vim-full
+        ]);
   
   programs = {
       xfconf.enable = true;
