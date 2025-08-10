@@ -1,13 +1,13 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   nixpkgs.overlays = [
     (final: prev: {
-      btop = prev.btop.overrideAttrs (old: {
-        name = "btop-git";
+      vim-full = prev.vim-full.overrideAttrs (old: {
+        name = "vim-full-git";
         src = prev.fetchFromGitHub {
-          owner = "aristocratos";
-          repo = "btop";
+          owner = "vim";
+          repo = "vim";
           rev = "latest";
           hash = "";
         };
