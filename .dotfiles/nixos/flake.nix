@@ -1,6 +1,6 @@
 {
 
-  description = "My flake";
+  description = "My NixOS config flake";
 
   
   inputs = {
