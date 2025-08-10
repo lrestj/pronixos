@@ -15,12 +15,7 @@
   };
 
 
-  outputs = {
-      self,
-      nixpkgs,
-      ... }@inputs:
-
-  {
+  outputs = { self, nixpkgs, ... }@inputs: {
       nixosConfigurations = {
           nixos = nixpkgs.lib.nixosSystem {
               system = "x86_64-linux";
