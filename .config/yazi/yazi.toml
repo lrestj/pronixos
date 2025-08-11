@@ -58,7 +58,7 @@ play = [
 
 [open]
 prepend_rules = [
-	# { name = "*.vim", use = "edit" },
+	 { name = "*.docx", use = "open" },
 	# { name = "vimrc", use = "edit" },
 ]
 
@@ -67,6 +67,8 @@ rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
+        # Document
+	{ mime = "*/docx", use = [ "open", "edit", "reveal" ] },
 	# Image
 	{ mime = "image/*", use = [ "open", "reveal" ] },
 	# Media
@@ -79,7 +81,7 @@ rules = [
 	{ mime = "*/javascript", use = [ "edit", "reveal" ] },
 	# Empty file
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
-    # Data file
+        # Data file
 	{ mime = "data", use = [ "edit", "reveal" ] },
 	# Fallback
 	{ name = "*", use = [ "edit", "open", "reveal" ] },
