@@ -58,7 +58,7 @@ play = [
 
 [open]
 prepend_rules = [
-	 { name = "*.docx", use = "open" },
+	 { name = "*.{doc,docx,odt,xls,xlsx}", use = "open" },
 	# { name = "vimrc", use = "edit" },
 ]
 
@@ -67,8 +67,6 @@ rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
-        # Document
-	{ mime = "*/docx", use = [ "open", "edit", "reveal" ] },
 	# Image
 	{ mime = "image/*", use = [ "open", "reveal" ] },
 	# Media
