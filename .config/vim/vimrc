@@ -50,7 +50,8 @@ colorscheme wildcharm
 syntax on
 filetype plugin indent on
 set autoread hidden
-set number ruler cul
+set number cul
+set ruler rulerformat=%17(\ \ %v\ \ %l\ %p%%%)
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
