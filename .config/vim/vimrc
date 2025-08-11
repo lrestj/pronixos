@@ -96,7 +96,6 @@ hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 hi LineNr ctermbg=NONE
 
-
 "Toggle background transparency
 let t:isTransparent = 0
 function! BGToggleTransparency()
