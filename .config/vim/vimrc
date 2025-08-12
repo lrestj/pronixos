@@ -52,7 +52,7 @@ filetype plugin indent on
 set autoread hidden
 set number cul
 set ls=0
-set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%%)
+set ruler rulerformat=%44(%F\ \ %v\ \ %l\ %p%%%)
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
@@ -73,9 +73,11 @@ function! ToggleHiddenAll()
     if s:hidden_all  == 0
         let s:hidden_all = 1
         set laststatus=0
+        set ruler
     else
         let s:hidden_all = 0
         set laststatus=2
+        set noruler
     endif
 endfunction
 nnoremap<silent> <S-h> :call ToggleHiddenAll()<CR>
