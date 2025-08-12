@@ -12,7 +12,7 @@ nnoremap <leader><leader> :set relativenumber!<CR>
 nnoremap <leader>, :set nohlsearch<CR>
 noremap <leader>y :Yazi<CR>
 noremap <A-r> :registers
-noremap <A-v> :e ~/.config/vim/vimrc<CR>
+noremap <A-v> :e $MYVIMRC<CR>
 noremap <leader>a :normal! ggV$G$<CR> 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
@@ -51,8 +51,7 @@ syntax on
 filetype plugin indent on
 set autoread hidden
 set number cul
-set ls=0
-set ruler rulerformat=%44(%F\ \ %v\ \ %l\ %p%%%)
+set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%%)
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
