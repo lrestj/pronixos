@@ -79,6 +79,7 @@
             udiskie
             ueberzugpp
             unzip
+            # vim-full
             vlc
             waypaper
             wget
