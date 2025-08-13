@@ -23,8 +23,8 @@ vnoremap <A-j> :m '>+1<CR>gv
 vnoremap <A-k> :m '<-2<CR>gv
 
 "Window next, buffer next, delete and vertical split
-noremap <leader>b :bn<CR>
 noremap <leader>n <C-w>w
+noremap <leader>b :bn<CR>
 noremap <leader>x :bd<CR>
 noremap <leader>v :vnew<CR>
 
@@ -51,7 +51,7 @@ syntax on
 filetype plugin indent on
 set autoread hidden
 set number cul
-set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%%)
+set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%\ \%)
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
@@ -62,7 +62,7 @@ set undofile undolevels=5000
 set undodir=~/.config/vim/undodir
 command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
 
-"Statusline look and toggle visibility
+"Statusline look and toggle on/off
 hi StatusLine ctermbg=0 ctermfg=22
 set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
 set statusline+=%=reg\ {%{v:register}}\ \ 
