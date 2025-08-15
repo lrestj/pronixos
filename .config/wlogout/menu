@@ -42,13 +42,13 @@
 }
 {
     "label" : "yazi",
-    "action" : "footclient -T Yazi -e yazi",
+    "action" : "foot -T Yazi -e yazi",
     "text" : "Yazi FM  ",
     "keybind" : "y"
 }
 {
     "label" : "vim",
-    "action" : "footclient -T Vim -e vim",
+    "action" : "foot -T Vim -e vim",
     "text" : "    Vim editor  ",
     "keybind" : "v"
 }
