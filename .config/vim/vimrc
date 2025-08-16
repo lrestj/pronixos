@@ -55,7 +55,7 @@ set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%\ \%)
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
-set mouse=a
+set mouse=a so=5
 set spelllang=cs,en
 set softtabstop=4 shiftwidth=4 expandtab
 set undofile undolevels=5000

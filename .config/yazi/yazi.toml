@@ -58,7 +58,7 @@ play = [
 
 [open]
 prepend_rules = [
-	 { name = "*.{doc,docx,odt,xls,xlsx}", use = "open" },
+	 { name = "*.{pdf,doc,docx,odt,xls,xlsx}", use = "open" },
 	# { name = "vimrc", use = "edit" },
 ]
 
