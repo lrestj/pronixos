@@ -8,12 +8,12 @@ nnoremap <BS> X
 nnoremap Y y$
 map <C-c> "+y
 nnoremap <leader>q ZQ
-nnoremap <leader><leader> :set relativenumber!<CR>
-nnoremap <leader>, :set nohlsearch<CR>
+nnoremap <silent><leader><leader> :set relativenumber!<CR>
+nnoremap <silent><leader>, :set nohlsearch<CR>
 noremap <leader>y :Yazi<CR>
 noremap <A-r> :registers
-noremap <A-v> :e $MYVIMRC<CR>
-noremap <leader>a :normal! ggV$G$<CR> 
+noremap <silent> <A-v> :e $MYVIMRC<CR>
+noremap <silent> <leader>a :normal! ggV$G$<CR> 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 "Line down and up
@@ -52,10 +52,11 @@ filetype plugin indent on
 set autoread hidden
 set number cul
 set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%\ \%)
+set shortmess+=F
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
-set mouse=a so=5
+set mouse=a scrolloff=5
 set spelllang=cs,en
 set softtabstop=4 shiftwidth=4 expandtab
 set undofile undolevels=5000
