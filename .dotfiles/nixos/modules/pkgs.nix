@@ -9,6 +9,7 @@
   
   fonts.packages = with pkgs; [
       font-awesome
+      corefonts vista-fonts
       noto-fonts
       nerd-fonts.hack
       jetbrains-mono
