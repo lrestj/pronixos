@@ -22,6 +22,7 @@
 
     environment.systemPackages =
         (with pkgs; [
+            onlyoffice-desktopeditors
             alacritty
             baobab
             bibata-cursors
