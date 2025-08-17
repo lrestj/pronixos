@@ -90,8 +90,8 @@ call plug#begin()
 call plug#end()
 
 "Cursor look
-let &t_SI = "\<Esc>[6 q" "Vertical line in INSERT
-let &t_SR = "\<Esc>[4 q" "Underline in REPLACE
+let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
+let &t_SR = "\<Esc>[3 q" "Blinking underline in REPLACE
 let &t_EI = "\<Esc>[2 q" "Block in other modes
 
 "Transparent background    
