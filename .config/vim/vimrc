@@ -59,23 +59,9 @@ set undofile undolevels=5000
 set undodir=~/.config/vim/undodir
 command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
 
-"Statusline look and toggle on/off
+"Statusline look
 hi StatusLine ctermbg=0 ctermfg=22
 set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
-
-let s:hidden_all = 1
-function! ToggleHiddenAll()
-    if s:hidden_all  == 0
-        let s:hidden_all = 1
-        set laststatus=0
-        set ruler
-    else
-        let s:hidden_all = 0
-        set laststatus=2
-        set noruler
-    endif
-endfunction
-nnoremap<silent> <S-h> :call ToggleHiddenAll()<CR>
 
 "Plugins
 call plug#begin()
