@@ -4,14 +4,12 @@
 let mapleader=" "
 nnoremap ; :
 nnoremap : ;
-nnoremap <BS> X
 nnoremap Y y$
 map <C-c> "+y
 nnoremap <leader>q ZQ
 nnoremap <silent><leader><leader> :set relativenumber!<CR>
 nnoremap <silent><leader>, :set nohlsearch<CR>
 noremap <leader>y :Yazi<CR>
-noremap <A-r> :registers
 noremap <silent> <A-v> :e $MYVIMRC<CR>
 noremap <silent> <leader>a :normal! ggV$G$<CR> 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
@@ -51,7 +49,7 @@ syntax on
 filetype plugin indent on
 set autoread hidden
 set number cul
-set ruler rulerformat=%63(%F\ \ %v\ \ %l\ %p%%\ \%)
+set ruler rulerformat=%63(%F\ \ %v\ \ \ %l\ \ %p%%\ \%)
 set shortmess+=F title
 set directory=~/Public/
 set ignorecase smartcase
@@ -65,8 +63,7 @@ command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -d
 
 "Statusline look and toggle on/off
 hi StatusLine ctermbg=0 ctermfg=22
-set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
-set statusline+=%=reg\ {%{v:register}}\ \ 
+set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
 
 let s:hidden_all = 1
 function! ToggleHiddenAll()
@@ -88,6 +85,7 @@ call plug#begin()
     Plug 'chriszarate/yazi.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/vim-peekaboo'
 call plug#end()
 
 "Cursor look
