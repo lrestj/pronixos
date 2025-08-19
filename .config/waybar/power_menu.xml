@@ -19,7 +19,7 @@
         </child>
         <child>
             <object class="GtkMenuItem" id="vypnout">
-                <property name="label">  Vypnout</property>
+                <property name="label">󰐥  Vypnout</property>
             </object>
         </child>
         <child>
