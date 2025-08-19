@@ -47,13 +47,11 @@ set background=dark
 colorscheme wildcharm
 syntax on
 filetype plugin indent on
-set autoread hidden
-set number cul
+set number cul autoread hidden
 set ruler rulerformat=%63(%F\ \ %v\ \ \ %l\ \ %p%%\ \%)
 set shortmess+=F title
 set directory=~/Public/
-set ignorecase smartcase
-set incsearch
+set ignorecase smartcase incsearch
 set mouse=a scrolloff=5
 set spelllang=cs,en
 set softtabstop=4 shiftwidth=4 expandtab
@@ -97,21 +95,5 @@ let &t_EI = "\<Esc>[2 q" "Block in other modes
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 hi LineNr ctermbg=NONE
-
-"Toggle background transparency
-let t:isTransparent = 0
-function! BGToggleTransparency()
-    if t:isTransparent == 0
-        hi Normal ctermbg=black
-        set background=dark
-        let t:isTransparent = 1
-    else
-        hi Normal ctermbg=NONE
-        hi NonText ctermbg=NONE
-        hi LineNr ctermbg=NONE
-        let t:isTransparent = 0
-    endif
-endfunction
-nnoremap <A-t> :call BGToggleTransparency()<CR>
 
 """"" END OF FILE """""
