@@ -51,8 +51,8 @@ syntax on
 filetype plugin indent on
 set autoread hidden
 set number cul
-set ruler rulerformat=%40(%F\ \ %v\ \ %l\ %p%%\ \%)
-set shortmess+=F
+set ruler rulerformat=%63(%F\ \ %v\ \ %l\ %p%%\ \%)
+set shortmess+=F title
 set directory=~/Public/
 set ignorecase smartcase
 set incsearch
