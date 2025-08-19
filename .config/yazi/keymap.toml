@@ -165,10 +165,10 @@ keymap = [
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go to the home directory" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go to the config directory" },
-	{ on = [ "g", "d" ],       run = "cd ~/Stažené",   desc = "Go to the downloads directory" },
+	{ on = [ "g", "d" ],       run = "cd ~/.dotfiles",     desc = "Go to the dotfiles directory" },
+	{ on = [ "g", "s" ],       run = "cd ~/Stažené",   desc = "Go to the downloads directory" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Go to a directory interactively" },
 	{ on = [ "g", "n" ],       run = "cd /data/nfs", desc = "Go to NAS" },
-	{ on = [ "g", "." ],       run = "cd ~/.dotfiles", desc = "Go to .dotfiles" },
 
 	# Tabs
 	{ on = "t", run = "tab_create --current", desc = "Create a new tab with CWD" },
