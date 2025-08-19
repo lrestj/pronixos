@@ -23,6 +23,7 @@
 
     environment.systemPackages =
         (with pkgs; [
+            glib util-linux
             onlyoffice-desktopeditors
             alacritty
             baobab
