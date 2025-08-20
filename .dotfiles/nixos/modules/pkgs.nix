@@ -23,8 +23,6 @@
 
     environment.systemPackages =
         (with pkgs; [
-            glib util-linux
-            onlyoffice-desktopeditors
             alacritty
             baobab
             bibata-cursors
@@ -45,6 +43,7 @@
             foot
             fzf
             geany
+            glib util-linux
             gnome-calculator
             gthumb
             hunspellDicts.cs_CZ
