@@ -20,7 +20,7 @@ nnoremap <A-k> :m .-2<CR>
 vnoremap <A-j> :m '>+1<CR>gv
 vnoremap <A-k> :m '<-2<CR>gv
 
-"Window next, buffer next, delete and vertical split
+"Window next, buffer next, delete and vsplit
 noremap <leader>n <C-w>w
 noremap <leader>b :bn<CR>
 noremap <leader>x :bd<CR>
@@ -48,7 +48,7 @@ colorscheme wildcharm
 syntax on
 filetype plugin indent on
 set number cul autoread hidden
-set ruler rulerformat=%63(%F\ \ %v\ \ \ %l/%L\ \ %p%%\ \%)
+set ruler rulerformat=%63(%F\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 set shortmess+=F title
 set directory=~/Public/
 set ignorecase smartcase incsearch
@@ -63,15 +63,6 @@ command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -d
 hi StatusLine ctermbg=0 ctermfg=22
 set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
 
-"Plugins
-call plug#begin()
-    Plug 'tpope/vim-commentary'
-    Plug 'chriszarate/yazi.vim'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/vim-peekaboo'
-call plug#end()
-
 "Cursor look
 let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
 let &t_SR = "\<Esc>[3 q" "Blinking underline in REPLACE
@@ -81,5 +72,14 @@ let &t_EI = "\<Esc>[2 q" "Block in other modes
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 hi LineNr ctermbg=NONE
+
+"Plugins
+call plug#begin()
+    Plug 'tpope/vim-commentary'
+    Plug 'chriszarate/yazi.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/vim-peekaboo'
+call plug#end()
 
 """"" END OF FILE """""

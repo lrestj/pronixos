@@ -1,106 +1,73 @@
 """"" NEOVIM CONFIGURATION """""
 
-    "source ~/.config/nvim/plugin/startify.vim
-    "source ~/.config/nvim/plugin/fzf.vim
-
     "My remaps
     let mapleader=" "
     nnoremap ; :
     nnoremap : ;
-    nnoremap <BS> X
     nnoremap <leader>q ZQ
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
-    noremap <leader>s :Startify<CR>
     noremap <leader>y :Tfm<cr>
-    noremap <silent><leader>w :so %<cr>
+    noremap <leader>a :normal! ggV$G$<CR>
+    command! W execute 'SudaWrite<CR>'
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
     nnoremap <A-k> :m .-2<CR>
-    inoremap <A-j> <Esc>:m .+1<CR>gi
-    inoremap <A-k> <Esc>:m .-2<CR>gi
     vnoremap <A-j> :m '>+1<CR>gv
     vnoremap <A-k> :m '<-2<CR>gv
 
-    "Select all and sudo trick
-    noremap <leader>a :normal! ggV$G$<CR>
-    command! W execute 'SudaWrite<CR>'
-
-    "Windows focus, rearrange and swap
-    noremap <C-j> <C-w>j
-    noremap <C-k> <C-w>k
-    noremap <C-h> <C-w>h
-    noremap <C-l> <C-w>l
-    noremap <C-n> <C-w>w
-    noremap <leader>r <C-w>r
-    noremap <leader>l <C-w>L
-    noremap <leader>h <C-w>H
-
-    "Buffers prev, next, delete,show and new vertical split
-    noremap <leader>b :bp<CR>
-    noremap <leader>n :bn<CR>
+    "Window next, buffer next, delete and vsplit
+    noremap <leader>n <C-w>w
+    noremap <leader>b :bn<CR>
     noremap <leader>x :bd<CR>
-    nnoremap <leader><Tab> :buffer<Space><Tab>
     noremap <leader>v :vnew<CR>
 
-    "Numbered list macro
-    noremap <leader>c I0gvg
+    "FZF settings
+    let g:fzf_vim = {}
+    let g:fzf_vim.command_prefix = 'Fzf'
+    set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+    nnoremap <A-b> :FzfBuffers<CR>
+    nnoremap <A-c> :FzfChanges<CR>
+    nnoremap <A-d> :FzfFiles<CR>
+    nnoremap <A-g> :FzfRg<CR>
+    nnoremap <A-s> :FzfLines<CR>
+    nnoremap <A-a> :FzfBLines<CR>
+    nnoremap <A-m> :FzfMarks<CR>
+    nnoremap <A-u> :FzfJumps<CR>
+    nnoremap <A-f> :FzfHistory<CR>
+    nnoremap <A-.> :FzfHistory:<CR>
+    nnoremap <A-,> :FzfHistory/<CR>
     
     "Optional settings
     colorscheme wildcharm
     filetype plugin indent on
-    set wildmode=full:lastused
-    set cul
-    set directory=~/Veřejné//
+    set cul laststatus=1
+    set directory=~/Public/
     set ignorecase smartcase
     set lazyredraw
-    set number
-    set scrolloff=2
-    set showmatch mat=2
+    set scrolloff=5
     set spelllang=cs,en
     set tabstop=4 shiftwidth=4 expandtab
-    set wildcharm=<Tab>
     set shada=!,'30,<50,s10,h
     let g:suda#prompt = 'Heslo: '
+    set ruler rulerformat=%63(%F\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 
     "Statusline
     hi StatusLine guifg=#153bda guibg=#000000         
-    set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
-    set statusline+=%=reg\ {%{v:register}}\ \\ 
+    set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
 
     " Transparent background
     high Normal guibg=none
     high NonText guibg=none
     high LineNr guibg=none
          
-    " Toggle background transparency
-    let t:isTransparent = 0
-    function! BGToggleTransparency()
-      if t:isTransparent == 0
-        hi Normal guibg=black
-        set background=dark
-        let t:isTransparent = 1
-      else
-        hi Normal guibg=none
-        hi NonText guibg=none
-        hi LineNr guibg=none
-        let t:isTransparent = 0
-      endif
-    endfunction
-    nnoremap <silent><A-t> :call BGToggleTransparency()<CR>
-
     "Plugins
     call plug#begin()
-    " List your plugins here
-    Plug 'mhinz/vim-startify'
     Plug 'junegunn/vim-peekaboo'
-    Plug 'LnL7/vim-nix'
     Plug 'Rolv-Apneseth/tfm.nvim'
-    Plug 'nvim-lua/plenary.nvim'
     Plug 'ibhagwan/fzf-lua'
     Plug 'lambdalisue/vim-suda'
     call plug#end()
-
 
 """"" END OF FILE """""
