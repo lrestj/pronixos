@@ -42,6 +42,13 @@ nnoremap <A-f> :FzfHistory<CR>
 nnoremap <A-.> :FzfHistory:<CR>
 nnoremap <A-,> :FzfHistory/<CR>
 
+"Netrw 
+au FileType netrw nmap <buffer> h -
+au FileType netrw nmap <buffer> <left> -
+au FileType netrw nmap <buffer> l <CR>
+au FileType netrw nmap <buffer> <right> <CR>
+let g:netrw_banner = 0
+
 "My settings
 set background=dark   
 colorscheme wildcharm
