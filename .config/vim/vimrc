@@ -2,23 +2,16 @@
 
 "My remaps
 let mapleader=" "
-nnoremap ; :
-nnoremap : ;
-nnoremap Y y$
-map <C-c> "+y
-nnoremap <leader>q ZQ
-nnoremap <silent><leader><leader> :set relativenumber!<CR>
-nnoremap <silent><leader>, :set nohlsearch<CR>
+nnoremap Q ZQ
 noremap <leader>y :Yazi<CR>
 noremap <silent> <A-v> :e $MYVIMRC<CR>
-noremap <silent> <leader>a :normal! ggV$G$<CR> 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 "Line down and up
-nnoremap <A-j> :m .+1<CR>
-nnoremap <A-k> :m .-2<CR>
-vnoremap <A-j> :m '>+1<CR>gv
-vnoremap <A-k> :m '<-2<CR>gv
+nnoremap <A-j> :m.+1<CR>
+nnoremap <A-k> :m.-2<CR>
+vnoremap <A-j> :m'>+1<CR>gv
+vnoremap <A-k> :m'<-2<CR>gv
 
 "Window next, buffer next, delete and vsplit
 noremap <leader>n <C-w>w
