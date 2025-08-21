@@ -4,7 +4,6 @@
 let mapleader=" "
 nnoremap Q ZQ
 noremap <leader>y :Yazi<CR>
-noremap <silent> <A-v> :e $MYVIMRC<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 "Line down and up
