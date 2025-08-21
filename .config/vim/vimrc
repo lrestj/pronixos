@@ -35,12 +35,6 @@ nnoremap <A-f> :FzfHistory<CR>
 nnoremap <A-.> :FzfHistory:<CR>
 nnoremap <A-,> :FzfHistory/<CR>
 
-"Netrw 
-au FileType netrw nmap <buffer> h -
-au FileType netrw nmap <buffer> <left> -
-au FileType netrw nmap <buffer> l <CR>
-au FileType netrw nmap <buffer> <right> <CR>
-
 "My settings
 set background=dark   
 colorscheme wildcharm
@@ -57,10 +51,6 @@ set softtabstop=4 shiftwidth=4 expandtab
 set undofile undolevels=5000
 set undodir=~/.config/vim/undodir
 command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
-
-"Statusline look
-" hi StatusLine ctermbg=0 ctermfg=22
-" set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
 
 "Cursor look
 let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
