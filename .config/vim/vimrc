@@ -47,7 +47,7 @@ colorscheme wildcharm
 syntax on
 filetype plugin indent on
 set number cul autoread hidden
-set ruler rulerformat=%63(%F\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
+set ruler rulerformat=%63(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 set shortmess+=F title
 set directory=~/Public/
 set ignorecase smartcase incsearch
@@ -59,8 +59,8 @@ set undodir=~/.config/vim/undodir
 command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
 
 "Statusline look
-hi StatusLine ctermbg=0 ctermfg=22
-set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
+" hi StatusLine ctermbg=0 ctermfg=22
+" set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y%=\ \ 
 
 "Cursor look
 let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
