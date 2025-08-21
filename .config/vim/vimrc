@@ -21,7 +21,7 @@ noremap <leader>v :vnew<CR>
 "FZF settings
 let g:fzf_vim = {}
 let g:fzf_vim.command_prefix = 'Fzf'
-set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+" set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 nnoremap <A-a> :FzfBLines<CR>
 nnoremap <A-s> :FzfLines<CR>
 nnoremap <A-d> :FzfFiles<CR>
