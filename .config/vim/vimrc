@@ -57,7 +57,8 @@ let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
 let &t_SR = "\<Esc>[3 q" "Blinking underline in REPLACE
 let &t_EI = "\<Esc>[2 q" "Block in other modes
 
-"Transparent background    
+"Transparent and statusline background    
+hi StatusLine ctermbg=0 ctermfg=22
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
 hi LineNr ctermbg=NONE
