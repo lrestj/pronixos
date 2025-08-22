@@ -24,7 +24,7 @@ nnoremap <A-g> :FzfRg<CR>
 nnoremap <A-b> :FzfBuffers<CR>
 nnoremap <A-c> :FzfChanges<CR>
 nnoremap <A-m> :FzfMarks<CR>
-nnoremap <A-u> :FzfJumps<CR>
+nnoremap <A-j> :FzfJumps<CR>
 nnoremap <A-.> :FzfHistory:<CR>
 nnoremap <A-,> :FzfHistory/<CR>
 
@@ -33,7 +33,7 @@ set background=dark
 colorscheme wildcharm
 syntax on
 filetype plugin indent on
-set number cul title autoread hidden
+set nu cul title autoread hidden
 set ruler rulerformat=%63(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 set directory=~/Public/
 set ignorecase smartcase incsearch
@@ -49,7 +49,7 @@ let &t_SI = "\<Esc>[1 q" "Blinking block in INSERT
 let &t_SR = "\<Esc>[3 q" "Blinking underline in REPLACE
 let &t_EI = "\<Esc>[2 q" "Block in other modes
 
-"Transparent and statusline background    
+"Statusline and transparent background    
 hi StatusLine ctermbg=0 ctermfg=22
 hi Normal ctermbg=NONE
 hi NonText ctermbg=NONE
