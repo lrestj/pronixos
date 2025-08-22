@@ -9,9 +9,9 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 "Window next, buffer next, delete and vsplit
 noremap <leader>n <C-w>w
-noremap <leader>b :bn<CR>
-noremap <leader>x :bd<CR>
-noremap <leader>v :vnew<CR>
+noremap <leader>b :bn<CR><CR>
+noremap <leader>x :bd<CR><CR>
+noremap <leader>v :vnew<CR><CR>
 
 "FZF settings
 let g:fzf_vim = {}
