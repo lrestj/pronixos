@@ -8,10 +8,7 @@
         ./modules/pkgs.nix
         ./modules/greetd.nix
         ./modules/console.nix
-
       ];
-
-
 
   xdg.portal.enable = true;
   documentation.man.generateCaches = false;
