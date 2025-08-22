@@ -4,6 +4,7 @@
 let mapleader=" "
 nnoremap Q ZQ
 noremap <leader>y :Yazi<CR>
+noremap <leader><leader> :set relativenumber!<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 "Line down and up
