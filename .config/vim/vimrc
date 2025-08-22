@@ -7,12 +7,6 @@ noremap <leader>y :Yazi<CR>
 noremap <leader><leader> :set relativenumber!<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-"Line down and up
-nnoremap <A-j> :m.+1<CR>
-nnoremap <A-k> :m.-2<CR>
-vnoremap <A-j> :m'>+1<CR>gv
-vnoremap <A-k> :m'<-2<CR>gv
-
 "Window next, buffer next, delete and vsplit
 noremap <leader>n <C-w>w
 noremap <leader>b :bn<CR>
