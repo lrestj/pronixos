@@ -33,7 +33,8 @@ set background=dark
 colorscheme wildcharm
 syntax on
 filetype plugin indent on
-set nu cul title ar hidden lz
+set nu cul autoread hidden lz
+set title titlestring=%F
 set ruler rulerformat=%63(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 set directory=~/Public/
 set ignorecase smartcase incsearch
