@@ -4,10 +4,10 @@
       custom-sddm-astronaut = pkgs.sddm-astronaut.override {
           embeddedTheme = "jake_the_dog";
       };
-  
   in
 
 {
+  
   services.displayManager = {
       autoLogin = {
           enable = true;

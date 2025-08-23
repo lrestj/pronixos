@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
+
     services.flatpak = {
         enable = true;
         packages = [
@@ -11,6 +12,7 @@
             onCalendar = "weekly";
         };
     };
+
 }
 
 #####  END OF FILE  #####
