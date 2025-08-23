@@ -3,7 +3,6 @@
 "My remaps
 let mapleader=" "
 nnoremap Q ZQ
-noremap <leader>y :Yazi<CR>
 noremap <leader><leader> :set relativenumber!<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
@@ -59,7 +58,7 @@ hi LineNr ctermbg=NONE
 "Plugins
 call plug#begin()
     Plug 'tpope/vim-commentary'
-    Plug 'chriszarate/yazi.vim'
+    Plug 'Konfekt/filepicker.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/vim-peekaboo'
