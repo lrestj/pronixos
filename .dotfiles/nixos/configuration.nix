@@ -93,7 +93,7 @@
       kernelPackages = pkgs.linuxPackages_latest;
       kernel.sysctl."vm.swappiness" = 10;
       kernelParams = [ "nvidia-drm.fbdev=1" ];
-      initrd.kernelModules = [ "nvidia" "i915" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+      initrd.kernelModules = [ "nvidia" "i915" "nvidia_modeset" "nvidia_drm" ];
       loader = {
           timeout = 2;
           systemd-boot = {
