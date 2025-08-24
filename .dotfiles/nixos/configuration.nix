@@ -23,12 +23,16 @@
       nvidia = {
           modesetting.enable = true;
           nvidiaSettings = true;
-          package = config.boot.kernelPackages.nvidiaPackages.stable;
-          open = true;
+          package = config.boot.kernelPackages.nvidiaPackages.beta;
+          open = false;
           prime = {
               intelBusId = "PCI:0:2:0";
               nvidiaBusId = "PCI:1:0:0";
-              sync.enable = true;
+              offload = {
+                  enable = true;
+                  enableOffloadCmd = true;
+              };
+              # sync.enable = true;
           };
       };
       graphics = {
@@ -88,6 +92,8 @@
   boot = {
       kernelPackages = pkgs.linuxPackages_latest;
       kernel.sysctl."vm.swappiness" = 10;
+      kernelParams = [ "nvidia-drm.fbdev=1" ];
+      initrd.kernelModules = [ "nvidia" "i915" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
       loader = {
           timeout = 2;
           systemd-boot = {
@@ -140,6 +146,7 @@
       tumbler.enable = true;
       udisks2.enable = true;
       xserver = {
+          enable = true;
           xkb.layout = "cz";
           videoDrivers = [ "nvidia" ];
       };
