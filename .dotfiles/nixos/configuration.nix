@@ -20,6 +20,17 @@
 
   hardware = {
       cpu.intel.updateMicrocode = true;
+      nvidia = {
+          modesetting.enable = true;
+          nvidiaSettings = true;
+          package = config.boot.kernelPackages.nvidiaPackages.stable;
+          open = true;
+          prime = {
+              intelBusId = "PCI:0:2:0";
+              nvidiaBusId = "PCI:1:0:0";
+              sync.enable = true;
+          };
+      };
       graphics = {
           enable = true;
           extraPackages = with pkgs; [
@@ -128,7 +139,10 @@
       gvfs.enable = true;
       tumbler.enable = true;
       udisks2.enable = true;
-      xserver.xkb.layout = "cz";
+      xserver = {
+          xkb.layout = "cz";
+          videoDrivers = [ "nvidia" ];
+      };
       journald.extraConfig = "SystemMaxUse=50M";
       getty.autologinUser = "libor";
       pipewire = {
