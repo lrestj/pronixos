@@ -53,3 +53,4 @@ Stažené/
 .config/yazi/plugins/mount.yazi/
 .local/share/zoxide/
 .viminfz.tmp
+.config/rclone/
