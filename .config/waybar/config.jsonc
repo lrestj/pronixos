@@ -215,7 +215,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "right", 
-    //"height": 30,
+    "height": 34,
     // "width": 1280,
     "spacing": 4,
     // Choose the order of the modules
@@ -223,7 +223,7 @@
     // Modules configuration
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 30,
+        "icon-size": 35,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-right": "close"
