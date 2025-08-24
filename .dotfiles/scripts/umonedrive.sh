@@ -1,7 +1,7 @@
 #!/bin/bash
 
 icon="/home/libor/.dotfiles/icons/onedrive.png"
-title="OneDrive odpojen"
+title="❌ Odpojeno"
 
 umount /home/libor/Public/OneDrive
-notify-send -t 2000 -i $icon "$title" 
+notify-send -t 2000 -c min -i $icon "$title" 
