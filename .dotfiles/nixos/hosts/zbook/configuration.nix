@@ -1,3 +1,5 @@
+##### HP Zbook config #####
+
 { config, pkgs, lib, ... }:
 
 {
@@ -5,9 +7,9 @@
   imports =
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
-        ./modules/pkgs.nix
-        ./modules/greetd.nix
-        ./modules/console.nix
+        ../../modules/pkgs.nix
+        ../../modules/greetd.nix
+        ../../modules/console.nix
       ];
 
   xdg.portal.enable = true;
@@ -20,6 +22,21 @@
 
   hardware = {
       cpu.intel.updateMicrocode = true;
+      nvidia = {
+          modesetting.enable = true;
+          nvidiaSettings = true;
+          package = config.boot.kernelPackages.nvidiaPackages.beta;
+          open = false;
+          prime = {
+              intelBusId = "PCI:0:2:0";
+              nvidiaBusId = "PCI:1:0:0";
+              offload = {
+                  enable = true;
+                  enableOffloadCmd = true;
+              };
+              # sync.enable = true;
+          };
+      };
       graphics = {
           enable = true;
           extraPackages = with pkgs; [
@@ -77,17 +94,19 @@
   boot = {
       kernelPackages = pkgs.linuxPackages_latest;
       kernel.sysctl."vm.swappiness" = 10;
+      kernelParams = [ "nvidia-drm.fbdev=1" ];
+      initrd.kernelModules = [ "nvidia" "i915" "nvidia_modeset" "nvidia_drm" ];
       loader = {
           timeout = 2;
           systemd-boot = {
               enable = true;
               configurationLimit = 7;
-              extraEntries = {
-                  "opensuse.conf" = ''
-                      title openSUSE Tumbleweed
-                      efi /EFI/opensuse/grubx64.efi
-                  '';
-              };
+              # extraEntries = {
+              #     "opensuse.conf" = ''
+              #         title openSUSE Tumbleweed
+              #         efi /EFI/opensuse/grubx64.efi
+              #     '';
+              # };
          };
           efi = {
               canTouchEfiVariables = true;
@@ -97,7 +116,7 @@
   };
 
   networking = {
-      hostName = "nixos";
+      hostName = "zbook";
       networkmanager.enable = true;
       firewall = {
           enable = true;
@@ -128,7 +147,11 @@
       gvfs.enable = true;
       tumbler.enable = true;
       udisks2.enable = true;
-      xserver.xkb.layout = "cz";
+      xserver = {
+          enable = true;
+          xkb.layout = "cz";
+          videoDrivers = [ "nvidia" ];
+      };
       journald.extraConfig = "SystemMaxUse=50M";
       getty.autologinUser = "libor";
       pipewire = {

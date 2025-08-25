@@ -60,6 +60,7 @@
             krename
             libnotify
             libreoffice-fresh
+            lshw
             lxqt.lxqt-policykit
             mako
             mpv
