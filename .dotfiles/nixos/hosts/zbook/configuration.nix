@@ -1,3 +1,5 @@
+##### HP Zbook config #####
+
 { config, pkgs, lib, ... }:
 
 {
@@ -5,9 +7,9 @@
   imports =
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
-        ./modules/pkgs.nix
-        ./modules/greetd.nix
-        ./modules/console.nix
+        ../../modules/pkgs.nix
+        ../../modules/greetd.nix
+        ../../modules/console.nix
       ];
 
   xdg.portal.enable = true;
@@ -114,7 +116,7 @@
   };
 
   networking = {
-      hostName = "nixos";
+      hostName = "zbook";
       networkmanager.enable = true;
       firewall = {
           enable = true;
