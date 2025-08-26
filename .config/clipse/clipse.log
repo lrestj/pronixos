@@ -5,3 +5,4 @@
 2025/05/05 13:18:21 logger.go:19: ERROR: failed to save new image: exit status 1
 2025/05/05 13:32:46 logger.go:19: ERROR: failed to kill process: exit status 1
 2025/05/05 13:47:38 logger.go:19: ERROR: failed to save new image: exit status 1
+2025/08/26 20:17:24 logger.go:19: ERROR: invalid character '<' looking for beginning of value
