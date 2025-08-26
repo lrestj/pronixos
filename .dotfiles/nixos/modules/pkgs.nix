@@ -29,6 +29,7 @@
             brave
             brightnessctl
             btop
+            cliphist
             clipse
             dconf-editor
             efibootmgr
