@@ -34,7 +34,7 @@ syntax on
 filetype plugin indent on
 set nu cul autoread hidden lz
 set title titlestring=%F
-set ruler rulerformat=%63(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
+set ruler rulerformat=%43(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
 set directory=~/Public/
 set ignorecase smartcase incsearch
 set mouse=a scrolloff=5
@@ -61,7 +61,6 @@ call plug#begin()
     Plug 'Konfekt/filepicker.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/vim-peekaboo'
 call plug#end()
 
 """"" END OF FILE """""
