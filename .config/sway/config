@@ -67,6 +67,10 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
 #
     # Start a terminal
     bindsym $mod+a exec $term
+    bindsym Ctrl+Shift+y exec yazi
+    bindsym Ctrl+Shift+e exec vim
+    bindsym Ctrl+Shift+b exec brave
+
 
     # Kill focused window
     bindsym $mod+q kill
