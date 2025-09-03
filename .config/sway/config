@@ -95,6 +95,10 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
     # Kill focused window
     bindsym $mod+q kill
 
+    # Menu wlogout
+    bindsym $mod+y exec pkill wlogout || wlogout -s -c 5 -r 5 -L 360 -R 360
+    bindsym $mod+x exec pkill wlogout || ~/.dotfiles/scripts/power.sh
+
     # Screenshots
     bindsym $mod+Print exec hyprshot -m window
     bindsym Ctrl+Alt+Print exec hyprshot -m output
