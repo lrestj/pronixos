@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:vim
 SETUVAR --export TERM:footclient
 SETUVAR __fish_initialized:3800
 SETUVAR --export cs:/run/current\x2dsystem/sw/

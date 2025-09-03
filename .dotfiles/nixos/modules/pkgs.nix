@@ -122,7 +122,7 @@
         ]);
   
   programs = {
-      niri.enable = true;
+      sway.enable = true;
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;
