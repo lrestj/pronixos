@@ -71,6 +71,9 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
     bindsym Ctrl+Shift+e exec $term -e vim
     bindsym Ctrl+Shift+b exec brave
 
+    # Toggle waybar
+    bindsym $mod+Return exec pkill waybar || waybar-sway
+
 
     # Kill focused window
     bindsym $mod+q kill
