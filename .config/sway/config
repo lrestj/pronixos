@@ -18,8 +18,17 @@ set $term foot
 # Your preferred application launcher
 set $menu rofi -show drun -show-icons -sidebar-mode
 
-### Output configuration
-#
+# Apps at startup
+exec waypaper --restore &
+exec nm-applet --indicator &
+exec lxqt-policykit-agent &
+exec wl-paste --watch cliphist store
+exec hypridle
+exec wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000 # Screen blue light settings
+exec udiskie -t
+exec $HOME/.dotfiles/scripts/touchpad.sh
+
+
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
 output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
