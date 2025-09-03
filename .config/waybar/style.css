@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Hack Nerd Fonts, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -21,7 +21,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 */
 
@@ -58,6 +58,7 @@ button:hover {
 #backlight:hover,
 #pulseaudio:hover {
     background-color: #A2780E;
+    color: #000000;
 }
 #custom-scan:hover,
 #custom-power:hover,
@@ -92,7 +93,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #64727D;
+    background-color: #243440;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -113,33 +114,55 @@ button:hover {
     color: #ffffff;
 }
 
+#idle_inhibitor {
+    margin-right: 7;
+}
+
 #window,
 #workspaces {
     margin: 0 4px;
 }
 
 #custom-menu,
-#cpu,
-#temperature,
 #memory,
 #idle_inhibitor,
 #pulseaudio,
 #backlight,
-#tray,
 #clock,
 #battery,
-#power-profiles-daemon{
+#power-profiles-daemon {
     border-radius: 20px 20px 20px 20px;
     margin-top: 4px;
+    margin-right: 4;
     margin-bottom: 1px;
+}
+#cpu {
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 1px;
+}
+#temperature {
+    border-radius: 0px 20px 20px 0px;
+    margin-top: 4px;
+    margin-right: 4;
+    margin-bottom: 1px;
+}
+#tray {
+    border-radius: 20 20 20 20;
+    margin-top: 4;
+    margin-bottom: 1;
 }
 
 #custom-menu, 
 #cpu, 
 #temperature, 
 #memory {
-    background-color: #7f7f7f;
+    background-color: #64727D;
     color: #000000;
+}
+#memory {
+    margin-left: 5;
 }
 
 #custom-scan,
@@ -178,11 +201,12 @@ button:hover {
     background-size: contain;
 }
 #custom-text{
-    font-size: 18px;
+    font-size: 20px;
     background-image: url('/home/libor/.dotfiles/icons/notes.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-left: 6;
 }
 
 #custom-fm{
@@ -203,15 +227,16 @@ button:hover {
 
 #clock {
     background-color: #64727D;
+    color: #000000;
 }
 
 #battery {
     background-color: #64727D;
-    color: #ffffff;
+    color: #000000;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
+    color: #000000;
     background-color: #64727D;
 }
 
@@ -241,7 +266,7 @@ button:hover {
 /* background-color: #f53c3c; */
     padding: 0 3px;
     background-color: #64727D;
-    color: #ffffff;
+    color: #000000;
 }
 
 #power-profiles-daemon.balanced {
@@ -262,12 +287,12 @@ label:focus {
 
 #backlight {
     background-color: #64727D;
-    color: #ffffff;
+    color: #000000;
 }
 
 #pulseaudio {
     background-color: #64727D;
-    color: #ffffff;
+    color: #000000;
 }
 
 #pulseaudio.muted {
@@ -280,7 +305,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #64727D;
+    background-color: #243440;
 }
 
 #tray > .passive {
@@ -294,17 +319,18 @@ label:focus {
 
 #idle_inhibitor {
     background-color: #434444;
+    color: #aabbcc;
 }
 
 #idle_inhibitor.activated {
-    background-color: green;
-    color: #000000;
+    background-color: #243440;
+    color: #ffffff;
 }
 
 #custom-power {
     padding-left: 15px;
     margin-left: 12px;
-    font-size: 13px;
+    font-size: 15px;
     background-image: url('/home/libor/.dotfiles/icons/power.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -314,4 +340,5 @@ label:focus {
 #taskbar button {
     padding: 5 2px;
 }
+
 /* END OF FILE */

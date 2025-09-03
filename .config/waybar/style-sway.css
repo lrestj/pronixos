@@ -1,12 +1,12 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Hack Nerd Fonts, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: transparent;      /* rgba(43, 48, 59, 0.5) */
+    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -21,7 +21,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 */
 
@@ -49,58 +49,25 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#cpu:hover,
+#temperature:hover,
+#memory:hover,
+#custom-menu:hover,
+#idle_inhibitor:hover,
+#clock:hover,
+#backlight:hover,
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #A2780E;
+    color: #000000;
 }
-
-#workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
-}
-
-#window,
-#workspaces {
-    margin: 0 4px;
+#custom-scan:hover,
+#custom-power:hover,
+#custom-office:hover,
+#custom-kalk:hover,
+#custom-text:hover,
+#custom-fm:hover,
+#custom-browser:hover {
+    background-color: #000000;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -113,18 +80,164 @@ button:hover {
     margin-right: 0;
 }
 
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-top: 1px;
+    border-radius: 5px 5px 0px 8px;
+}
+
+#workspaces button:hover {
+    background-color: #A2780E;
+}
+
+#workspaces button.active {
+    background-color: #243440;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#pulseaudio,
+#idle_inhibitor,
+#power-profiles-daemon,
+#tray {
+    padding: 0 7px;
+    color: #ffffff;
+}
+
+#idle_inhibitor {
+    margin-right: 7;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#custom-menu,
+#memory,
+#idle_inhibitor,
+#pulseaudio,
+#backlight,
+#clock,
+#battery,
+#power-profiles-daemon {
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 4px;
+    margin-right: 4;
+    margin-bottom: 1px;
+}
+#cpu {
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 1px;
+}
+#temperature {
+    border-radius: 0px 20px 20px 0px;
+    margin-top: 4px;
+    margin-right: 4;
+    margin-bottom: 1px;
+}
+#tray {
+    border-radius: 20 20 20 20;
+    margin-top: 4;
+    margin-bottom: 1;
+}
+
+#custom-menu, 
+#cpu, 
+#temperature, 
+#memory {
+    background-color: #64727D;
+    color: #000000;
+}
+#memory {
+    margin-left: 5;
+}
+
+#custom-scan,
+#custom-office,
+#custom-kalk,
+#custom-text,
+#custom-power, 
+#custom-fm,
+#custom-browser {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+#custom-scan{
+    font-size: 17px;
+    background-image: url('/home/libor/.dotfiles/icons/skener.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left : 8;
+}
+    
+#custom-office{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#custom-kalk{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/kalk.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#custom-text{
+    font-size: 20px;
+    background-image: url('/home/libor/.dotfiles/icons/notes.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 6;
+}
+
+#custom-fm{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/fm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#custom-browser{
+    font-size: 19px;
+    background-image: url('/home/libor/.dotfiles/icons/brave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 #clock {
     background-color: #64727D;
+    color: #000000;
 }
 
 #battery {
-    background-color: #ffffff;
+    background-color: #64727D;
     color: #000000;
 }
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #64727D;
 }
 
 @keyframes blink {
@@ -146,20 +259,24 @@ button:hover {
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
+    padding-right: 0px;
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
+/* background-color: #f53c3c; */
+    padding: 0 3px;
+    background-color: #64727D;
+    color: #000000;
 }
 
 #power-profiles-daemon.balanced {
+    padding-right: 4px;   
     background-color: #2980b9;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
+    padding-right: 4px;   
     background-color: #2ecc71;
     color: #000000;
 }
@@ -168,33 +285,13 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #2ecc71;
+#backlight {
+    background-color: #64727D;
     color: #000000;
 }
 
-#memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
-#backlight {
-    background-color: #90b1b1;
-}
-
-#network {
-    background-color: #2980b9;
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
-}
-
 #pulseaudio {
-    background-color: #f1c40f;
+    background-color: #64727D;
     color: #000000;
 }
 
@@ -203,39 +300,12 @@ label:focus {
     color: #2a5c45;
 }
 
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
 #temperature.critical {
     background-color: #eb4d4b;
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #243440;
 }
 
 #tray > .passive {
@@ -248,80 +318,27 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: #434444;
+    color: #aabbcc;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: #243440;
+    color: #ffffff;
 }
 
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+#custom-power {
+    padding-left: 15px;
+    margin-left: 12px;
+    font-size: 15px;
+    background-image: url('/home/libor/.dotfiles/icons/power.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#mpd.disconnected {
-    background-color: #f53c3c;
+#taskbar button {
+    padding: 5 2px;
 }
 
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}
+/* END OF FILE */
