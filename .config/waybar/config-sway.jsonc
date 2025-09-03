@@ -10,29 +10,28 @@
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
-        "custom/media"
+        "custom/media",
+        "memory",
+        "cpu",
+        "temperature"
     ],
     "modules-center": [
         "sway/window"
     ],
     "modules-right": [
-        "mpd",
         "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
+        "mpd",
         "tray",
+        "pulseaudio",
+        "backlight",
+        "clock",
+        // "network",
+        "battery",
+        "sway/language",
+        "power-profiles-daemon",
         "custom/power"
     ],
+
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -111,9 +110,11 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "timezone": "Europe/Prague",
+        "locale": "cs_CZ.UTF-8",
+        "format": "{:%H:%M 🕘}",
+        "tooltip-format": "<big>{:L%e L%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:L%A %d.%m.%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
