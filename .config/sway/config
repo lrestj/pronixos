@@ -125,10 +125,10 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
-    bindsym $mod+Shift+left move container to workspace number 1
-    bindsym $mod+Shift+right move container to workspace number 2
-    bindsym $mod+Shift+down move container to workspace number 3
-    bindsym $mod+Shift+up move container to workspace number 4
+    bindsym Alt+Ctrl+left move container to workspace number 1
+    bindsym Alt+Ctrl+right move container to workspace number 2
+    bindsym Alt+Ctrl+down move container to workspace number 3
+    bindsym Alt+Ctrl+up move container to workspace number 4
     bindsym $mod+Shift+5 move container to workspace number 5
     bindsym $mod+Shift+6 move container to workspace number 6
     bindsym $mod+Shift+7 move container to workspace number 7
