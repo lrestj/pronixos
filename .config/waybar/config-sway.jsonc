@@ -112,7 +112,7 @@
    "custom/fm": {
         "format":"        ",
         "tooltip-format": "Soubory",
-        "on-click": "pkill $FILEMGR || $FILEMGR"
+        "on-click": "pkill thunar || thunar"
     },
 
    "custom/browser": {
