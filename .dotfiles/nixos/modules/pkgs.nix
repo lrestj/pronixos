@@ -46,7 +46,7 @@
             geany
             glib util-linux
             gnome-calculator
-            grim
+            grim sway-contrib.grimshot
             gthumb
             hunspellDicts.cs_CZ
             hunspellDicts.en_US

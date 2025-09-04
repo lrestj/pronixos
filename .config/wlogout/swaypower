@@ -1,0 +1,23 @@
+{
+    "label" : "lock",
+    "action" : "swaylock",
+    "text" : "   Zamknout  ",
+    "keybind" : "z"
+}
+{
+    "label" : "logout",
+    "action" : " sleep 1 && swaymsg exit",
+    "text" : "Odhlásit  ",
+    "keybind" : "o"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Restart  ",
+    "keybind" : "r"
+}{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "  Vypnout  ",
+    "keybind" : "v"
+}
