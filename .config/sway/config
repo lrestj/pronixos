@@ -30,6 +30,10 @@ exec udiskie -t
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
 output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
+## Locking the system
+set $lock swaylock -f -F -e -k -c 000000
+bindsym --to-code Ctrl+Alt+Delete exec $lock
+
 ### Idle configuration
 #
 # Example configuration:
@@ -55,6 +59,13 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
         xkb_layout "cz"
         xkb_options caps:swapescape
     }
+
+    # switch to workspace with urgent window
+    for_window [urgent="latest"] focus
+
+    # focus_on_window_activation   focus
+    focus_follows_mouse no
+
 
 ### Keybindings
     bindsym $mod+a exec $term
