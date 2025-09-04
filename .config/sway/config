@@ -164,10 +164,8 @@ bindsym --to-code Ctrl+Alt+Delete exec $lock
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    bindsym Print exec ~/.dotfiles/scripts/outgrim.sh
-    bindsym $mod+Print exec ~/.dotfiles/scripts/wingrim.sh
-    bindsym Alt+Print exec ~/.dotfiles/scripts/selgrim.sh
+    # Special key to take a screenshot with grimshot
+    bindsym $mod+Print exec grimshot --notify save anything
 
 ### Windows rules
 for_window [class=".*"] move left
