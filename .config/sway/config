@@ -1,5 +1,21 @@
 ##### SWAY CONFIG #####
 
+### Status Bar:
+    bar {
+        swaybar_command waybar-sway
+        position top
+    
+        # When the status_command prints a new line to stdout, swaybar updates.
+        # The default just shows the current date and time.
+        status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    
+        colors {
+            statusline #ffffff
+            background #323232
+        inactive_workspace #32323200 #32323200 #5c5c5c
+        }
+    }
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -79,6 +95,10 @@ exec_always killall swayidle; swayidle -w \
 
     # Clipboard toggle
     bindsym $mod+c exec pkill rofi || cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy
+
+    # Window opacity
+    bindsym $mod+p opacity plus 0.05
+    bindsym $mod+o opacity minus 0.05
 
     # Kill focused window
     bindsym $mod+q kill
@@ -168,22 +188,8 @@ exec_always killall swayidle; swayidle -w \
 
 ### Windows rules
 for_window [class=".*"] move left
-
-### Status Bar:
-    bar {
-        swaybar_command waybar-sway
-        position top
-    
-        # When the status_command prints a new line to stdout, swaybar updates.
-        # The default just shows the current date and time.
-        status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    
-        colors {
-            statusline #ffffff
-            background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-        }
-    }
+for_window [app_id="org.gnome.Calculator"] floating enable, move right 480, move up 55
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
 
 include /etc/sway/config.d/*
 
