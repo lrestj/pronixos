@@ -97,9 +97,6 @@ exec_always killall swayidle; swayidle -w \
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m '!!! UKONČENÍ SWAY !!! Opravdu opustit sezení?' -B 'Ano, ukončit sway' 'swaymsg exit'
-
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
@@ -129,10 +126,11 @@ exec_always killall swayidle; swayidle -w \
     bindsym Alt+Ctrl+Up move container to workspace number 4
 
     # Layout toggle
-    bindsym Alt+w layout toggle split
+    bindsym $mod+w layout toggle split
+    bindsym $mod+f layout toggle tabbed splith
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+Alt+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym Ctrl+Alt+f floating toggle
