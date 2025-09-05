@@ -2,8 +2,8 @@
 gtk-theme=Adwaita
 icon-theme=breeze-dark
 font-name=Sans 10
-cursor-theme=Bibata-Modern-Classic
-cursor-size=24
+cursor-theme=Banana
+cursor-size=28
 toolbar-style=both-horiz
 toolbar-icons-size=large
 font-hinting=slight

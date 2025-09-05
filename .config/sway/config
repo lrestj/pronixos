@@ -5,6 +5,10 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
+# Cursor theme
+seat seat0 xcursor_theme Banana 28
+# seat seat0 xcursor_theme Bibata-Modern-Classic 24
+
 # No window bars
 default_border pixel 4
 default_floating_border pixel 5
@@ -32,7 +36,9 @@ output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_19
 
 ## Locking the system
 set $lock swaylock -f -F -e -k -c 000000
+set $logout sleep 1 && swaymsg exit
 bindsym --to-code Ctrl+Alt+Delete exec $lock
+bindsym --to-code $mod+Delete exec $logout
 
 ### Idle configuration
 exec_always killall swayidle; swayidle -w \

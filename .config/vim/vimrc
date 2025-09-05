@@ -51,9 +51,9 @@ let &t_EI = "\<Esc>[2 q" "Block in other modes
 
 "Statusline and transparent background    
 hi StatusLine ctermbg=0 ctermfg=22
-hi Normal ctermbg=NONE
-hi NonText ctermbg=NONE
-hi LineNr ctermbg=NONE
+" hi Normal ctermbg=NONE
+" hi NonText ctermbg=NONE
+" hi LineNr ctermbg=NONE
 
 "Plugins
 call plug#begin()

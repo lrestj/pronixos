@@ -1,12 +1,12 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "swaylock -f -F -e -k -c 000000",
     "text" : "   Zamknout  ",
     "keybind" : "z"
 }
 {
     "label" : "logout",
-    "action" : " sleep 1 && hyprctl dispatch exit",
+    "action" : " sleep 1 && swaymsg exit",
     "text" : "Odhlásit  ",
     "keybind" : "o"
 }
