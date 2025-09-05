@@ -139,7 +139,7 @@ exec_always killall swayidle; swayidle -w \
     bindsym $mod+space focus mode_toggle
 
     # Move window to the scratchpad and show
-    bindsym $mod+Shift+s move scratchpad
+    bindsym $mod+Alt+s move scratchpad
     bindsym $mod+s scratchpad show
 
 ### Resizing containers:
