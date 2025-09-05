@@ -189,7 +189,7 @@ exec_always killall swayidle; swayidle -w \
 ### Windows rules
 for_window [class=".*"] move left
 for_window [app_id="org.gnome.Calculator"] floating enable, move right 480, move up 55
-for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable, resize set 630 400, move position 700px 3px
 
 include /etc/sway/config.d/*
 
